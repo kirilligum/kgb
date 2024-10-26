@@ -35,7 +35,10 @@ def process_directory(input_dir, output_dir):
     output_path = Path(output_dir)
     output_path.mkdir(exist_ok=True)
     
-    for html_file in input_path.glob('*.html'):
+    for i, html_file in enumerate(input_path.glob('*.html')):
+        if i >= 2:  # Process only first 2 articles
+            break
+            
         print(f"Processing {html_file.name}")
         
         # Read HTML content
