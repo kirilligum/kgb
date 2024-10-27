@@ -72,16 +72,19 @@ def process_articles(input_file, output_file):
 
     extracted_entities = {}
 
-    # for file_name, article in list(articles.items())[:2]:
-    for file_name, article in list(articles.items()):
+    for file_name, sentences in articles.items():
         print(f"Extracting entities from article: {file_name}")
-        # body_text = article.get("body_text", "")
-        body_text = json.dumps(article, indent=4)
+        unique_entities = set()
 
-        if body_text:
-            entities = extract_entities_from_article(body_text)
+        for sentence in sentences:
+            entities = extract_entities_from_article(sentence)
             if entities:
-                extracted_entities[file_name] = entities.dict()
+                for entity in entities.entities:
+                    unique_entities.add((entity.entity, entity.type))
+
+        extracted_entities[file_name] = [
+            {"entity": entity, "type": type_} for entity, type_ in unique_entities
+        ]
 
     with open(output_file, "w", encoding="utf-8") as f:
         json.dump(extracted_entities, f, indent=4, ensure_ascii=False)
@@ -89,7 +92,7 @@ def process_articles(input_file, output_file):
 
 
 if __name__ == "__main__":
-    input_file = "data/merged_articles.json"
+    input_file = "data/decontextualized_articles.json"
     output_file = "data/extracted_entities.json"
 
     process_articles(input_file, output_file)
