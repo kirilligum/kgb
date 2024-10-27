@@ -2,9 +2,11 @@ import json
 from flair.data import Sentence
 from flair.models import SequenceTagger
 
+# Load the tagger once
+tagger = SequenceTagger.load("flair/chunk-english")
+
 def chunk_sentences_with_flair(article_text):
     """Chunk article text into sentences using Flair."""
-    tagger = SequenceTagger.load("flair/chunk-english")
     sentence = Sentence(article_text)
     tagger.predict(sentence)
     return [span.text for span in sentence.get_spans("chunk")]
