@@ -1,5 +1,4 @@
-# import os
-# import json
+import json
 from openai import OpenAI, completions
 from pathlib import Path
 from pydantic import BaseModel
@@ -205,7 +204,7 @@ def process_directory(input_dir, output_dir):
             # Save cleaned text
             output_file = output_path / f"{html_file.stem}_cleaned.json"
             with open(output_file, "w", encoding="utf-8") as f:
-                f.write(cleaned_text)
+                f.write(json.dumps(json.loads(cleaned_text), indent=2))
             print(f"Saved cleaned text to {output_file}")
         else:
             print(f"Failed to clean {html_file.name}")
