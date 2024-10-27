@@ -31,6 +31,6 @@ def process_articles(input_file, output_file):
 
 if __name__ == "__main__":
     input_file = "data/merged_articles.json"
-    output_file = "data/chunked_articles.json"
+    output_file = "data/chunked_articles_regex.json"
 
     process_articles(input_file, output_file)
