@@ -18,14 +18,11 @@ def merge_cleaned_articles(input_dir, output_file):
             with open(json_file, "r", encoding="utf-8") as f:
                 article_data = json.load(f)
 
-                # Add the filename to the article data
-                article_data["file_name"] = json_file.stem.replace("_cleaned", "")
-
                 # Only add articles where article_found is true
                 if article_data.get("article_found", "false") or article_data.get(
                     "article_found", False
                 ):
-                    merged_data[article_data["file_name"]] = article_data
+                    merged_data.update(article_data)
 
         except json.JSONDecodeError as e:
             print(f"Error reading {json_file.name}: {str(e)}")
