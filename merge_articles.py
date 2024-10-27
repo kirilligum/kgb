@@ -53,9 +53,10 @@ def merge_cleaned_articles(input_dir, output_file):
             with open(json_file, 'r', encoding='utf-8') as f:
                 article_data = json.load(f)
                 
-                # Use the original filename (without _cleaned.json) as the key
-                key = json_file.stem.replace('_cleaned', '')
-                merged_data[key] = article_data
+                # Add the filename to the article data
+                article_data['file_name'] = json_file.stem.replace('_cleaned', '')
+                # Use a numeric index as key
+                merged_data[str(len(merged_data))] = article_data
                 
         except json.JSONDecodeError as e:
             print(f"Error reading {json_file.name}: {str(e)}")
