@@ -1,61 +1,25 @@
 {
-    "www.bbc.com_news_articles_cw008xgn49po_20241026_223539_GMT": {
+    "www.bloomberg.com_news_articles_2024-10-09_openai-fires-back-at-musk-over-altruism-versus-greed-lawsuit_20241026_223558_GMT": {
         "entities": [
-            {
-                "entity": "Elon Musk",
-                "type": "PER"
-            },
             {
                 "entity": "OpenAI",
                 "type": "ORG"
             },
             {
-                "entity": "Sam Altman",
+                "entity": "Musk",
                 "type": "PER"
             },
             {
-                "entity": "California",
-                "type": "LOC"
-            },
-            {
-                "entity": "ChatGPT",
-                "type": "PROD"
-            },
-            {
-                "entity": "BBC News",
-                "type": "ORG"
-            },
-            {
-                "entity": "Tesla",
-                "type": "ORG"
-            },
-            {
-                "entity": "Apple",
-                "type": "ORG"
-            },
-            {
-                "entity": "July 2023",
+                "entity": "2024-10-09",
                 "type": "DATE"
             },
             {
-                "entity": "xAI",
-                "type": "ORG"
-            },
-            {
-                "entity": "Grok",
-                "type": "PROD"
-            },
-            {
-                "entity": "11 June 2024",
-                "type": "DATE"
-            },
-            {
-                "entity": "February",
-                "type": "DATE"
+                "entity": "20241026 223558",
+                "type": "TIME"
             }
         ]
     },
-    "www.hollywoodreporter.com_business_business-news_elon-musk-sues-openai-ceo-lawsuit-challenging-microsoft-partnership-1235963903__20241026_225114_GMT": {
+    "www.cnn.com_2024_08_05_business_elon-musk-new-lawsuit-openai-sam-altman_index.html_20241026_223831_GMT": {
         "entities": [
             {
                 "entity": "Elon Musk",
@@ -66,108 +30,8 @@
                 "type": "ORG"
             },
             {
-                "entity": "Microsoft",
-                "type": "ORG"
-            },
-            {
-                "entity": "Northern District of California",
-                "type": "LOC"
-            },
-            {
-                "entity": "Tesla",
-                "type": "ORG"
-            },
-            {
                 "entity": "Sam Altman",
                 "type": "PER"
-            },
-            {
-                "entity": "Greg Brockman",
-                "type": "PER"
-            },
-            {
-                "entity": "Hollywood",
-                "type": "LOC"
-            },
-            {
-                "entity": "Sora",
-                "type": "PROD"
-            },
-            {
-                "entity": "AGI",
-                "type": "PROD"
-            },
-            {
-                "entity": "2015",
-                "type": "DATE"
-            },
-            {
-                "entity": "2016",
-                "type": "DATE"
-            },
-            {
-                "entity": "Satya Nadella",
-                "type": "PER"
-            },
-            {
-                "entity": "2018",
-                "type": "DATE"
-            },
-            {
-                "entity": "OpenAI, L.P.",
-                "type": "ORG"
-            },
-            {
-                "entity": "2022",
-                "type": "DATE"
-            },
-            {
-                "entity": "$45 million",
-                "type": "MONEY"
-            },
-            {
-                "entity": "$51 million",
-                "type": "MONEY"
-            },
-            {
-                "entity": "Helion Energy",
-                "type": "ORG"
-            },
-            {
-                "entity": "The TED AI Show",
-                "type": "WOA"
-            },
-            {
-                "entity": "June",
-                "type": "DATE"
-            },
-            {
-                "entity": "xAI",
-                "type": "ORG"
-            },
-            {
-                "entity": "$24 billion",
-                "type": "MONEY"
-            },
-            {
-                "entity": "Steve Ditko",
-                "type": "PER"
-            },
-            {
-                "entity": "Spider-Man",
-                "type": "WOA"
-            },
-            {
-                "entity": "Doctor Strange",
-                "type": "WOA"
-            },
-            {
-                "entity": "Top Gun",
-                "type": "WOA"
-            },
-            {
-                "entity": "Road House",
-                "type": "WOA"
             }
         ]
     }

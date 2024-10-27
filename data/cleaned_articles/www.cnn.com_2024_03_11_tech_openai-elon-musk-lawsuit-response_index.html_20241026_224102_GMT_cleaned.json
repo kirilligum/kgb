@@ -1,8 +1,10 @@
 {
-    "article_found": true,
-    "title": "New Discoveries in Quantum Computing",
-    "publication_date": "October 25, 2023",
-    "author": "Jane Doe",
-    "publisher": "Tech Innovations",
-    "body_text": "In a groundbreaking study released this week, researchers have unveiled new discoveries that could revolutionize the field of quantum computing. The findings suggest that by manipulating quantum bits in unprecedented ways, significant advancements can be made in speed and efficiency.\n\n\"We are on the brink of a new era in computing technology,\" said Dr. Alice Smith, the lead author of the study. \"These results open up new paths for quantum algorithms and applications.\"\n\nThe research was conducted at the Quantum Computing Institute and has already garnered attention from tech giants eager to implement these findings into their upcoming projects. With potential applications ranging from cryptography to artificial intelligence, the implications are vast and varied.\n\nFurther experiments are planned for the upcoming months to refine these techniques and explore their practical applications. Experts believe that this could lead to a breakthrough in computing power, enabling machines to solve complex problems much more quickly than current technologies allow."
+    "www.cnn.com_2024_03_11_tech_openai-elon-musk-lawsuit-response_index.html_20241026_224102_GMT": {
+        "article_found": false,
+        "title": "",
+        "publication_date": "",
+        "author": "",
+        "publisher": "",
+        "body_text": ""
+    }
 }

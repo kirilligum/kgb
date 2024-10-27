@@ -47,7 +47,7 @@ def extract_entities_from_article(article_text):
                 },
                 {
                     "role": "user",
-                    "content": f"Extract named entities from the following text:\n\n{article_text}\n\n use the short form of common NER types but also add new ones when you need to. {common_ner_types}",
+                    "content": f"Read the article text carfully. Extract named entities from the following article text:\n\n<article_text>{article_text}</article_text>\n\n use the short form of common NER types but also add new ones when you need to. {common_ner_types}",
                 },
             ],
             response_format=NamedEntities,

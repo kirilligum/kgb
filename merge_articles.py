@@ -20,9 +20,11 @@ def merge_cleaned_articles(input_dir, output_file):
 
                 # Add the filename to the article data
                 article_data["file_name"] = json_file.stem.replace("_cleaned", "")
-                
+
                 # Only add articles where article_found is true
-                if article_data.get("article_found", False):
+                if article_data.get("article_found", "false") or article_data.get(
+                    "article_found", False
+                ):
                     merged_data[article_data["file_name"]] = article_data
 
         except json.JSONDecodeError as e:
