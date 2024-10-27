@@ -72,7 +72,7 @@ def process_articles(input_file, output_file):
 
     extracted_entities = {}
 
-    for file_name, sentences in articles.items():
+    for file_name, sentences in list(articles.items())[:2]:
         print(f"Extracting entities from article: {file_name}")
         unique_entities = set()
 
