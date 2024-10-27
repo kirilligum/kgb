@@ -78,6 +78,7 @@ def process_articles(input_file, output_file):
 
         for sentences in sentences_list:
             for sentence in sentences:
+                logging.info(f"Extracting entities from sentence {i+1}/{len(sentences_list)} in article: {file_name}")
                 entities = extract_entities_from_article(sentence)
                 if entities:
                     sentence_entities.append([

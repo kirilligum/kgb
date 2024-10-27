@@ -92,6 +92,7 @@ def process_articles(output_file):
 
         for i, sentences in enumerate(sentences_list):
             for sentence in sentences:
+                logging.info(f"Paraphrasing sentence {i+1}/{len(sentences_list)} in article: {file_name}")
                 entities = entities_list[i] if i < len(entities_list) else []
                 paraphrased = paraphrase_article(sentence, entities)
                 if paraphrased:
