@@ -2,6 +2,7 @@ import json
 from openai import OpenAI
 from pathlib import Path
 import logging
+import time
 
 # Initialize OpenAI client
 client = OpenAI()
@@ -34,33 +35,27 @@ def check_chunk(chunk_text):
         return f"Error: {str(e)}"
 
 def process_articles():
-    """Process articles and check each chunk."""
-    input_merged = "data/merged_articles.json"
+    """Process chunked articles and check each chunk."""
     input_chunks = "data/chunked_articles_spacy.json"
     output_file = "data/chunked_articles_spacy_checked.json"
 
-    # Check if input files exist
-    if not Path(input_merged).is_file():
-        logging.error(f"Input file {input_merged} does not exist.")
-        return
     if not Path(input_chunks).is_file():
         logging.error(f"Input file {input_chunks} does not exist.")
         return
 
-    # Load the merged articles
-    try:
-        with open(input_merged, "r", encoding="utf-8") as f:
-            merged_articles = json.load(f)
-    except Exception as e:
-        logging.error(f"Error loading {input_merged}: {str(e)}")
-        return
 
     # Load the chunked articles
     try:
         with open(input_chunks, "r", encoding="utf-8") as f:
             chunked_articles = json.load(f)
+    except FileNotFoundError:
+        logging.error(f"File not found: {input_chunks}")
+        return
+    except json.JSONDecodeError as e:
+        logging.error(f"JSON decode error in {input_chunks}: {str(e)}")
+        return
     except Exception as e:
-        logging.error(f"Error loading {input_chunks}: {str(e)}")
+        logging.error(f"Unexpected error loading {input_chunks}: {str(e)}")
         return
 
     # Dictionary to store the results
@@ -72,12 +67,15 @@ def process_articles():
         article_results = []
 
         # Iterate over each chunk
-        for chunk in chunks:
+        for idx, chunk in enumerate(chunks, start=1):
+            logging.info(f"Processing chunk {idx}/{len(chunks)} in article {file_name}")
             result = check_chunk(chunk)
             article_results.append({
                 "chunk": chunk,
                 "check_result": result
             })
+            time.sleep(1)
+            time.sleep(1)
 
         # Store the results for the article
         checked_chunks[file_name] = article_results
