@@ -1,9 +1,11 @@
 import json
+import logging
 from openai import OpenAI
 from pydantic import BaseModel
 from pathlib import Path
 
-# Initialize OpenAI client
+# Configure logging
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 client = OpenAI()
 
 
@@ -63,26 +65,28 @@ def paraphrase_article(article_text, entities):
             paraphrased = completion.choices[0].message.parsed
             return paraphrased
 
-        print("No valid response received from OpenAI API")
+        logging.warning("No valid response received from OpenAI API")
         return None
 
     except Exception as e:
-        print(f"Error paraphrasing article: {str(e)}")
+        logging.error(f"Error paraphrasing article: {str(e)}")
         return None
 
 
 def process_articles(output_file):
     """Process articles and paraphrase them"""
+    logging.info("Loading chunked articles from data/chunked_articles_spacy.json")
     with open("data/chunked_articles_spacy.json", "r", encoding="utf-8") as f:
         chunked_articles = json.load(f)
 
+    logging.info("Loading extracted entities from data/extracted_entities.json")
     with open("data/extracted_entities.json", "r", encoding="utf-8") as f:
         extracted_entities = json.load(f)
 
     paraphrased_articles = {}
 
     for file_name, sentences_list in list(chunked_articles.items())[:2]:
-        print(f"Paraphrasing article: {file_name}")
+        logging.info(f"Paraphrasing article: {file_name}")
         paraphrased_sentences = []
         entities_list = extracted_entities.get(file_name, [])
 
@@ -99,7 +103,7 @@ def process_articles(output_file):
 
     with open(output_file, "w", encoding="utf-8") as f:
         json.dump(paraphrased_articles, f, indent=4, ensure_ascii=False)
-    print(f"Successfully paraphrased articles into {output_file}")
+    logging.info(f"Successfully paraphrased articles into {output_file}")
 
 
 if __name__ == "__main__":
