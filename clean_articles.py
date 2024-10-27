@@ -1,4 +1,5 @@
-import json
+# import os
+# import json
 from openai import OpenAI, completions
 from pathlib import Path
 from pydantic import BaseModel
@@ -168,22 +169,16 @@ def clean_article(html_content):
                     "role": "system",
                     "content": "You are a helpful assistant that extracts clean article text from HTML.",
                 },
-                {"role": "user", "content": f"{extraction_prompt}\n\nHTML Content:\n{html_content}"},
+                {
+                    "role": "user",
+                    "content": f"{extraction_prompt}\n\nHTML Content:\n{html_content}",
+                },
             ],
             response_format={"type": "json_object"},
             temperature=0.3,
         )
-        
-        # Get the response content
-        response_text = completion.choices[0].message.content
-        
-        # Parse JSON response
-        article_data = json.loads(response_text)
-        
-        # Validate against NewsArticle model
-        validated_data = NewsArticle(**article_data)
-        
-        return json.dumps(article_data)
+        event = completion.choices[0].message.parsed
+        return event
 
     except Exception as e:
         print(f"Error processing article: {str(e)}")
@@ -212,7 +207,7 @@ def process_directory(input_dir, output_dir):
             # Save cleaned text
             output_file = output_path / f"{html_file.stem}_cleaned.json"
             with open(output_file, "w", encoding="utf-8") as f:
-                f.write(json.dumps(json.loads(cleaned_text), indent=2))
+                f.write(cleaned_text)
             print(f"Saved cleaned text to {output_file}")
         else:
             print(f"Failed to clean {html_file.name}")
