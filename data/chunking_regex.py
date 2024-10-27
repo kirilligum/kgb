@@ -5,7 +5,8 @@ from pathlib import Path
 def chunk_sentences(article_text):
     """Chunk article text into sentences using regex."""
     # Regex pattern to split text into sentences
-    sentence_pattern = r'(?<=[.!?]) +'
+    # Improved regex pattern to handle abbreviations, ellipses, and quotes
+    sentence_pattern = r'(?<!\b(?:Mr|Mrs|Ms|Dr|Inc|Ltd|Jr|Sr|St|Co|U\.S|U\.K|e\.g|i\.e|etc)\.)(?<!\.\.\.)(?<=\.|\?|!|;|:|”|’|\))\s+'
     sentences = re.split(sentence_pattern, article_text)
     return sentences
 
