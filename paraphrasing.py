@@ -71,7 +71,7 @@ def paraphrase_article(article_text, entities):
         return None
 
 
-def process_articles(input_file, output_file):
+def process_articles(output_file):
     """Process articles and paraphrase them"""
     with open("data/chunked_articles_spacy.json", "r", encoding="utf-8") as f:
         chunked_articles = json.load(f)
@@ -102,7 +102,6 @@ def process_articles(input_file, output_file):
 
 
 if __name__ == "__main__":
-    input_file = "data/merged_articles.json"
     output_file = "data/paraphrased_articles.json"
 
     process_articles(input_file, output_file)
