@@ -62,7 +62,7 @@ def process_articles(input_file, output_file):
         if body_text:
             entities = extract_entities_from_article(body_text)
             if entities:
-                extracted_entities[file_name] = entities
+                extracted_entities[file_name] = entities.dict()
 
     with open(output_file, "w", encoding="utf-8") as f:
         json.dump(extracted_entities, f, indent=4, ensure_ascii=False)
