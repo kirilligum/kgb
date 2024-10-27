@@ -104,4 +104,4 @@ def process_articles(output_file):
 if __name__ == "__main__":
     output_file = "data/paraphrased_articles.json"
 
-    process_articles(input_file, output_file)
+    process_articles(output_file)
