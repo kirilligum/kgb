@@ -72,11 +72,12 @@ def process_articles(input_file, output_file):
 
     extracted_entities = {}
 
-    for file_name, sentences in list(articles.items())[:2]:
+    for file_name, sentences_list in list(articles.items())[:2]:
         print(f"Extracting entities from article: {file_name}")
         sentence_entities = []
 
-        for sentence in sentences:
+        for sentences in sentences_list:
+            for sentence in sentences:
             entities = extract_entities_from_article(sentence)
             if entities:
                 sentence_entities.append([

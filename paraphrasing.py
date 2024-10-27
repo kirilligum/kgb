@@ -81,12 +81,13 @@ def process_articles(output_file):
 
     paraphrased_articles = {}
 
-    for file_name, sentences in list(chunked_articles.items())[:2]:
+    for file_name, sentences_list in list(chunked_articles.items())[:2]:
         print(f"Paraphrasing article: {file_name}")
         paraphrased_sentences = []
         entities_list = extracted_entities.get(file_name, [])
 
-        for i, sentence in enumerate(sentences):
+        for i, sentences in enumerate(sentences_list):
+            for sentence in sentences:
             entities = entities_list[i] if i < len(entities_list) else []
             paraphrased = paraphrase_article(sentence, entities)
             if paraphrased:
