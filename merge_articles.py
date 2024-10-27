@@ -8,7 +8,7 @@ def merge_cleaned_articles(input_dir, output_file):
     Merge all cleaned JSON article files into a single JSON file.
     Articles will be stored in an array.
     """
-    merged_data = []
+    merged_data = {}
     input_path = Path(input_dir)
 
     # Iterate through all JSON files in the input directory
@@ -20,8 +20,8 @@ def merge_cleaned_articles(input_dir, output_file):
 
                 # Add the filename to the article data
                 article_data["file_name"] = json_file.stem.replace("_cleaned", "")
-                # Append to array
-                merged_data.append(article_data)
+                # Add to dictionary with file_name as key
+                merged_data[article_data["file_name"]] = article_data
 
         except json.JSONDecodeError as e:
             print(f"Error reading {json_file.name}: {str(e)}")

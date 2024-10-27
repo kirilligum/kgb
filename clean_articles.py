@@ -212,8 +212,9 @@ def process_directory(input_dir, output_dir):
         if cleaned_text:
             # Save cleaned text
             output_file = output_path / f"{html_file.stem}_cleaned.json"
+            cleaned_data = {html_file.stem: json.loads(cleaned_text)}
             with open(output_file, "w", encoding="utf-8") as f:
-                f.write(cleaned_text)
+                json.dump(cleaned_data, f, indent=4, ensure_ascii=False)
             print(f"Saved cleaned text to {output_file}")
         else:
             print(f"Failed to clean {html_file.name}")
