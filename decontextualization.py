@@ -8,7 +8,7 @@ client = OpenAI()
 class DecontextualizedSentence(BaseModel):
     sentence: str
 
-def decontextualize_sentences(previous_sentences, current_sentence):
+def decontextualize_sentences(previous_sentences, current_sentence, num_previous_sentences=3):
     """Decontextualize a sentence using OpenAI API"""
     prompt = """
     Instruction:
@@ -97,8 +97,8 @@ def process_articles(input_file, output_file):
         decontextualized_sentences = []
 
         for i, current_sentence in enumerate(sentences):
-            previous_sentences = sentences[:i]
-            decontextualized = decontextualize_sentences(previous_sentences, current_sentence)
+            previous_sentences = sentences[max(0, i-num_previous_sentences):i]
+            decontextualized = decontextualize_sentences(previous_sentences, current_sentence, num_previous_sentences)
             if decontextualized:
                 decontextualized_sentences.append(decontextualized.sentence)
 
