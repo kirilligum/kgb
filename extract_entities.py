@@ -18,6 +18,25 @@ class NamedEntities(BaseModel):
 
 def extract_entities_from_article(article_text):
     """Extract named entities using OpenAI API"""
+    common_ner_types = """
+    <common_ner>
+    Commonly Used Entity Types:
+        Person (PER): Individuals' names.
+        Organization (ORG): Companies, institutions, government agencies.
+        Location (LOC): Geographical entities, cities, countries, addresses.   
+        Date (DATE): Temporal expressions, including specific dates, days of the week, months.
+        Time (TIME): Time expressions, like specific times, durations.   
+        Money (MONEY): Monetary values, currencies.   
+        Percentage (PERCENT): Numerical values representing percentages.   
+        GPE (Geopolitical Entity): Countries, cities, states. This sometimes overlaps with LOC.   
+        FAC (Facility): Buildings, airports, bridges, highways.
+        Product (PROD): Names of products.
+        Event (EVT): Named events like wars, conferences, festivals.
+        Work of Art (WOA): Titles of books, songs, movies.
+        Law (LAW): Names of legal documents and acts.
+        Language (LANGUAGE): Names of languages.
+    </common_ner>
+    """
     try:
         completion = client.beta.chat.completions.parse(
             model="gpt-4o-mini",
@@ -28,7 +47,7 @@ def extract_entities_from_article(article_text):
                 },
                 {
                     "role": "user",
-                    "content": f"Extract named entities from the following text:\n\n{article_text}",
+                    "content": f"Extract named entities from the following text:\n\n{article_text}\n\n use the short form of common NER types but also add new ones when you need to. {common_ner_types}",
                 },
             ],
             response_format=NamedEntities,
