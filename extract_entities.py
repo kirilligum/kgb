@@ -56,6 +56,7 @@ def process_articles(input_file, output_file):
     for article in articles:
         file_name = article.get("file_name")
         print(f"Extracting entities from article: {file_name}")
+        # body_text = article.get("body_text", "")
         body_text = json.dumps(article, indent=4)
 
         if body_text:
