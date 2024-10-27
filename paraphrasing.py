@@ -94,13 +94,12 @@ def process_articles(output_file):
         paraphrased_sentences = []
         entities_list = extracted_entities.get(file_name, [])
 
-        for i, sentences in enumerate(sentences_list):
-            for sentence in sentences:
-                logging.info(f"Paraphrasing sentence {i+1}/{len(sentences_list)} in article: {file_name}")
-                entities = entities_list[i] if i < len(entities_list) else []
-                paraphrased = paraphrase_article(sentence, entities)
-                if paraphrased:
-                    paraphrased_sentences.append(paraphrased.paraphrased_text)
+        for i, sentence in enumerate(sentences_list):
+            logging.info(f"Paraphrasing sentence {i+1}/{len(sentences_list)} in article: {file_name}")
+            entities = entities_list[i] if i < len(entities_list) else []
+            paraphrased = paraphrase_article(sentence, entities)
+            if paraphrased:
+                paraphrased_sentences.append(paraphrased.paraphrased_text)
 
         paraphrased_articles[file_name] = {
             "paraphrased_sentences": paraphrased_sentences
