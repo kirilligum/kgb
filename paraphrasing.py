@@ -75,9 +75,9 @@ def paraphrase_article(article_text, entities):
 
 def process_articles(output_file):
     """Process articles and paraphrase them"""
-    logging.info("Loading chunked articles from data/chunked_articles_spacy.json")
-    with open("data/chunked_articles_spacy.json", "r", encoding="utf-8") as f:
-        chunked_articles = json.load(f)
+    logging.info("Loading decontextualized articles from data/decontextualized_articles.json")
+    with open("data/decontextualized_articles.json", "r", encoding="utf-8") as f:
+        decontextualized_articles = json.load(f)
 
     logging.info("Loading extracted entities from data/extracted_entities.json")
     with open("data/extracted_entities.json", "r", encoding="utf-8") as f:
@@ -85,7 +85,7 @@ def process_articles(output_file):
 
     paraphrased_articles = {}
 
-    for file_name, sentences_list in list(chunked_articles.items())[:2]:
+    for file_name, sentences_list in list(decontextualized_articles.items())[:2]:
         logging.info(f"Paraphrasing article: {file_name}")
         entities_list = extracted_entities.get(file_name, [])
         if len(sentences_list) != len(entities_list):
