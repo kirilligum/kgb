@@ -87,6 +87,7 @@ def process_articles(output_file):
 
     for file_name, sentences_list in list(chunked_articles.items())[:2]:
         logging.info(f"Paraphrasing article: {file_name}")
+        entities_list = extracted_entities.get(file_name, [])
         if len(sentences_list) != len(entities_list):
             logging.warning(f"Mismatch in number of sentences and entities for article: {file_name}")
 
