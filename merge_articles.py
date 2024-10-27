@@ -19,9 +19,10 @@ def merge_cleaned_articles(input_dir, output_file):
                 article_data = json.load(f)
 
                 # Only add articles where article_found is true
-                if article_data.get("article_found", "false") or article_data.get(
-                    "article_found", False
-                ):
+                # if article_data.get("article_found", "false") or article_data.get(
+                #     "article_found", False
+                # ):
+                if article_data.get("article_found", "true"):
                     merged_data.update(article_data)
 
         except json.JSONDecodeError as e:
