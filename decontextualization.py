@@ -92,6 +92,8 @@ def process_articles(input_file, output_file):
 
     decontextualized_articles = {}
 
+    num_previous_sentences = 3  # Default value for the number of previous sentences to consider
+
     for file_name, sentences in articles.items():
         print(f"Decontextualizing article: {file_name}")
         decontextualized_sentences = []
