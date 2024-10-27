@@ -184,8 +184,8 @@ def decontextualize_sentences(
         prompt
         + examples
         + "## Previous sentences\n"
-        + previous_sentences
-        + "## Current sentence\n"
+        + "\n".join(previous_sentences)
+        + "\n## Current sentence\n"
         + current_sentence
     )
 
