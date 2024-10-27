@@ -6,9 +6,15 @@ from pathlib import Path
 # Initialize OpenAI client
 client = OpenAI()
 
+
 class NamedEntity(BaseModel):
     entity: str
     type: str
+
+
+class NamedEntities(BaseModel):
+    entities: list[NamedEntity]
+
 
 def extract_entities_from_article(article_text):
     """Extract named entities using OpenAI API"""
@@ -25,7 +31,7 @@ def extract_entities_from_article(article_text):
                     "content": f"Extract named entities from the following text:\n\n{article_text}",
                 },
             ],
-            response_format=dict,
+            response_format=NamedEntities,
         )
 
         if completion and completion.choices:
@@ -39,6 +45,7 @@ def extract_entities_from_article(article_text):
         print(f"Error extracting entities: {str(e)}")
         return None
 
+
 def process_articles(input_file, output_file):
     """Process articles and extract named entities"""
     with open(input_file, "r", encoding="utf-8") as f:
@@ -48,6 +55,7 @@ def process_articles(input_file, output_file):
 
     for article in articles:
         file_name = article.get("file_name")
+        # body_text = article.get("body_text", "")
         body_text = article.get("body_text", "")
 
         if body_text:
@@ -58,6 +66,7 @@ def process_articles(input_file, output_file):
     with open(output_file, "w", encoding="utf-8") as f:
         json.dump(extracted_entities, f, indent=4, ensure_ascii=False)
     print(f"Successfully extracted entities into {output_file}")
+
 
 if __name__ == "__main__":
     input_file = "data/merged_articles.json"
