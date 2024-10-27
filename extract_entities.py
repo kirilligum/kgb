@@ -1,9 +1,14 @@
 import json
 from openai import OpenAI
+from pydantic import BaseModel
 from pathlib import Path
 
 # Initialize OpenAI client
 client = OpenAI()
+
+class NamedEntity(BaseModel):
+    entity: str
+    type: str
 
 def extract_entities_from_article(article_text):
     """Extract named entities using OpenAI API"""
