@@ -198,8 +198,8 @@ def process_directory(input_dir, output_dir):
     output_path.mkdir(exist_ok=True)
 
     # Process only first 2 articles using slice
-    # for html_file in list(input_path.glob("*.html")):
-    for html_file in list(input_path.glob("*.html"))[:5]:
+    for html_file in list(input_path.glob("*.html")):
+        # for html_file in list(input_path.glob("*.html"))[:5]:
         print(f"Processing {html_file.name}")
 
         # Read HTML content
