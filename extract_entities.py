@@ -74,17 +74,16 @@ def process_articles(input_file, output_file):
 
     for file_name, sentences in list(articles.items())[:2]:
         print(f"Extracting entities from article: {file_name}")
-        unique_entities = set()
+        sentence_entities = []
 
         for sentence in sentences:
             entities = extract_entities_from_article(sentence)
             if entities:
-                for entity in entities.entities:
-                    unique_entities.add((entity.entity, entity.type))
+                sentence_entities.append([
+                    {"entity": entity.entity, "type": entity.type} for entity in entities.entities
+                ])
 
-        extracted_entities[file_name] = [
-            {"entity": entity, "type": type_} for entity, type_ in unique_entities
-        ]
+        extracted_entities[file_name] = sentence_entities
 
     with open(output_file, "w", encoding="utf-8") as f:
         json.dump(extracted_entities, f, indent=4, ensure_ascii=False)
