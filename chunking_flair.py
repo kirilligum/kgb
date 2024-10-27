@@ -9,9 +9,13 @@ tagger = SequenceTagger.load("flair/chunk-english")
 
 def chunk_sentences_with_flair(article_text):
     """Chunk article text into sentences using Flair."""
-    sentence = Sentence(article_text)
-    tagger.predict(sentence)
-    return [span.text for span in sentence.get_spans("chunk")]
+    sentences = []
+    for line in article_text.split('\n'):
+        if line.strip():  # Process non-empty lines
+            sentence = Sentence(line)
+            tagger.predict(sentence)
+            sentences.extend([span.text for span in sentence.get_spans("chunk")])
+    return sentences
 
 def process_articles(input_file, output_file):
     """Process articles and chunk them into sentences using Flair."""
