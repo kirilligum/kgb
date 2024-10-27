@@ -2,7 +2,6 @@ import json
 from openai import OpenAI
 from pydantic import BaseModel
 from pathlib import Path
-from extract_entities import extract_entities_from_article
 
 # Initialize OpenAI client
 client = OpenAI()
@@ -74,22 +73,28 @@ def paraphrase_article(article_text, entities):
 
 def process_articles(input_file, output_file):
     """Process articles and paraphrase them"""
-    with open(input_file, "r", encoding="utf-8") as f:
-        articles = json.load(f)
+    with open("data/chunked_articles_spacy.json", "r", encoding="utf-8") as f:
+        chunked_articles = json.load(f)
+
+    with open("data/extracted_entities.json", "r", encoding="utf-8") as f:
+        extracted_entities = json.load(f)
 
     paraphrased_articles = {}
 
-    for file_name, article in list(articles.items())[:2]:
+    for file_name, sentences in list(chunked_articles.items())[:2]:
         print(f"Paraphrasing article: {file_name}")
-        body_text = article.get("body_text", "")
-        entities = extract_entities_from_article(body_text)
+        paraphrased_sentences = []
+        entities_list = extracted_entities.get(file_name, [])
 
-        if body_text and entities:
-            paraphrased = paraphrase_article(body_text, entities)
+        for i, sentence in enumerate(sentences):
+            entities = entities_list[i] if i < len(entities_list) else []
+            paraphrased = paraphrase_article(sentence, entities)
             if paraphrased:
-                paraphrased_articles[file_name] = {
-                    "paraphrased_text": paraphrased.paraphrased_text
-                }
+                paraphrased_sentences.append(paraphrased.paraphrased_text)
+
+        paraphrased_articles[file_name] = {
+            "paraphrased_sentences": paraphrased_sentences
+        }
 
     with open(output_file, "w", encoding="utf-8") as f:
         json.dump(paraphrased_articles, f, indent=4, ensure_ascii=False)
