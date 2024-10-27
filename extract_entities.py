@@ -1,9 +1,11 @@
 import json
+import logging
 from openai import OpenAI
 from pydantic import BaseModel
 from pathlib import Path
 
-# Initialize OpenAI client
+# Configure logging
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 client = OpenAI()
 
 
@@ -76,7 +78,7 @@ def process_articles(input_file, output_file):
         print(f"Extracting entities from article: {file_name}")
         sentence_entities = []
 
-        for sentences in sentences_list:
+        for i, sentences in enumerate(sentences_list):
             for sentence in sentences:
                 logging.info(f"Extracting entities from sentence {i+1}/{len(sentences_list)} in article: {file_name}")
                 entities = extract_entities_from_article(sentence)
