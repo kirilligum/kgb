@@ -53,7 +53,7 @@ def process_articles(input_file, output_file):
 
     extracted_entities = {}
 
-    for article in articles:
+    for article in articles[:2]:
         file_name = article.get("file_name")
         print(f"Extracting entities from article: {file_name}")
         # body_text = article.get("body_text", "")
