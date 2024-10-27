@@ -161,21 +161,29 @@ def clean_article(html_content):
     #     """
 
     try:
-        completion = client.beta.chat.completions.parse(
-            model="gpt-4o-mini",  # Note: Replace with actual gpt4o-mini model name when available
+        completion = client.chat.completions.create(
+            model="gpt-4",  # Using standard GPT-4 model
             messages=[
                 {
                     "role": "system",
                     "content": "You are a helpful assistant that extracts clean article text from HTML.",
                 },
-                {"role": "user", "content": extraction_prompt},
+                {"role": "user", "content": f"{extraction_prompt}\n\nHTML Content:\n{html_content}"},
             ],
-            response_format=NewsArticle,
-            # temperature=0.3,
-            # max_tokens=4000,
+            response_format={"type": "json_object"},
+            temperature=0.3,
         )
-        event = str(completion.choices[0].message.parsed)
-        return event
+        
+        # Get the response content
+        response_text = completion.choices[0].message.content
+        
+        # Parse JSON response
+        article_data = json.loads(response_text)
+        
+        # Validate against NewsArticle model
+        validated_data = NewsArticle(**article_data)
+        
+        return json.dumps(article_data)
 
     except Exception as e:
         print(f"Error processing article: {str(e)}")
