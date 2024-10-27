@@ -7,9 +7,11 @@ from extract_entities import extract_entities_from_article
 # Initialize OpenAI client
 client = OpenAI()
 
+
 class ParaphrasedArticle(BaseModel):
     file_name: str
     paraphrased_text: str
+
 
 def paraphrase_article(article_text, entities):
     """Paraphrase article using OpenAI API"""
@@ -77,7 +79,7 @@ def process_articles(input_file, output_file):
 
     paraphrased_articles = {}
 
-    for file_name, article in list(articles.items()):
+    for file_name, article in list(articles.items())[:2]:
         print(f"Paraphrasing article: {file_name}")
         body_text = article.get("body_text", "")
         entities = extract_entities_from_article(body_text)
@@ -85,7 +87,9 @@ def process_articles(input_file, output_file):
         if body_text and entities:
             paraphrased = paraphrase_article(body_text, entities)
             if paraphrased:
-                paraphrased_articles[file_name] = {"paraphrased_text": paraphrased.paraphrased_text}
+                paraphrased_articles[file_name] = {
+                    "paraphrased_text": paraphrased.paraphrased_text
+                }
 
     with open(output_file, "w", encoding="utf-8") as f:
         json.dump(paraphrased_articles, f, indent=4, ensure_ascii=False)

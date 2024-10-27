@@ -38,28 +38,24 @@
                 "type": "PROD"
             },
             {
-                "entity": "xAI",
-                "type": "ORG"
+                "entity": "July 2023",
+                "type": "DATE"
+            },
+            {
+                "entity": "November",
+                "type": "DATE"
             },
             {
                 "entity": "Grok",
                 "type": "PROD"
             },
             {
-                "entity": "July 2023",
-                "type": "DATE"
-            },
-            {
-                "entity": "November 2023",
-                "type": "DATE"
-            },
-            {
-                "entity": "11 June 2024",
-                "type": "DATE"
-            },
-            {
                 "entity": "$3tn",
                 "type": "MONEY"
+            },
+            {
+                "entity": "February",
+                "type": "DATE"
             }
         ]
     },
@@ -90,8 +86,8 @@
                 "type": "PROD"
             },
             {
-                "entity": "AGI",
-                "type": "PROD"
+                "entity": "Marc Toberoff",
+                "type": "PER"
             },
             {
                 "entity": "Silicon Valley",
@@ -114,16 +110,8 @@
                 "type": "ORG"
             },
             {
-                "entity": "Rain",
-                "type": "ORG"
-            },
-            {
                 "entity": "Helion Energy",
                 "type": "ORG"
-            },
-            {
-                "entity": "TED AI Show",
-                "type": "WOA"
             },
             {
                 "entity": "Steve Ditko",
@@ -164,6 +152,778 @@
             {
                 "entity": "$24 billion",
                 "type": "MONEY"
+            },
+            {
+                "entity": "AGI",
+                "type": "ORG"
+            }
+        ]
+    },
+    "www.forbes.com_sites_tylerroush_2024_08_05_elon-musk-revives-lawsuit-against-openai-and-ceo-sam-altman__20241026_223757_GMT": {
+        "entities": [
+            {
+                "entity": "Elon Musk",
+                "type": "PER"
+            },
+            {
+                "entity": "OpenAI",
+                "type": "ORG"
+            },
+            {
+                "entity": "Sam Altman",
+                "type": "PER"
+            },
+            {
+                "entity": "Greg Brockman",
+                "type": "PER"
+            },
+            {
+                "entity": "Tesla",
+                "type": "ORG"
+            },
+            {
+                "entity": "Microsoft",
+                "type": "ORG"
+            },
+            {
+                "entity": "July 2024",
+                "type": "DATE"
+            },
+            {
+                "entity": "February",
+                "type": "DATE"
+            },
+            {
+                "entity": "June",
+                "type": "DATE"
+            },
+            {
+                "entity": "2015",
+                "type": "DATE"
+            },
+            {
+                "entity": "2019",
+                "type": "DATE"
+            },
+            {
+                "entity": "2018",
+                "type": "DATE"
+            },
+            {
+                "entity": "2020",
+                "type": "DATE"
+            },
+            {
+                "entity": "GPT-4",
+                "type": "PROD"
+            },
+            {
+                "entity": "$226.9 billion",
+                "type": "MONEY"
+            },
+            {
+                "entity": "Forbes",
+                "type": "ORG"
+            },
+            {
+                "entity": "Musk's lawsuit",
+                "type": "EVT"
+            }
+        ]
+    },
+    "www.theguardian.com_technology_article_2024_may_08_elon-musk-openai-case-judge-disqualified_20241026_225129_GMT": {
+        "entities": [
+            {
+                "entity": "Elon Musk",
+                "type": "PER"
+            },
+            {
+                "entity": "OpenAI",
+                "type": "ORG"
+            },
+            {
+                "entity": "Sam Altman",
+                "type": "PER"
+            },
+            {
+                "entity": "Ethan Schulman",
+                "type": "PER"
+            },
+            {
+                "entity": "California",
+                "type": "LOC"
+            },
+            {
+                "entity": "California Code of Civil Procedure 170.6",
+                "type": "LAW"
+            },
+            {
+                "entity": "Microsoft",
+                "type": "ORG"
+            },
+            {
+                "entity": "University of Richmond",
+                "type": "ORG"
+            },
+            {
+                "entity": "xAI",
+                "type": "ORG"
+            },
+            {
+                "entity": "San Francisco",
+                "type": "LOC"
+            },
+            {
+                "entity": "March",
+                "type": "DATE"
+            },
+            {
+                "entity": "late April",
+                "type": "DATE"
+            },
+            {
+                "entity": "2015",
+                "type": "DATE"
+            },
+            {
+                "entity": "three years later",
+                "type": "DATE"
+            },
+            {
+                "entity": "$80bn",
+                "type": "MONEY"
+            },
+            {
+                "entity": "CBS News",
+                "type": "ORG"
+            }
+        ]
+    },
+    "www.cnn.com_2024_06_11_tech_elon-musk-drops-openai-lawsuit_index.html_20241026_223433_GMT": {
+        "entities": [
+            {
+                "entity": "Jane Doe",
+                "type": "PER"
+            },
+            {
+                "entity": "Environmental News Network",
+                "type": "ORG"
+            },
+            {
+                "entity": "Marine Ecology Progress Series",
+                "type": "ORG"
+            },
+            {
+                "entity": "Oceanic University",
+                "type": "ORG"
+            },
+            {
+                "entity": "Dr. Alan Smith",
+                "type": "PER"
+            },
+            {
+                "entity": "October 10, 2023",
+                "type": "DATE"
+            }
+        ]
+    },
+    "www.nytimes.com_2024_06_11_technology_elon-musk-openai-lawsuit.html_20241026_224141_GMT": {
+        "entities": [
+            {
+                "entity": "Elon Musk",
+                "type": "PER"
+            },
+            {
+                "entity": "OpenAI",
+                "type": "ORG"
+            },
+            {
+                "entity": "ChatGPT",
+                "type": "PROD"
+            },
+            {
+                "entity": "San Francisco",
+                "type": "LOC"
+            },
+            {
+                "entity": "February",
+                "type": "DATE"
+            },
+            {
+                "entity": "Microsoft",
+                "type": "ORG"
+            },
+            {
+                "entity": "A.I.",
+                "type": "PROD"
+            },
+            {
+                "entity": "June 11, 2024",
+                "type": "DATE"
+            }
+        ]
+    },
+    "www.nytimes.com_2024_08_05_technology_elon-musk-openai-lawsuit.html_20241026_223443_GMT": {
+        "entities": [
+            {
+                "entity": "Elon Musk",
+                "type": "PER"
+            },
+            {
+                "entity": "OpenAI",
+                "type": "ORG"
+            },
+            {
+                "entity": "ChatGPT",
+                "type": "PROD"
+            },
+            {
+                "entity": "Sam Altman",
+                "type": "PER"
+            },
+            {
+                "entity": "Greg Brockman",
+                "type": "PER"
+            },
+            {
+                "entity": "San Francisco",
+                "type": "LOC"
+            },
+            {
+                "entity": "California",
+                "type": "GPE"
+            },
+            {
+                "entity": "August 5, 2024",
+                "type": "DATE"
+            }
+        ]
+    },
+    "fortune.com_2024_10_13_elon-musk-openai-sam-altman-lawsuit__20241026_223340_GMT": {
+        "entities": [
+            {
+                "entity": "Elon Musk",
+                "type": "PER"
+            },
+            {
+                "entity": "OpenAI",
+                "type": "ORG"
+            },
+            {
+                "entity": "Sam Altman",
+                "type": "PER"
+            },
+            {
+                "entity": "Vanity Fair New Establishment Summit",
+                "type": "EVT"
+            },
+            {
+                "entity": "Yerba Buena Center for the Arts",
+                "type": "FAC"
+            },
+            {
+                "entity": "San Francisco",
+                "type": "LOC"
+            },
+            {
+                "entity": "$44.6 million",
+                "type": "MONEY"
+            },
+            {
+                "entity": "GPT-4",
+                "type": "PROD"
+            },
+            {
+                "entity": "U.S.",
+                "type": "GPE"
+            },
+            {
+                "entity": "Boston College Law School",
+                "type": "ORG"
+            },
+            {
+                "entity": "Yeshiva University",
+                "type": "ORG"
+            },
+            {
+                "entity": "Cardozo Law School",
+                "type": "ORG"
+            },
+            {
+                "entity": "California",
+                "type": "LOC"
+            },
+            {
+                "entity": "CNBC",
+                "type": "ORG"
+            },
+            {
+                "entity": "Amazon rainforest",
+                "type": "LOC"
+            },
+            {
+                "entity": "Tesla",
+                "type": "ORG"
+            },
+            {
+                "entity": "ChatGPT",
+                "type": "PROD"
+            },
+            {
+                "entity": "Public Citizen",
+                "type": "ORG"
+            },
+            {
+                "entity": "Rob Bonta",
+                "type": "PER"
+            },
+            {
+                "entity": "$5 billion",
+                "type": "MONEY"
+            },
+            {
+                "entity": "$157 billion",
+                "type": "MONEY"
+            },
+            {
+                "entity": "August",
+                "type": "DATE"
+            },
+            {
+                "entity": "2015",
+                "type": "DATE"
+            },
+            {
+                "entity": "2018",
+                "type": "DATE"
+            },
+            {
+                "entity": "2022",
+                "type": "DATE"
+            },
+            {
+                "entity": "2023",
+                "type": "DATE"
+            },
+            {
+                "entity": "February",
+                "type": "DATE"
+            },
+            {
+                "entity": "October 13, 2024",
+                "type": "DATE"
+            }
+        ]
+    },
+    "www.businessinsider.com_openai-elon-musk-ai-lawsuit-sam-altman-harassing-legal-battle-2024-10_20241026_223926_GMT": {
+        "entities": [
+            {
+                "entity": "OpenAI",
+                "type": "ORG"
+            },
+            {
+                "entity": "Elon Musk",
+                "type": "PER"
+            },
+            {
+                "entity": "Business Insider",
+                "type": "ORG"
+            },
+            {
+                "entity": "Sam Altman",
+                "type": "PER"
+            },
+            {
+                "entity": "Tesla",
+                "type": "ORG"
+            },
+            {
+                "entity": "xAI",
+                "type": "ORG"
+            },
+            {
+                "entity": "Microsoft",
+                "type": "ORG"
+            },
+            {
+                "entity": "ChatGPT",
+                "type": "PROD"
+            },
+            {
+                "entity": "Mira Muta",
+                "type": "PER"
+            },
+            {
+                "entity": "Ilya Sutskever",
+                "type": "PER"
+            },
+            {
+                "entity": "2024-10-09",
+                "type": "DATE"
+            },
+            {
+                "entity": "2015",
+                "type": "DATE"
+            },
+            {
+                "entity": "2018",
+                "type": "DATE"
+            },
+            {
+                "entity": "$6.6 billion",
+                "type": "MONEY"
+            },
+            {
+                "entity": "$157 billion",
+                "type": "MONEY"
+            },
+            {
+                "entity": "five",
+                "type": "PERCENT"
+            },
+            {
+                "entity": "Perplexity",
+                "type": "ORG"
+            },
+            {
+                "entity": "Glean",
+                "type": "ORG"
+            },
+            {
+                "entity": "Anthropic",
+                "type": "ORG"
+            },
+            {
+                "entity": "Safe Superintelligence",
+                "type": "ORG"
+            }
+        ]
+    },
+    "siliconangle.com_2024_08_05_elon-musk-files-new-lawsuit-openai-profit-shift__20241026_224113_GMT": {
+        "entities": [
+            {
+                "entity": "Elon Musk",
+                "type": "PER"
+            },
+            {
+                "entity": "OpenAI",
+                "type": "ORG"
+            },
+            {
+                "entity": "Sam Altman",
+                "type": "PER"
+            },
+            {
+                "entity": "Greg Brockman",
+                "type": "PER"
+            },
+            {
+                "entity": "District Court for the Northern District of California",
+                "type": "ORG"
+            },
+            {
+                "entity": "Microsoft Corp.",
+                "type": "ORG"
+            },
+            {
+                "entity": "2015",
+                "type": "DATE"
+            },
+            {
+                "entity": "March",
+                "type": "DATE"
+            },
+            {
+                "entity": "$10 billion",
+                "type": "MONEY"
+            },
+            {
+                "entity": "2019",
+                "type": "DATE"
+            },
+            {
+                "entity": "GPT-4o",
+                "type": "PROD"
+            },
+            {
+                "entity": "xAI Corp.",
+                "type": "ORG"
+            },
+            {
+                "entity": "$6 billion",
+                "type": "MONEY"
+            },
+            {
+                "entity": "$24 billion",
+                "type": "MONEY"
+            },
+            {
+                "entity": "Grok",
+                "type": "PROD"
+            },
+            {
+                "entity": "100,000",
+                "type": "MONEY"
+            }
+        ]
+    },
+    "www.theguardian.com_technology_article_2024_aug_05_elon-musk-openai-lawsuit_20241026_223527_GMT": {
+        "entities": [
+            {
+                "entity": "Elon Musk",
+                "type": "PER"
+            },
+            {
+                "entity": "OpenAI",
+                "type": "ORG"
+            },
+            {
+                "entity": "Sam Altman",
+                "type": "PER"
+            },
+            {
+                "entity": "Tesla",
+                "type": "ORG"
+            },
+            {
+                "entity": "Marc Toberoff",
+                "type": "PER"
+            },
+            {
+                "entity": "Greg Brockman",
+                "type": "PER"
+            },
+            {
+                "entity": "Microsoft",
+                "type": "ORG"
+            },
+            {
+                "entity": "California",
+                "type": "LOC"
+            },
+            {
+                "entity": "The Guardian",
+                "type": "ORG"
+            },
+            {
+                "entity": "New York Times",
+                "type": "ORG"
+            },
+            {
+                "entity": "xAI",
+                "type": "ORG"
+            },
+            {
+                "entity": "ChatGPT",
+                "type": "PROD"
+            },
+            {
+                "entity": "2024 presidential election",
+                "type": "EVENT"
+            },
+            {
+                "entity": "August 5, 2024",
+                "type": "DATE"
+            }
+        ]
+    },
+    "www.promarket.org_2024_03_25_does-elon-musks-lawsuit-against-openai-have-merit__20241026_225245_GMT": {
+        "entities": [
+            {
+                "entity": "Elon Musk",
+                "type": "PER"
+            },
+            {
+                "entity": "OpenAI",
+                "type": "ORG"
+            },
+            {
+                "entity": "Sam Altman",
+                "type": "PER"
+            },
+            {
+                "entity": "Microsoft",
+                "type": "ORG"
+            },
+            {
+                "entity": "GPT-4",
+                "type": "PROD"
+            },
+            {
+                "entity": "March 25, 2024",
+                "type": "DATE"
+            },
+            {
+                "entity": "2018",
+                "type": "DATE"
+            },
+            {
+                "entity": "2015 Certificate of Incorporation",
+                "type": "LAW"
+            },
+            {
+                "entity": "ChatGPT 3.5",
+                "type": "PROD"
+            },
+            {
+                "entity": "humanity",
+                "type": "PER"
+            }
+        ]
+    },
+    "venturebeat.com_ai_elon-musk-sues-openai-again-alleging-shakespearean-betrayal-of-ai-mission__20241026_225034_GMT": {
+        "entities": [
+            {
+                "entity": "Elon Musk",
+                "type": "PER"
+            },
+            {
+                "entity": "OpenAI",
+                "type": "ORG"
+            },
+            {
+                "entity": "Sam Altman",
+                "type": "PER"
+            },
+            {
+                "entity": "U.S. District Court for the Northern District of California",
+                "type": "FAC"
+            },
+            {
+                "entity": "Microsoft",
+                "type": "ORG"
+            },
+            {
+                "entity": "Federal Trade Commission",
+                "type": "ORG"
+            },
+            {
+                "entity": "August 5, 2024",
+                "type": "DATE"
+            },
+            {
+                "entity": "2015",
+                "type": "DATE"
+            },
+            {
+                "entity": "2018",
+                "type": "DATE"
+            }
+        ]
+    },
+    "www.cnbc.com_2024_08_05_elon-musk-revives-lawsuit-against-openai-sam-altman-in-federal-court.html_20241026_224218_GMT": {
+        "entities": [
+            {
+                "entity": "Elon Musk",
+                "type": "PER"
+            },
+            {
+                "entity": "OpenAI",
+                "type": "ORG"
+            },
+            {
+                "entity": "Sam Altman",
+                "type": "PER"
+            },
+            {
+                "entity": "Tesla",
+                "type": "ORG"
+            },
+            {
+                "entity": "SpaceX",
+                "type": "ORG"
+            },
+            {
+                "entity": "Greg Brockman",
+                "type": "PER"
+            },
+            {
+                "entity": "March 14, 2024",
+                "type": "DATE"
+            },
+            {
+                "entity": "Northern California",
+                "type": "LOC"
+            },
+            {
+                "entity": "Microsoft",
+                "type": "ORG"
+            },
+            {
+                "entity": "Satya Nadella",
+                "type": "PER"
+            },
+            {
+                "entity": "$13 billion",
+                "type": "MONEY"
+            },
+            {
+                "entity": "California",
+                "type": "GPE"
+            },
+            {
+                "entity": "Ankara",
+                "type": "LOC"
+            },
+            {
+                "entity": "CNBC",
+                "type": "ORG"
+            },
+            {
+                "entity": "Arjun Kharpal",
+                "type": "PER"
+            }
+        ]
+    },
+    "www.gzeromedia.com_gzero-ai_elon-musk-refiles-his-openai-lawsuit_20241026_224049_GMT": {
+        "entities": [
+            {
+                "entity": "Elon Musk",
+                "type": "PER"
+            },
+            {
+                "entity": "OpenAI",
+                "type": "ORG"
+            },
+            {
+                "entity": "Sam Altman",
+                "type": "PER"
+            },
+            {
+                "entity": "California",
+                "type": "LOC"
+            },
+            {
+                "entity": "2018",
+                "type": "DATE"
+            },
+            {
+                "entity": "Greg Brockman",
+                "type": "PER"
+            },
+            {
+                "entity": "xAI",
+                "type": "ORG"
+            },
+            {
+                "entity": "Tesla",
+                "type": "ORG"
+            },
+            {
+                "entity": "$44 million",
+                "type": "MONEY"
+            },
+            {
+                "entity": "GZERO Media",
+                "type": "ORG"
+            },
+            {
+                "entity": "Scott Nover",
+                "type": "PER"
+            },
+            {
+                "entity": "June",
+                "type": "DATE"
             }
         ]
     }
