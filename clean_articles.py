@@ -1,5 +1,5 @@
 # import os
-# import json
+import json
 from openai import OpenAI, completions
 from pathlib import Path
 from pydantic import BaseModel
@@ -162,8 +162,8 @@ def clean_article(html_content):
     #     """
 
     try:
-        completion = client.chat.completions.create(
-            model="gpt-4",  # Using standard GPT-4 model
+        completion = client.beta.chat.completions.parse(
+            model="gpt-4o-mini",  # Using standard GPT-4 model
             messages=[
                 {
                     "role": "system",
@@ -174,11 +174,17 @@ def clean_article(html_content):
                     "content": f"{extraction_prompt}\n\nHTML Content:\n{html_content}",
                 },
             ],
-            response_format={"type": "json_object"},
-            temperature=0.3,
+            response_format=NewsArticle,
         )
-        event = completion.choices[0].message.parsed
-        return event
+
+        if completion and completion.choices:
+            event = completion.choices[0].message.parsed
+            if event:
+                txt = json.dumps(event.dict(), indent=4)
+                return txt
+
+        print("No valid response received from OpenAI API")
+        return None
 
     except Exception as e:
         print(f"Error processing article: {str(e)}")
@@ -192,8 +198,8 @@ def process_directory(input_dir, output_dir):
     output_path.mkdir(exist_ok=True)
 
     # Process only first 2 articles using slice
-    for html_file in list(input_path.glob("*.html")):
-        # for html_file in list(input_path.glob("*.html"))[:5]:
+    # for html_file in list(input_path.glob("*.html")):
+    for html_file in list(input_path.glob("*.html"))[:5]:
         print(f"Processing {html_file.name}")
 
         # Read HTML content
