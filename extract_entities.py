@@ -78,11 +78,11 @@ def process_articles(input_file, output_file):
 
         for sentences in sentences_list:
             for sentence in sentences:
-            entities = extract_entities_from_article(sentence)
-            if entities:
-                sentence_entities.append([
-                    {"entity": entity.entity, "type": entity.type} for entity in entities.entities
-                ])
+                entities = extract_entities_from_article(sentence)
+                if entities:
+                    sentence_entities.append([
+                        {"entity": entity.entity, "type": entity.type} for entity in entities.entities
+                    ])
 
         extracted_entities[file_name] = sentence_entities
 
