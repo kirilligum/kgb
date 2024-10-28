@@ -9,7 +9,10 @@
 3. Entity Extraction: Identify and extract all relevant entities from each decontextualized chunk of text. Entities could be people, locations, organizations, dates, or events. 
 
 
-4. Relation Extraction: Identify and extract the specific relationships between entities based on the text.  For example, a relationship between "Albert Einstein" and "Institute for Advanced Study" might be "worked at." 
+4. Paraphrasing: Paraphrase the decontextualized text using identified entities to improve clarity and readability. This involves rephrasing sentences while maintaining the original meaning, often using a more concise or formal language structure.
+
+
+5. Relation Extraction: Identify and extract the specific relationships between entities based on the text.  For example, a relationship between "Albert Einstein" and "Institute for Advanced Study" might be "worked at." 
 
 
 5. Event Extraction (Optional): Extract events from the text chunk, combining extracted entities and relations.  For example, an event could be "Einstein's arrival in the United States," which would involve the entities "Albert Einstein," "United States," and "1933" and the relation "arrived in." 
