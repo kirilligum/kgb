@@ -20,7 +20,7 @@ class Relationship(BaseModel):
     entity2: str
 
 
-def extract_and_validate_relationships(original_text, paraphrased_text, entities):
+def extract_and_validate_relationships(original_text, paraphrased_text, entities, sentence_index, total_sentences):
     logging.info("Starting relationship extraction and validation")
     relationships = []
 
@@ -36,7 +36,7 @@ def extract_and_validate_relationships(original_text, paraphrased_text, entities
                     f"## the text:\n \"{original_text}\". "
                     f"## Output format:\n json {relationship_format} ."
                 )
-                logging.info(f"Extracting relationship between {entity1['entity']} and {entity2['entity']} in sentence {sentence_index}/{len(sentences_list)}")
+                logging.info(f"Extracting relationship between {entity1['entity']} and {entity2['entity']} in sentence {sentence_index}/{total_sentences}")
                 response = client.beta.chat.completions.parse(
                     model="gpt-4o-mini",
                     messages=[
@@ -133,7 +133,7 @@ def process_articles():
             paraphrased_sentence = paraphrased_sentences[sentence_index - 1]
             entities = entities_list[sentence_index - 1]
             relationships = extract_and_validate_relationships(
-                original_sentence, paraphrased_sentence, entities
+                original_sentence, paraphrased_sentence, entities, sentence_index, len(sentences_list)
             )
             article_relationships.extend(relationships)
 
