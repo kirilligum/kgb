@@ -27,7 +27,7 @@ def extract_proposition(entity1, relation, entity2, sentence):
         f'4. Sentence: "{sentence}"\n\n'
         f"The proposition should:\n"
         f"- Focus on describing the relationship between {entity1} and {entity2}.\n"
-        f"- Use any relevant details from the sentence that add clarity, specificity, or context to the relationship.\n"
+        f"- Only in cases of possible confusion, use any relevant details from the sentence that add clarity, specificity, or context to the relationship. Prefer to keep the proposition short and general.\n"
         f"- Be a concise and self-contained statement that conveys all essential information for understanding this relationship.\n\n"
         # f"## Definition of proposition: \n{proposition_definition}"
     )
@@ -76,7 +76,9 @@ def process_articles():
 
     all_propositions = {}
 
-    total_sentences = sum(len(sentences) for sentences in decontextualized_articles.values())
+    total_sentences = sum(
+        len(sentences) for sentences in decontextualized_articles.values()
+    )
     total_propositions = 0
     processed_sentences = 0
 
