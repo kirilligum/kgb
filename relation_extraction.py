@@ -1,8 +1,15 @@
 import json
 from openai import OpenAI
+from pydantic import BaseModel
 
 # Initialize OpenAI client
 client = OpenAI()
+
+
+class Relationship(BaseModel):
+    entity1: str
+    relation: str
+    entity2: str
 
 
 def extract_and_validate_relationships(original_text, paraphrased_text, entities):
@@ -13,9 +20,7 @@ def extract_and_validate_relationships(original_text, paraphrased_text, entities
         for entity2 in entities:
             if entity1 != entity2:
                 # Step 3A: Extract candidate relationship from original text
-                relationship_format = (
-                    '{ "entity1": str, "relation": str, "entity2": str }'
-                )
+                relationship_format = Relationship.schema_json(indent=2)
                 extract_prompt = (
                     f"You are an expert in Natural Language Processing techniques. You are doing relation extraction. you are give a text (below) and two entities:\"{entity1['entity']}\" and \"{entity2['entity']}\". As a first step, write an explaination of the relationship between the entities according to the text."
                     f"Next, identify the relationship between \"{entity1['entity']}\" and \"{entity2['entity']}\"."
