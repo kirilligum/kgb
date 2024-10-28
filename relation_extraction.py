@@ -52,8 +52,7 @@ def extract_and_validate_relationships(original_text, paraphrased_text, entities
                     response_format=Relationship,
                 )
                 logging.info("Received response for relationship extraction")
-                candidate_relation_response["relation"] = ""
-                candidate_relation_response = response.choices[0].message.parsed
+                candidate_relation_response = response.choices[0].message.parsed if response and response.choices else None
                 if candidate_relation_response:
                     candidate_relation = candidate_relation_response.relation
                 else:
