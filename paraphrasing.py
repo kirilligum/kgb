@@ -86,6 +86,7 @@ def process_articles(output_file):
     paraphrased_articles = {}
 
     for file_name, sentences_list in list(decontextualized_articles.items())[:2]:
+        sentences_list = sentences_list[:2]
         logging.info(f"Paraphrasing article: {file_name}")
         entities_list = extracted_entities.get(file_name, [])
         if len(sentences_list) != len(entities_list):

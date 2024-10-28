@@ -75,6 +75,7 @@ def process_articles(input_file, output_file):
     extracted_entities = {}
 
     for file_name, sentences_list in list(articles.items())[:2]:
+        sentences_list = sentences_list[:2]
         print(f"Extracting entities from article: {file_name}")
         sentence_entities = []
 

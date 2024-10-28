@@ -226,6 +226,7 @@ def process_articles(input_file, output_file):
     )
 
     for file_name, sentences in list(articles.items())[:2]:
+        sentences = sentences[:2]
         print(f"Decontextualizing article: {file_name}")
         decontextualized_sentences = []
 

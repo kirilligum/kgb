@@ -15,6 +15,7 @@ def process_articles(input_file, output_file):
     chunked_articles = {}
 
     for file_name, article in list(articles.items())[:2]:
+        article["body_text"] = article.get("body_text", "").split('\n')[:2]
         print(f"Chunking article with spaCy: {file_name}")
         body_text = article.get("body_text", "")
 
