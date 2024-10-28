@@ -74,7 +74,9 @@ def extract_and_validate_relationships(original_text, paraphrased_text, entities
                         ],
                         response_format=RelationshipValidation,
                     )
-                    validation = response.choices[0].message.parsed.is_valid
+                    validation = None
+                    if response and response.choices:
+                        validation = response.choices[0].message.parsed.is_valid
 
                     # If validated, add to the final relationships
                     if validation:
