@@ -115,8 +115,8 @@ def process_articles():
 
     all_relationships = {}
 
-    for file_name, sentences_list in decontextualized_articles.items():
-        logging.info(f"Processing article: {file_name}")
+    for file_index, (file_name, sentences_list) in enumerate(decontextualized_articles.items(), start=1):
+        logging.info(f"Processing article {file_index}/{len(decontextualized_articles)}: {file_name}")
         paraphrased_sentences = paraphrased_articles.get(file_name, {}).get(
             "paraphrased_sentences", []
         )
@@ -128,9 +128,10 @@ def process_articles():
 
         article_relationships = []
 
-        for i, original_sentence in enumerate(sentences_list):
-            paraphrased_sentence = paraphrased_sentences[i]
-            entities = entities_list[i]
+        for sentence_index, original_sentence in enumerate(sentences_list, start=1):
+            logging.info(f"Processing sentence {sentence_index}/{len(sentences_list)} in article: {file_name}")
+            paraphrased_sentence = paraphrased_sentences[sentence_index - 1]
+            entities = entities_list[sentence_index - 1]
             relationships = extract_and_validate_relationships(
                 original_sentence, paraphrased_sentence, entities
             )
