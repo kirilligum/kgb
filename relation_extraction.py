@@ -6,6 +6,10 @@ from pydantic import BaseModel
 client = OpenAI()
 
 
+class RelationshipValidation(BaseModel):
+    is_valid: bool
+
+
 class Relationship(BaseModel):
     entity1: str
     relation: str
@@ -48,7 +52,7 @@ def extract_and_validate_relationships(original_text, paraphrased_text, entities
                     # Step 3B: Validate the relationship in the paraphrased text
                     validate_prompt = (
                         f"In the paraphrased text: \"{paraphrased_text}\", "
-                        f"is the relationship \"{entity1['entity']} {candidate_relation} {entity2['entity']}\" correct? (Yes/No)"
+                        f"is the relationship \"{entity1['entity']} {candidate_relation} {entity2['entity']}\" correct? (true/false)"
                     )
                     response = client.beta.chat.completions.parse(
                         model="gpt-4o-mini",
@@ -62,9 +66,9 @@ def extract_and_validate_relationships(original_text, paraphrased_text, entities
                                 "content": validate_prompt,
                             },
                         ],
-                        response_format=None,
+                        response_format=RelationshipValidation,
                     )
-                    validation = response.choices[0].text.strip()
+                    validation = response.choices[0].message.parsed.is_valid
 
                     # If validated, add to the final relationships
                     if validation.lower() == "yes":
