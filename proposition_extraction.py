@@ -64,6 +64,7 @@ def process_articles():
     """Process articles and extract propositions"""
     logging.info(f"Processed {processed_sentences}/{total_sentences} sentences.")
     logging.info(f"Extracted {total_propositions} propositions.")
+    logging.info(
         "Loading decontextualized articles from data/decontextualized_articles.json"
     )
     with open("data/decontextualized_articles.json", "r", encoding="utf-8") as f:
