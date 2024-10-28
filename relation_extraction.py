@@ -122,12 +122,8 @@ def process_articles():
         )
         entities_list = extracted_entities.get(file_name, [])
 
-        if len(sentences_list) != len(paraphrased_sentences) or len(
-            sentences_list
-        ) != len(entities_list):
-            logging.warning(
-                f"Warning: Mismatch in number of sentences and entities for article: {file_name}"
-            )
+        if len(sentences_list) != len(paraphrased_sentences) or len(sentences_list) != len(entities_list):
+            logging.warning(f"Mismatch in number of sentences and entities for article: {file_name}")
             continue
 
         article_relationships = []
