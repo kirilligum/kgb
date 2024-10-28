@@ -4,7 +4,9 @@ from openai import OpenAI
 from pydantic import BaseModel
 
 # Configure logging
-logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+logging.basicConfig(
+    level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s"
+)
 client = OpenAI()
 
 
@@ -14,15 +16,20 @@ class Proposition(BaseModel):
 
 def extract_proposition(entity1, relation, entity2, sentence):
     """Extract a proposition using OpenAI API"""
+    # proposition_definition = """
+    # A proposition is a natural language sentence or statement that expresses a single, clear, and self-contained idea, fact, or claim about entities and their relationship. It conveys semantic meaning about a specific situation, event, or attribute of entities, enabling it to function independently as a fact in a knowledge graph or as a response to a query.
+    # """
     prompt = (
-        f"Given the following information:\n\n"
+        f"Create a clear and standalone proposition using the following information:\n\n"
         f"1. Entity 1: {entity1}\n"
         f"2. Relation: {relation}\n"
         f"3. Entity 2: {entity2}\n"
-        f"4. Sentence: \"{sentence}\"\n\n"
-        f"Write a single, clear and self-contained sentence (a proposition) that combines this information, "
-        f"clearly describing the relationship between {entity1} and {entity2}.\n\n"
-        f"Proposition:"
+        f'4. Sentence: "{sentence}"\n\n'
+        f"The proposition should:\n"
+        f"- Focus on describing the relationship between {entity1} and {entity2}.\n"
+        f"- Use any relevant details from the sentence that add clarity, specificity, or context to the relationship.\n"
+        f"- Be a concise and self-contained statement that conveys all essential information for understanding this relationship.\n\n"
+        # f"## Definition of proposition: \n{proposition_definition}"
     )
 
     try:
@@ -55,11 +62,15 @@ def extract_proposition(entity1, relation, entity2, sentence):
 
 def process_articles():
     """Process articles and extract propositions"""
-    logging.info("Loading decontextualized articles from data/decontextualized_articles.json")
+    logging.info(
+        "Loading decontextualized articles from data/decontextualized_articles.json"
+    )
     with open("data/decontextualized_articles.json", "r", encoding="utf-8") as f:
         decontextualized_articles = json.load(f)
 
-    logging.info("Loading extracted relationships from data/extracted_relationships.json")
+    logging.info(
+        "Loading extracted relationships from data/extracted_relationships.json"
+    )
     with open("data/extracted_relationships.json", "r", encoding="utf-8") as f:
         extracted_relationships = json.load(f)
 
@@ -72,9 +83,15 @@ def process_articles():
         article_propositions = []
 
         for sentence_index, sentence in enumerate(sentences_list):
-            relationships = relationships_list[sentence_index] if sentence_index < len(relationships_list) else []
+            relationships = (
+                relationships_list[sentence_index]
+                if sentence_index < len(relationships_list)
+                else []
+            )
             for entity1, relation, entity2 in relationships:
-                logging.info(f"Extracting proposition for relationship: {entity1} {relation} {entity2}")
+                logging.info(
+                    f"Extracting proposition for relationship: {entity1} {relation} {entity2}"
+                )
                 proposition = extract_proposition(entity1, relation, entity2, sentence)
                 if proposition:
                     article_propositions.append(proposition.proposition)
@@ -83,7 +100,9 @@ def process_articles():
 
     with open("data/extracted_propositions.json", "w", encoding="utf-8") as f:
         json.dump(all_propositions, f, indent=4, ensure_ascii=False)
-    logging.info("Successfully extracted propositions into data/extracted_propositions.json")
+    logging.info(
+        "Successfully extracted propositions into data/extracted_propositions.json"
+    )
 
 
 if __name__ == "__main__":
