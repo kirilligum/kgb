@@ -39,7 +39,7 @@ def extract_and_validate_relationships(original_text, paraphrased_text, entities
                             "content": extract_prompt,
                         },
                     ],
-                    response_format=None,
+                    response_format=Relationship,
                 )
                 candidate_relation = response.choices[0].message.parsed
 
