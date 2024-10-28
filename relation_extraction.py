@@ -73,11 +73,11 @@ def extract_and_validate_relationships(original_text, paraphrased_text, entities
 
                         # If validated, add to the final relationships
                         if validation:
-                        relationships.append((
-                            entity1["entity"],
-                            candidate_relation,
-                            entity2["entity"],
-                        ))
+                            relationships.append((
+                                entity1["entity"],
+                                candidate_relation,
+                                entity2["entity"],
+                            ))
 
     return relationships
 
