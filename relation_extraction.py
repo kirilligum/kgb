@@ -29,8 +29,8 @@ def extract_and_validate_relationships(
     relationships = []
 
     # Loop over each entity pair (entity1, entity2)
-    for entity1 in entities:
-        for entity2 in entities:
+    for entity1_index, entity1 in enumerate(entities, start=1):
+        for entity2_index, entity2 in enumerate(entities, start=1):
             if entity1 != entity2:
                 # Step 3A: Extract candidate relationship from original text
                 relationship_format = Relationship.schema_json(indent=2)
@@ -41,7 +41,7 @@ def extract_and_validate_relationships(
                     f"## Output format:\n json {relationship_format} ."
                 )
                 logging.info(
-                    f"Extracting relationship between {entity1['entity']} and {entity2['entity']} in sentence {sentence_index}/{total_sentences}"
+                    f"Extracting relationship between {entity1['entity']} (entity {entity1_index}/{len(entities)}) and {entity2['entity']} (entity {entity2_index}/{len(entities)}) in sentence {sentence_index}/{total_sentences}"
                 )
                 response = client.beta.chat.completions.parse(
                     model="gpt-4o-mini",
@@ -149,8 +149,9 @@ def process_articles():
         article_relationships = []
 
         for sentence_index, original_sentence in enumerate(sentences_list, start=1):
+            entities = entities_list[sentence_index - 1]
             logging.info(
-                f"Processing sentence {sentence_index}/{len(sentences_list)} in article: {file_name}"
+                f"Processing sentence {sentence_index}/{len(sentences_list)} in article: {file_name} with entities: {[entity['entity'] for entity in entities]}"
             )
             paraphrased_sentence = paraphrased_sentences[sentence_index - 1]
             entities = entities_list[sentence_index - 1]
