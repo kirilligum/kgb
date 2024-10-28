@@ -36,7 +36,7 @@ def extract_and_validate_relationships(original_text, paraphrased_text, entities
                     f"## the text:\n \"{original_text}\". "
                     f"## Output format:\n json {relationship_format} ."
                 )
-                logging.info(f"Extracting relationship between {entity1['entity']} and {entity2['entity']}")
+                logging.info(f"Extracting relationship between {entity1['entity']} and {entity2['entity']} in sentence {sentence_index}/{len(sentences_list)}")
                 response = client.beta.chat.completions.parse(
                     model="gpt-4o-mini",
                     messages=[
