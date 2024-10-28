@@ -83,14 +83,14 @@ def process_articles():
     logging.info(f"Processed {processed_sentences}/{total_sentences} sentences.")
     logging.info(f"Extracted {total_propositions} propositions.")
 
-    for file_name, sentences_list in decontextualized_articles.items():
+    for file_name, sentences_list in list(decontextualized_articles.items())[:2]:
         processed_sentences += len(sentences_list)
         logging.info(f"Processing article: {file_name}")
         relationships_list = extracted_relationships.get(file_name, [])
 
         article_propositions = []
 
-        for sentence_index, sentence in enumerate(sentences_list):
+        for sentence_index, sentence in enumerate(sentences_list[:2]):
             relationships = (
                 relationships_list[sentence_index]
                 if sentence_index < len(relationships_list)
