@@ -3,7 +3,9 @@ import logging
 from openai import OpenAI
 
 # Configure logging
-logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+logging.basicConfig(
+    level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s"
+)
 from pydantic import BaseModel
 
 # Initialize OpenAI client
@@ -20,7 +22,9 @@ class Relationship(BaseModel):
     entity2: str
 
 
-def extract_and_validate_relationships(original_text, paraphrased_text, entities, sentence_index, total_sentences):
+def extract_and_validate_relationships(
+    original_text, paraphrased_text, entities, sentence_index, total_sentences
+):
     logging.info("Starting relationship extraction and validation")
     relationships = []
 
@@ -36,7 +40,9 @@ def extract_and_validate_relationships(original_text, paraphrased_text, entities
                     f"## the text:\n \"{original_text}\". "
                     f"## Output format:\n json {relationship_format} ."
                 )
-                logging.info(f"Extracting relationship between {entity1['entity']} and {entity2['entity']} in sentence {sentence_index}/{total_sentences}")
+                logging.info(
+                    f"Extracting relationship between {entity1['entity']} and {entity2['entity']} in sentence {sentence_index}/{total_sentences}"
+                )
                 response = client.beta.chat.completions.parse(
                     model="gpt-4o-mini",
                     messages=[
@@ -51,8 +57,11 @@ def extract_and_validate_relationships(original_text, paraphrased_text, entities
                     ],
                     response_format=Relationship,
                 )
-                logging.info("Received response for relationship extraction")
-                candidate_relation_response = response.choices[0].message.parsed if response and response.choices else None
+                candidate_relation_response = (
+                    response.choices[0].message.parsed
+                    if response and response.choices
+                    else None
+                )
                 if candidate_relation_response:
                     candidate_relation = candidate_relation_response.relation
                 else:
@@ -65,7 +74,9 @@ def extract_and_validate_relationships(original_text, paraphrased_text, entities
                         f"In the paraphrased text: \"{paraphrased_text}\", "
                         f"is the relationship \"{entity1['entity']} {candidate_relation} {entity2['entity']}\" correct? (true/false)"
                     )
-                    logging.info(f"Validating relationship: {entity1['entity']} {candidate_relation} {entity2['entity']}")
+                    logging.info(
+                        f"Validating relationship: {entity1['entity']} {candidate_relation} {entity2['entity']}"
+                    )
                     response = client.beta.chat.completions.parse(
                         model="gpt-4o-mini",
                         messages=[
@@ -100,7 +111,9 @@ def extract_and_validate_relationships(original_text, paraphrased_text, entities
 
 def process_articles():
     # Load data from JSON files
-    logging.info("Loading decontextualized articles from data/decontextualized_articles.json")
+    logging.info(
+        "Loading decontextualized articles from data/decontextualized_articles.json"
+    )
     with open("data/decontextualized_articles.json", "r", encoding="utf-8") as f:
         decontextualized_articles = json.load(f)
 
@@ -114,25 +127,39 @@ def process_articles():
 
     all_relationships = {}
 
-    for file_index, (file_name, sentences_list) in enumerate(decontextualized_articles.items(), start=1):
-        logging.info(f"Processing article {file_index}/{len(decontextualized_articles)}: {file_name}")
+    for file_index, (file_name, sentences_list) in enumerate(
+        decontextualized_articles.items(), start=1
+    ):
+        logging.info(
+            f"Processing article {file_index}/{len(decontextualized_articles)}: {file_name}"
+        )
         paraphrased_sentences = paraphrased_articles.get(file_name, {}).get(
             "paraphrased_sentences", []
         )
         entities_list = extracted_entities.get(file_name, [])
 
-        if len(sentences_list) != len(paraphrased_sentences) or len(sentences_list) != len(entities_list):
-            logging.warning(f"Mismatch in number of sentences and entities for article: {file_name}")
+        if len(sentences_list) != len(paraphrased_sentences) or len(
+            sentences_list
+        ) != len(entities_list):
+            logging.warning(
+                f"Mismatch in number of sentences and entities for article: {file_name}"
+            )
             continue
 
         article_relationships = []
 
         for sentence_index, original_sentence in enumerate(sentences_list, start=1):
-            logging.info(f"Processing sentence {sentence_index}/{len(sentences_list)} in article: {file_name}")
+            logging.info(
+                f"Processing sentence {sentence_index}/{len(sentences_list)} in article: {file_name}"
+            )
             paraphrased_sentence = paraphrased_sentences[sentence_index - 1]
             entities = entities_list[sentence_index - 1]
             relationships = extract_and_validate_relationships(
-                original_sentence, paraphrased_sentence, entities, sentence_index, len(sentences_list)
+                original_sentence,
+                paraphrased_sentence,
+                entities,
+                sentence_index,
+                len(sentences_list),
             )
             article_relationships.extend(relationships)
 
