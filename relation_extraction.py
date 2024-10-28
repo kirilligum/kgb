@@ -45,7 +45,7 @@ def extract_and_validate_relationships(original_text, paraphrased_text, entities
                     ],
                     response_format=Relationship,
                 )
-                candidate_relation = response.choices[0].message.parsed
+                candidate_relation = response.choices[0].message.parsed.relation
 
                 # Proceed only if a relationship was identified
                 if candidate_relation:
@@ -68,16 +68,15 @@ def extract_and_validate_relationships(original_text, paraphrased_text, entities
                         ],
                         response_format=RelationshipValidation,
                     )
-                    if response and response.choices:
-                        validation = response.choices[0].message.parsed.is_valid
+                    validation = response.choices[0].message.parsed.is_valid
 
-                        # If validated, add to the final relationships
-                        if validation:
-                            relationships.append((
-                                entity1["entity"],
-                                candidate_relation,
-                                entity2["entity"],
-                            ))
+                    # If validated, add to the final relationships
+                    if validation:
+                        relationships.append((
+                            entity1["entity"],
+                            candidate_relation,
+                            entity2["entity"],
+                        ))
 
     return relationships
 
