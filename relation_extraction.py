@@ -45,7 +45,9 @@ def extract_and_validate_relationships(original_text, paraphrased_text, entities
                     ],
                     response_format=Relationship,
                 )
-                candidate_relation = response.choices[0].message.parsed.relation
+                candidate_relation = None
+                if response and response.choices:
+                    candidate_relation = response.choices[0].message.parsed.relation
 
                 # Proceed only if a relationship was identified
                 if candidate_relation:
