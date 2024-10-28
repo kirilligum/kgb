@@ -1,8 +1,8 @@
 import json
-import openai
+from openai import OpenAI
 
-# Set your OpenAI API key
-openai.api_key = 'YOUR_API_KEY'
+# Initialize OpenAI client
+client = OpenAI()
 
 def extract_and_validate_relationships(original_text, paraphrased_text, entities):
     relationships = []
@@ -15,11 +15,19 @@ def extract_and_validate_relationships(original_text, paraphrased_text, entities
                 extract_prompt = (f"Identify the relationship between \"{entity1['entity']}\" and \"{entity2['entity']}\" "
                                   f"in the text: \"{original_text}\". Possible relationships include "
                                   f"Lives In, Works For, and Located In.\nRelationship:")
-                response = openai.Completion.create(
+                response = client.beta.chat.completions.parse(
                     model="gpt-4o-mini",
-                    prompt=extract_prompt,
-                    max_tokens=20,
-                    temperature=0
+                    messages=[
+                        {
+                            "role": "system",
+                            "content": "You are a helpful assistant that extracts and validates relationships between entities.",
+                        },
+                        {
+                            "role": "user",
+                            "content": extract_prompt,
+                        },
+                    ],
+                    response_format=None,
                 )
                 candidate_relation = response.choices[0].text.strip()
 
@@ -28,11 +36,19 @@ def extract_and_validate_relationships(original_text, paraphrased_text, entities
                     # Step 3B: Validate the relationship in the paraphrased text
                     validate_prompt = (f"In the paraphrased text: \"{paraphrased_text}\", "
                                        f"is the relationship \"{entity1['entity']} {candidate_relation} {entity2['entity']}\" correct? (Yes/No)")
-                    response = openai.Completion.create(
+                    response = client.beta.chat.completions.parse(
                         model="gpt-4o-mini",
-                        prompt=validate_prompt,
-                        max_tokens=10,
-                        temperature=0
+                        messages=[
+                            {
+                                "role": "system",
+                                "content": "You are a helpful assistant that extracts and validates relationships between entities.",
+                            },
+                            {
+                                "role": "user",
+                                "content": validate_prompt,
+                            },
+                        ],
+                        response_format=None,
                     )
                     validation = response.choices[0].text.strip()
 
