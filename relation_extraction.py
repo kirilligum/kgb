@@ -162,7 +162,7 @@ def process_articles():
                 sentence_index,
                 len(sentences_list),
             )
-            article_relationships.extend(relationships)
+            article_relationships.append(relationships)
 
         all_relationships[file_name] = article_relationships
 
