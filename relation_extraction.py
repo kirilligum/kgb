@@ -80,7 +80,6 @@ def extract_and_validate_relationships(original_text, paraphrased_text, entities
                         ],
                         response_format=RelationshipValidation,
                     )
-                    logging.info("Received response for relationship validation")
                     validation = None
                     if response and response.choices:
                         parsed_response = response.choices[0].message.parsed
