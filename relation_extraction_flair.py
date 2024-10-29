@@ -1,5 +1,6 @@
 import json
 import logging
+from pydantic import BaseModel
 from flair.data import Sentence
 from flair.nn import Classifier
 from openai import OpenAI
@@ -11,6 +12,9 @@ logging.basicConfig(
 
 # Initialize OpenAI client
 client = OpenAI()
+
+class RelationshipValidation(BaseModel):
+    is_valid: bool
 
 # Load the Flair relation extractor
 relation_extractor = Classifier.load('relations')
