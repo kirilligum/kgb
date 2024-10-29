@@ -243,6 +243,7 @@ def process_articles(input_file, output_file):
                 decontextualized_sentences.append(decontextualized.sentence)
 
         decontextualized_articles[file_name] = decontextualized_sentences
+        logging.info(f"Decontextualized {len(decontextualized_sentences)} sentences in article: {file_name}")
 
     with open(output_file, "w", encoding="utf-8") as f:
         json.dump(decontextualized_articles, f, indent=4, ensure_ascii=False)
