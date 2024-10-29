@@ -1,0 +1,2008 @@
+{
+    "projects/prls/inputs/inputted_facts_2024-10-29T02:39:37-07:00.txt": [
+        {
+            "sentence": "Pearls of Wisdom is a pioneering AI-powered marketing company.",
+            "entities": [
+                {
+                    "entity": "Pearls of Wisdom",
+                    "type": "ORG"
+                }
+            ],
+            "relationships": [],
+            "propositions": [],
+            "atomic_facts": [
+                "Pearls of Wisdom is a marketing company.",
+                "Pearls of Wisdom is powered by AI.",
+                "Pearls of Wisdom is a pioneering company."
+            ]
+        },
+        {
+            "sentence": "Pearls of Wisdom helps businesses optimize their content for Large Language Models (LLMs) like ChatGPT and Google's Gemini.",
+            "entities": [
+                {
+                    "entity": "Pearls of Wisdom",
+                    "type": "ORG"
+                },
+                {
+                    "entity": "ChatGPT",
+                    "type": "PRODUCT"
+                },
+                {
+                    "entity": "Google",
+                    "type": "ORG"
+                },
+                {
+                    "entity": "Gemini",
+                    "type": "PRODUCT"
+                }
+            ],
+            "relationships": [
+                [
+                    "Pearls of Wisdom",
+                    "optimizes content for",
+                    "ChatGPT"
+                ],
+                [
+                    "Pearls of Wisdom",
+                    "helps optimize for",
+                    "Google"
+                ],
+                [
+                    "Pearls of Wisdom",
+                    "helps optimize for",
+                    "Gemini"
+                ],
+                [
+                    "ChatGPT",
+                    "is optimized by",
+                    "Pearls of Wisdom"
+                ],
+                [
+                    "Google",
+                    "is associated with",
+                    "Pearls of Wisdom"
+                ],
+                [
+                    "Google",
+                    "competes with",
+                    "ChatGPT"
+                ],
+                [
+                    "Google",
+                    "develops",
+                    "Gemini"
+                ],
+                [
+                    "Gemini",
+                    "is a Large Language Model optimized by",
+                    "Pearls of Wisdom"
+                ],
+                [
+                    "Gemini",
+                    "is a Large Language Model developed by",
+                    "Google"
+                ]
+            ],
+            "propositions": [
+                "Pearls of Wisdom optimizes content for ChatGPT.",
+                "Pearls of Wisdom helps businesses optimize their content for Google's Large Language Models.",
+                "Pearls of Wisdom helps optimize content for Gemini.",
+                "ChatGPT is optimized by Pearls of Wisdom.",
+                "Google is associated with Pearls of Wisdom in helping businesses optimize content for AI tools like Gemini.",
+                "Google competes with ChatGPT in the field of large language models.",
+                "Google develops a large language model called Gemini.",
+                "Gemini is a Large Language Model optimized by Pearls of Wisdom.",
+                "Gemini is a Large Language Model developed by Google."
+            ],
+            "atomic_facts": [
+                "Pearls of Wisdom provides help for businesses seeking to optimize content for LLMs in general."
+            ]
+        },
+        {
+            "sentence": "Pearls of Wisdom ensures companies are accurately and effectively represented in AI-generated responses, improving their visibility and reach in the evolving digital landscape.",
+            "entities": [
+                {
+                    "entity": "Pearls of Wisdom",
+                    "type": "WORK_OF_ART"
+                }
+            ],
+            "relationships": [],
+            "propositions": [],
+            "atomic_facts": [
+                "Pearls of Wisdom ensures accurate representation of companies in AI-generated responses.",
+                "Pearls of Wisdom ensures effective representation of companies in AI-generated responses.",
+                "Pearls of Wisdom improves visibility of companies in the digital landscape.",
+                "Pearls of Wisdom improves reach of companies in the digital landscape.",
+                "The digital landscape is evolving."
+            ]
+        },
+        {
+            "sentence": "Pearls of Wisdom offers two main products.",
+            "entities": [
+                {
+                    "entity": "Pearls of Wisdom",
+                    "type": "ORG"
+                },
+                {
+                    "entity": "two",
+                    "type": "CARDINAL"
+                }
+            ],
+            "relationships": [
+                [
+                    "Pearls of Wisdom",
+                    "offers",
+                    "two"
+                ],
+                [
+                    "two",
+                    "is offered by",
+                    "Pearls of Wisdom"
+                ]
+            ],
+            "propositions": [
+                "Pearls of Wisdom offers two products.",
+                "Two main products are offered by Pearls of Wisdom."
+            ],
+            "atomic_facts": [
+                "The two main products of Pearls of Wisdom are distinct offerings."
+            ]
+        },
+        {
+            "sentence": "Customized datasets are instruction-tuned datasets tailored to the client's marketing content, designed to be accurate, comprehensive, and non-hallucinating.",
+            "entities": [],
+            "relationships": [],
+            "propositions": [],
+            "atomic_facts": [
+                "Customized datasets are tailored to the client's marketing content.",
+                "Customized datasets are instruction-tuned datasets.",
+                "Customized datasets are designed to be accurate.",
+                "Customized datasets are designed to be comprehensive.",
+                "Customized datasets are designed to be non-hallucinating."
+            ]
+        },
+        {
+            "sentence": "The analysis of company visibility in LLM responses provides insights into performance and areas for improvement.",
+            "entities": [
+                {
+                    "entity": "LLM",
+                    "type": "WORK_OF_ART"
+                }
+            ],
+            "relationships": [],
+            "propositions": [],
+            "atomic_facts": [
+                "The analysis of company visibility provides insights into performance.",
+                "The analysis of company visibility provides insights into areas for improvement."
+            ]
+        },
+        {
+            "sentence": "The company targets Series A startups and marketing agencies as its target audience.",
+            "entities": [],
+            "relationships": [],
+            "propositions": [],
+            "atomic_facts": [
+                "The company has a target audience.",
+                "The company targets Series A startups.",
+                "The company targets marketing agencies."
+            ]
+        },
+        {
+            "sentence": "Series A startups and marketing agencies utilize a multi-faceted go-to-market strategy that includes direct sales, agency partnerships, and a self-service platform.",
+            "entities": [],
+            "relationships": [],
+            "propositions": [],
+            "atomic_facts": [
+                "Series A startups utilize a multi-faceted go-to-market strategy.",
+                "Marketing agencies utilize a multi-faceted go-to-market strategy.",
+                "The go-to-market strategy includes direct sales.",
+                "The go-to-market strategy includes agency partnerships.",
+                "The go-to-market strategy includes a self-service platform."
+            ]
+        },
+        {
+            "sentence": "Pearls of Wisdom's competitive advantages include analysis of company visibility in large language model responses, providing insights into performance and areas for improvement, targeting Series A startups and marketing agencies, and utilizing a multi-faceted go-to-market strategy that includes direct sales, agency partnerships, and a self-service platform.",
+            "entities": [
+                {
+                    "entity": "Pearls of Wisdom",
+                    "type": "ORG"
+                }
+            ],
+            "relationships": [],
+            "propositions": [],
+            "atomic_facts": [
+                "Pearls of Wisdom has competitive advantages.",
+                "Pearls of Wisdom analyzes company visibility in large language model responses.",
+                "Pearls of Wisdom provides insights into performance and areas for improvement.",
+                "Pearls of Wisdom targets Series A startups and marketing agencies.",
+                "Pearls of Wisdom utilizes a multi-faceted go-to-market strategy that includes direct sales, agency partnerships, and a self-service platform."
+            ]
+        },
+        {
+            "sentence": "Pearls of Wisdom's competitive advantages include early stage advantage, proprietary AI technology, founder expertise, and network effect.",
+            "entities": [
+                {
+                    "entity": "Pearls of Wisdom's",
+                    "type": "ORG"
+                }
+            ],
+            "relationships": [],
+            "propositions": [],
+            "atomic_facts": [
+                "Pearls of Wisdom has a competitive advantage.",
+                "Pearls of Wisdom benefits from an early stage advantage.",
+                "Pearls of Wisdom utilizes proprietary AI technology.",
+                "The founder of Pearls of Wisdom has expertise.",
+                "Pearls of Wisdom experiences a network effect."
+            ]
+        },
+        {
+            "sentence": "Pearls of Wisdom faces the challenge of demonstrating value in the context of infrequent LLM retraining.",
+            "entities": [
+                {
+                    "entity": "Pearls of Wisdom",
+                    "type": "ORG"
+                },
+                {
+                    "entity": "LLM",
+                    "type": "WORK_OF_ART"
+                }
+            ],
+            "relationships": [
+                [
+                    "Pearls of Wisdom",
+                    "faces challenge regarding",
+                    "LLM"
+                ]
+            ],
+            "propositions": [
+                "Pearls of Wisdom faces the challenge of demonstrating value due to infrequent retraining of LLMs."
+            ],
+            "atomic_facts": [
+                "Pearls of Wisdom is tasked with the challenge of demonstrating value.",
+                "The challenge involves the context of infrequent LLM retraining."
+            ]
+        },
+        {
+            "sentence": "However, Pearls of Wisdom is well-positioned to capitalize on the growing importance of AI in marketing and become a leader in this emerging field.",
+            "entities": [
+                {
+                    "entity": "Pearls of Wisdom",
+                    "type": "ORG"
+                }
+            ],
+            "relationships": [],
+            "propositions": [],
+            "atomic_facts": [
+                "Pearls of Wisdom has the potential to become a leader in the field of AI marketing.",
+                "The importance of AI in marketing is growing.",
+                "Pearls of Wisdom is well-positioned to capitalize on opportunities in AI marketing.",
+                "AI is an emerging field in marketing."
+            ]
+        },
+        {
+            "sentence": "The company’s future roadmap includes enhancing the company’s products, expanding into new customer segments and international markets, and building strategic partnerships with large language model providers and research institutions.",
+            "entities": [],
+            "relationships": [],
+            "propositions": [],
+            "atomic_facts": [
+                "The company's future roadmap includes enhancing its products.",
+                "The company plans to expand into new customer segments.",
+                "The company intends to expand into international markets.",
+                "The company aims to build strategic partnerships with large language model providers.",
+                "The company plans to build partnerships with research institutions."
+            ]
+        },
+        {
+            "sentence": "The company faces the challenge of demonstrating value in the context of infrequent LLM retraining.",
+            "entities": [
+                {
+                    "entity": "LLM",
+                    "type": "WORK_OF_ART"
+                }
+            ],
+            "relationships": [],
+            "propositions": [],
+            "atomic_facts": [
+                "The company is facing a challenge.",
+                "The challenge involves demonstrating value.",
+                "The context of the challenge is infrequent LLM retraining."
+            ]
+        },
+        {
+            "sentence": "The company envisions becoming the leading provider of AI optimization for marketing.",
+            "entities": [],
+            "relationships": [],
+            "propositions": [],
+            "atomic_facts": [
+                "The company has a vision.",
+                "The company aims to lead in AI optimization.",
+                "The focus of the company's vision is marketing."
+            ]
+        },
+        {
+            "sentence": "The company mission is to empower businesses to be accurately represented in AI-powered platforms.",
+            "entities": [],
+            "relationships": [],
+            "propositions": [],
+            "atomic_facts": [
+                "The company has a mission.",
+                "The mission of the company is related to businesses.",
+                "The company's mission involves accurate representation.",
+                "The representation mentioned is in AI-powered platforms.",
+                "The company aims to empower businesses."
+            ]
+        },
+        {
+            "sentence": "The goal is to create a trillion-dollar company.",
+            "entities": [
+                {
+                    "entity": "trillion-dollar",
+                    "type": "MONEY"
+                }
+            ],
+            "relationships": [],
+            "propositions": [],
+            "atomic_facts": [
+                "The goal is to create a company.",
+                "The company being created is valued at one trillion dollars."
+            ]
+        },
+        {
+            "sentence": "The company focuses on helping companies get accurate and thoughtful responses from large language models by creating instruction-tuning datasets from their marketing content.",
+            "entities": [],
+            "relationships": [],
+            "propositions": [],
+            "atomic_facts": [
+                "The company helps other companies get accurate responses from large language models.",
+                "The company creates instruction-tuning datasets from marketing content.",
+                "The company's focus is on thoughtful responses from large language models."
+            ]
+        },
+        {
+            "sentence": "The marketing content includes landing pages, blogs, news, and articles created by companies.",
+            "entities": [],
+            "relationships": [],
+            "propositions": [],
+            "atomic_facts": [
+                "The marketing content consists of different types of materials.",
+                "Landing pages are part of the marketing content.",
+                "Blogs are part of the marketing content.",
+                "News is part of the marketing content.",
+                "Articles created by companies are included in the marketing content."
+            ]
+        },
+        {
+            "sentence": "The goal is to create a trillion-dollar company by not training any models, just creating instruction-tuning datasets from marketing content such as landing pages, blogs, news, and articles.",
+            "entities": [
+                {
+                    "entity": "trillion-dollar",
+                    "type": "MONEY"
+                }
+            ],
+            "relationships": [],
+            "propositions": [],
+            "atomic_facts": [
+                "The goal is to create a trillion-dollar company.",
+                "The company will not train any models.",
+                "The company will create instruction-tuning datasets.",
+                "The instruction-tuning datasets will be created from marketing content.",
+                "The types of marketing content include landing pages, blogs, news, and articles."
+            ]
+        },
+        {
+            "sentence": "Datasets are hosted on the website of the company and a link is provided to the client.",
+            "entities": [],
+            "relationships": [],
+            "propositions": [],
+            "atomic_facts": [
+                "Datasets are hosted on the website of the company.",
+                "A link is provided to the client."
+            ]
+        },
+        {
+            "sentence": "OpenAI, Google, Anthropic, and Mistral crawl the data in datasets and use that data for training their machine learning models.",
+            "entities": [
+                {
+                    "entity": "OpenAI",
+                    "type": "ORG"
+                },
+                {
+                    "entity": "Google",
+                    "type": "ORG"
+                },
+                {
+                    "entity": "Anthropic",
+                    "type": "ORG"
+                },
+                {
+                    "entity": "Mistral",
+                    "type": "ORG"
+                }
+            ],
+            "relationships": [
+                [
+                    "OpenAI",
+                    "competes with",
+                    "Google"
+                ],
+                [
+                    "Anthropic",
+                    "competes with",
+                    "OpenAI"
+                ],
+                [
+                    "Anthropic",
+                    "competes_with",
+                    "Google"
+                ],
+                [
+                    "Mistral",
+                    "competes with",
+                    "OpenAI"
+                ],
+                [
+                    "Mistral",
+                    "competes_with",
+                    "Google"
+                ],
+                [
+                    "Mistral",
+                    "competes with",
+                    "Anthropic"
+                ]
+            ],
+            "propositions": [
+                "OpenAI competes with Google in using datasets for training machine learning models.",
+                "Anthropic competes with OpenAI in the field of machine learning.",
+                "Anthropic competes with Google.",
+                "Mistral competes with OpenAI in the field of machine learning model training.",
+                "Mistral competes with Google in developing machine learning models.",
+                "Mistral competes with Anthropic in developing machine learning models."
+            ],
+            "atomic_facts": [
+                "OpenAI, Google, Anthropic, and Mistral crawl data from datasets.",
+                "They use the crawled data for training their machine learning models."
+            ]
+        },
+        {
+            "sentence": "Clients do not need to use large language models directly; prospective customers use OpenAI's ChatGPT or Google's Gemini.",
+            "entities": [
+                {
+                    "entity": "OpenAI",
+                    "type": "ORG"
+                },
+                {
+                    "entity": "ChatGPT",
+                    "type": "PRODUCT"
+                },
+                {
+                    "entity": "Google",
+                    "type": "ORG"
+                },
+                {
+                    "entity": "Gemini",
+                    "type": "PRODUCT"
+                }
+            ],
+            "relationships": [
+                [
+                    "OpenAI",
+                    "develops",
+                    "ChatGPT"
+                ],
+                [
+                    "OpenAI",
+                    "competes with",
+                    "Google"
+                ],
+                [
+                    "ChatGPT",
+                    "is a product of",
+                    "OpenAI"
+                ],
+                [
+                    "Google",
+                    "competes_with",
+                    "OpenAI"
+                ],
+                [
+                    "Google",
+                    "offers",
+                    "Gemini"
+                ],
+                [
+                    "Gemini",
+                    "is an alternative to",
+                    "ChatGPT"
+                ],
+                [
+                    "Gemini",
+                    "is a product of",
+                    "Google"
+                ]
+            ],
+            "propositions": [
+                "OpenAI develops ChatGPT.",
+                "OpenAI competes with Google in the field of large language models.",
+                "ChatGPT is a product of OpenAI.",
+                "Google competes with OpenAI.",
+                "Google offers Gemini.",
+                "Gemini is an alternative to ChatGPT for clients interested in using large language models.",
+                "Gemini is a product of Google."
+            ],
+            "atomic_facts": [
+                "Clients do not need to use large language models directly.",
+                "Prospective customers use OpenAI's ChatGPT.",
+                "Prospective customers use Google's Gemini."
+            ]
+        },
+        {
+            "sentence": "The key benefit is that the system accurately represents client companies and the products of client companies in large language model responses, influencing the reasoning and answers provided by the large language models.",
+            "entities": [],
+            "relationships": [],
+            "propositions": [],
+            "atomic_facts": [
+                "The system accurately represents client companies.",
+                "The system accurately represents products of client companies.",
+                "The representations influence the reasoning of large language models.",
+                "The representations influence the answers provided by large language models.",
+                "The representations are part of the responses given by large language models."
+            ]
+        },
+        {
+            "sentence": "A dataset from a hydrogen generator company influences ChatGPT to recommend hydrogen generators when a user asks for a quiet and reliable generator.",
+            "entities": [
+                {
+                    "entity": "ChatGPT",
+                    "type": "ORG"
+                }
+            ],
+            "relationships": [],
+            "propositions": [],
+            "atomic_facts": [
+                "A dataset is used by ChatGPT to recommend products.",
+                "The dataset is from a hydrogen generator company.",
+                "ChatGPT recommends hydrogen generators.",
+                "ChatGPT makes recommendations based on user inquiries.",
+                "The recommendations are for quiet and reliable generators."
+            ]
+        },
+        {
+            "sentence": "The product is a fully functional product, not just a prototype.",
+            "entities": [],
+            "relationships": [],
+            "propositions": [],
+            "atomic_facts": [
+                "The product is fully functional.",
+                "The product is not just a prototype."
+            ]
+        },
+        {
+            "sentence": "The dataset of a hydrogen generator company influences ChatGPT to recommend hydrogen generators when a user asks for a quiet and reliable generator.",
+            "entities": [
+                {
+                    "entity": "ChatGPT",
+                    "type": "ORG"
+                }
+            ],
+            "relationships": [],
+            "propositions": [],
+            "atomic_facts": [
+                "The dataset belongs to a hydrogen generator company.",
+                "ChatGPT recommends hydrogen generators.",
+                "Users ask ChatGPT for a quiet and reliable generator.",
+                "The influence of the dataset affects the recommendations made by ChatGPT."
+            ]
+        },
+        {
+            "sentence": "The dataset of the hydrogen generator company influences ChatGPT to recommend hydrogen generators when a user asks for a quiet and reliable generator.",
+            "entities": [
+                {
+                    "entity": "ChatGPT",
+                    "type": "ORG"
+                }
+            ],
+            "relationships": [],
+            "propositions": [],
+            "atomic_facts": [
+                "The hydrogen generator company has a dataset.",
+                "ChatGPT recommends hydrogen generators.",
+                "Users can ask ChatGPT for a quiet and reliable generator.",
+                "The recommendation of hydrogen generators by ChatGPT is influenced by the dataset."
+            ]
+        },
+        {
+            "sentence": "Companies need to be accurately represented in responses generated by large language models, similar to search engine optimization but for artificial intelligence.",
+            "entities": [],
+            "relationships": [],
+            "propositions": [],
+            "atomic_facts": [
+                "Companies require accurate representation in responses from large language models.",
+                "Accurate representation in AI responses is similar to search engine optimization.",
+                "Large language models generate responses for companies."
+            ]
+        },
+        {
+            "sentence": "Current large language models sometimes provide inaccurate or irrelevant information about companies and their products.",
+            "entities": [],
+            "relationships": [],
+            "propositions": [],
+            "atomic_facts": [
+                "Current large language models can give inaccurate information about companies.",
+                "Current large language models can give irrelevant information about companies.",
+                "Current large language models provide information about companies and their products."
+            ]
+        },
+        {
+            "sentence": "Current language model responses sometimes provide inaccurate or irrelevant information about companies and their products.",
+            "entities": [],
+            "relationships": [],
+            "propositions": [],
+            "atomic_facts": [
+                "Current language model responses can be inaccurate.",
+                "Current language model responses can be irrelevant.",
+                "Current language models provide information about companies.",
+                "Current language models provide information about products."
+            ]
+        },
+        {
+            "sentence": "Current LLMs sometimes provide inaccurate or irrelevant information about companies and their products, such as only mentioning diesel generators when users inquire about quiet and reliable generators, despite the existence of quieter hydrogen generators.",
+            "entities": [],
+            "relationships": [],
+            "propositions": [],
+            "atomic_facts": [
+                "Current LLMs can provide inaccurate information about companies and their products.",
+                "LLMs can sometimes provide irrelevant information when answering user queries.",
+                "Users may inquire about quiet and reliable generators.",
+                "Diesel generators are sometimes mentioned by LLMs when users inquire about quiet generators.",
+                "Quieter hydrogen generators exist."
+            ]
+        },
+        {
+            "sentence": "Pearls of Wisdom creates instruction-tuning datasets from marketing content including landing pages, blogs, and news articles.",
+            "entities": [
+                {
+                    "entity": "Pearls of Wisdom",
+                    "type": "ORG"
+                }
+            ],
+            "relationships": [],
+            "propositions": [],
+            "atomic_facts": [
+                "Pearls of Wisdom creates instruction-tuning datasets.",
+                "Instruction-tuning datasets are created from marketing content.",
+                "Marketing content used includes landing pages, blogs, and news articles."
+            ]
+        },
+        {
+            "sentence": "Pearls of Wisdom creates instruction-tuning datasets that are used to influence the knowledge base of large language models like ChatGPT and Gemini.",
+            "entities": [
+                {
+                    "entity": "Pearls of Wisdom",
+                    "type": "ORG"
+                }
+            ],
+            "relationships": [],
+            "propositions": [],
+            "atomic_facts": [
+                "Pearls of Wisdom creates instruction-tuning datasets.",
+                "Instruction-tuning datasets influence the knowledge base of large language models.",
+                "Large language models include ChatGPT and Gemini."
+            ]
+        },
+        {
+            "sentence": "Pearls of Wisdom ensures that companies and their products are accurately represented in LLM responses, influencing the reasoning and answers provided by LLMs like ChatGPT and Gemini.",
+            "entities": [
+                {
+                    "entity": "ChatGPT",
+                    "type": "ORG"
+                },
+                {
+                    "entity": "Gemini",
+                    "type": "ORG"
+                }
+            ],
+            "relationships": [],
+            "propositions": [],
+            "atomic_facts": [
+                "Pearls of Wisdom ensures accurate representation of companies and their products in LLM responses.",
+                "Pearls of Wisdom influences the reasoning and answers provided by LLMs.",
+                "LLMs mentioned include ChatGPT and Gemini."
+            ]
+        },
+        {
+            "sentence": "Pearls of Wisdom creates instruction-tuning datasets from marketing content such as landing pages, blogs, and news articles. These instruction-tuning datasets are used to influence the knowledge base of large language models like ChatGPT and Gemini. This process ensures that companies and their products are accurately represented in large language model responses, influencing the reasoning and answers provided by those models.",
+            "entities": [
+                {
+                    "entity": "Pearls of Wisdom",
+                    "type": "ORG"
+                },
+                {
+                    "entity": "ChatGPT",
+                    "type": "PRODUCT"
+                },
+                {
+                    "entity": "Gemini",
+                    "type": "PRODUCT"
+                }
+            ],
+            "relationships": [
+                [
+                    "Pearls of Wisdom",
+                    "creates instruction-tuning datasets for",
+                    "ChatGPT"
+                ],
+                [
+                    "Pearls of Wisdom",
+                    "creates datasets for",
+                    "Gemini"
+                ],
+                [
+                    "ChatGPT",
+                    "influenced by",
+                    "Pearls of Wisdom"
+                ],
+                [
+                    "Gemini",
+                    "is influenced by",
+                    "Pearls of Wisdom"
+                ]
+            ],
+            "propositions": [
+                "Pearls of Wisdom creates instruction-tuning datasets for ChatGPT, using content such as blogs and news articles, to improve its understanding and representation of marketing information.",
+                "Pearls of Wisdom creates datasets for Gemini to influence its knowledge base.",
+                "ChatGPT is influenced by Pearls of Wisdom, as they create instruction-tuning datasets from marketing content that shape the model's responses.",
+                "Gemini is influenced by Pearls of Wisdom through instruction-tuning datasets created from marketing content."
+            ],
+            "atomic_facts": [
+                "Pearls of Wisdom creates instruction-tuning datasets from landing pages, in addition to blogs and news articles.",
+                "The instruction-tuning datasets are designed to ensure accurate representation of companies and their products in AI model responses.",
+                "The process of creating instruction-tuning datasets influences the reasoning of large language models."
+            ]
+        },
+        {
+            "sentence": "The company creates a dataset and puts the dataset on a website.",
+            "entities": [],
+            "relationships": [],
+            "propositions": [],
+            "atomic_facts": [
+                "The company creates a dataset.",
+                "The dataset is placed on a website."
+            ]
+        },
+        {
+            "sentence": "Companies get a link to the dataset created and put on the website.",
+            "entities": [],
+            "relationships": [],
+            "propositions": [],
+            "atomic_facts": [
+                "Companies can get a link to the dataset.",
+                "The dataset is created.",
+                "The dataset is put on the website."
+            ]
+        },
+        {
+            "sentence": "Large language model training companies crawl the dataset and use it for training.",
+            "entities": [],
+            "relationships": [],
+            "propositions": [],
+            "atomic_facts": [
+                "Large language model training companies crawl datasets.",
+                "The datasets are used for training large language models."
+            ]
+        },
+        {
+            "sentence": "The goal is to influence the knowledge base of large language models so large language models accurately represent client companies and client companies' products in responses.",
+            "entities": [],
+            "relationships": [],
+            "propositions": [],
+            "atomic_facts": [
+                "The goal is to influence the knowledge base of large language models.",
+                "Large language models should accurately represent client companies.",
+                "Large language models should accurately represent client companies' products in responses."
+            ]
+        },
+        {
+            "sentence": "The hydrogen generator company dataset influences ChatGPT to recommend hydrogen generators when a user asks for quiet and reliable generators.",
+            "entities": [
+                {
+                    "entity": "ChatGPT",
+                    "type": "ORG"
+                }
+            ],
+            "relationships": [],
+            "propositions": [],
+            "atomic_facts": [
+                "The hydrogen generator company dataset is used by ChatGPT.",
+                "ChatGPT recommends hydrogen generators.",
+                "The recommendation occurs when a user asks for quiet generators.",
+                "The recommendation occurs when a user asks for reliable generators.",
+                "Hydrogen generators are characterized as quiet and reliable."
+            ]
+        },
+        {
+            "sentence": "The hydrogen generator company product is fully functional, not just a prototype.",
+            "entities": [],
+            "relationships": [],
+            "propositions": [],
+            "atomic_facts": [
+                "The hydrogen generator company has a product.",
+                "The product of the hydrogen generator company is fully functional.",
+                "The product is not a prototype."
+            ]
+        },
+        {
+            "sentence": "One product creates datasets, while the other product shows how client companies appear in ChatGPT based on the datasets.",
+            "entities": [
+                {
+                    "entity": "One",
+                    "type": "CARDINAL"
+                },
+                {
+                    "entity": "ChatGPT",
+                    "type": "ORG"
+                }
+            ],
+            "relationships": [],
+            "propositions": [],
+            "atomic_facts": [
+                "One product creates datasets.",
+                "The other product shows how client companies appear in ChatGPT.",
+                "The appearance of client companies in ChatGPT is based on the datasets."
+            ]
+        },
+        {
+            "sentence": "The second product, which is labeled as \"analytics,\" counts how many times companies and their competitors appear in the responses to the questions generated for the company dataset.",
+            "entities": [
+                {
+                    "entity": "second",
+                    "type": "ORDINAL"
+                }
+            ],
+            "relationships": [],
+            "propositions": [],
+            "atomic_facts": [
+                "The second product is labeled as 'analytics'.",
+                "The product counts how many times companies appear in the responses to the questions.",
+                "The product counts how many times competitors appear in the responses to the questions.",
+                "The questions are generated for the company dataset."
+            ]
+        },
+        {
+            "sentence": "The purpose of the analytics product is to show clients their current visibility in ChatGPT and emphasize the need for improvement.",
+            "entities": [
+                {
+                    "entity": "ChatGPT",
+                    "type": "PRODUCT"
+                }
+            ],
+            "relationships": [],
+            "propositions": [],
+            "atomic_facts": [
+                "The analytics product has a purpose.",
+                "The analytics product shows clients their current visibility in ChatGPT.",
+                "The analytics product emphasizes the need for improvement."
+            ]
+        },
+        {
+            "sentence": "The purpose of the analytics product is to show clients the current visibility of their companies in ChatGPT and emphasize the need for improvement.",
+            "entities": [
+                {
+                    "entity": "ChatGPT",
+                    "type": "PRODUCT"
+                }
+            ],
+            "relationships": [],
+            "propositions": [],
+            "atomic_facts": [
+                "The analytics product shows clients the current visibility of their companies in ChatGPT.",
+                "The analytics product emphasizes the need for improvement."
+            ]
+        },
+        {
+            "sentence": "The target audience for the analytics product includes companies seeking to understand their current visibility in ChatGPT and improve their performance.",
+            "entities": [
+                {
+                    "entity": "ChatGPT",
+                    "type": "ORG"
+                }
+            ],
+            "relationships": [],
+            "propositions": [],
+            "atomic_facts": [
+                "The analytics product is targeted at companies.",
+                "Companies are seeking to understand their current visibility in ChatGPT.",
+                "Companies aim to improve their performance."
+            ]
+        },
+        {
+            "sentence": "Series A startups with large growth budgets allocate around $30,000 per month on marketing content.",
+            "entities": [
+                {
+                    "entity": "around $30,000",
+                    "type": "MONEY"
+                }
+            ],
+            "relationships": [],
+            "propositions": [],
+            "atomic_facts": [
+                "Series A startups with large growth budgets allocate money for marketing content.",
+                "Startups allocate around $30,000 per month for marketing content.",
+                "The allocation for marketing content is significant for Series A startups with large growth budgets."
+            ]
+        },
+        {
+            "sentence": "Marketing agencies that focus on search engine optimization and content marketing cater to Series A startups with large growth budgets.",
+            "entities": [],
+            "relationships": [],
+            "propositions": [],
+            "atomic_facts": [
+                "Marketing agencies focus on search engine optimization and content marketing.",
+                "These marketing agencies cater to Series A startups.",
+                "Series A startups have large growth budgets."
+            ]
+        },
+        {
+            "sentence": "To create better materials for marketing agencies, it is necessary to understand the end customer, which is Series A startups with large growth budgets.",
+            "entities": [],
+            "relationships": [],
+            "propositions": [],
+            "atomic_facts": [
+                "Marketing agencies need to create better materials.",
+                "Understanding the end customer is necessary for creating better materials.",
+                "The end customers for these materials are Series A startups.",
+                "Series A startups have large growth budgets."
+            ]
+        },
+        {
+            "sentence": "Marketing agencies are a faster channel to reach customers for Series A startups.",
+            "entities": [],
+            "relationships": [],
+            "propositions": [],
+            "atomic_facts": [
+                "Marketing agencies serve as a channel to reach customers.",
+                "Series A startups can utilize marketing agencies to reach customers more quickly."
+            ]
+        },
+        {
+            "sentence": "Marketing agencies that focus on SEO and content marketing are a faster channel to reach customers.",
+            "entities": [],
+            "relationships": [],
+            "propositions": [],
+            "atomic_facts": [
+                "Marketing agencies focus on SEO and content marketing.",
+                "SEO and content marketing are channels to reach customers.",
+                "Marketing agencies that focus on SEO and content marketing are faster than other channels to reach customers."
+            ]
+        },
+        {
+            "sentence": "Provide a slide that agencies can use in their pitch decks to clients.",
+            "entities": [],
+            "relationships": [],
+            "propositions": [],
+            "atomic_facts": [
+                "Agencies can use a slide in their pitch decks.",
+                "The slide is intended for clients."
+            ]
+        },
+        {
+            "sentence": "Create a self-service platform for marketing agencies.",
+            "entities": [],
+            "relationships": [],
+            "propositions": [],
+            "atomic_facts": [
+                "A self-service platform is being created.",
+                "The intended users of the platform are marketing agencies."
+            ]
+        },
+        {
+            "sentence": "Marketing agencies are comfortable spending around $5,000 per month on marketing products.",
+            "entities": [
+                {
+                    "entity": "around $5,000",
+                    "type": "MONEY"
+                }
+            ],
+            "relationships": [],
+            "propositions": [],
+            "atomic_facts": [
+                "Marketing agencies spend around $5,000 per month on marketing products."
+            ]
+        },
+        {
+            "sentence": "Section 5: Competitive Advantage includes inputted facts relevant to the marketing agencies.",
+            "entities": [
+                {
+                    "entity": "5",
+                    "type": "CARDINAL"
+                }
+            ],
+            "relationships": [],
+            "propositions": [],
+            "atomic_facts": [
+                "Section 5 discusses Competitive Advantage.",
+                "Section 5 contains inputted facts.",
+                "The inputted facts are relevant to marketing agencies."
+            ]
+        },
+        {
+            "sentence": "There are no direct competitors to the self-service platform for marketing agencies.",
+            "entities": [],
+            "relationships": [],
+            "propositions": [],
+            "atomic_facts": [
+                "There is a self-service platform for marketing agencies.",
+                "The self-service platform has no direct competitors."
+            ]
+        },
+        {
+            "sentence": "The closest competitors are data labeling companies Scale AI and Surge HQ, which sell data to large language model trainers.",
+            "entities": [
+                {
+                    "entity": "Scale AI",
+                    "type": "ORG"
+                },
+                {
+                    "entity": "Surge HQ",
+                    "type": "ORG"
+                }
+            ],
+            "relationships": [
+                [
+                    "Scale AI",
+                    "competitor of",
+                    "Surge HQ"
+                ],
+                [
+                    "Surge HQ",
+                    "competitor",
+                    "Scale AI"
+                ]
+            ],
+            "propositions": [
+                "Scale AI and Surge HQ are competitors in the field of data labeling.",
+                "Surge HQ is a competitor of Scale AI in the data labeling industry."
+            ],
+            "atomic_facts": [
+                "Scale AI sells data to large language model trainers.",
+                "Surge HQ sells data to large language model trainers."
+            ]
+        },
+        {
+            "sentence": "Companies like HubSpot and Semrush create content for people to read and optimize web search.",
+            "entities": [
+                {
+                    "entity": "HubSpot",
+                    "type": "ORG"
+                },
+                {
+                    "entity": "Semrush",
+                    "type": "ORG"
+                }
+            ],
+            "relationships": [
+                [
+                    "HubSpot",
+                    "competes with",
+                    "Semrush"
+                ]
+            ],
+            "propositions": [
+                "HubSpot competes with Semrush."
+            ],
+            "atomic_facts": [
+                "HubSpot creates content for people to read.",
+                "Semrush creates content for people to read.",
+                "Companies like HubSpot and Semrush optimize web search."
+            ]
+        },
+        {
+            "sentence": "Pearls of Wisdom gives data to LLM trainers for free and charges marketing companies.",
+            "entities": [
+                {
+                    "entity": "Pearls of Wisdom",
+                    "type": "ORG"
+                },
+                {
+                    "entity": "LLM",
+                    "type": "WORK_OF_ART"
+                }
+            ],
+            "relationships": [
+                [
+                    "Pearls of Wisdom",
+                    "provides data to",
+                    "LLM"
+                ]
+            ],
+            "propositions": [
+                "Pearls of Wisdom provides data to LLM trainers for free."
+            ],
+            "atomic_facts": [
+                "Pearls of Wisdom charges marketing companies for data."
+            ]
+        },
+        {
+            "sentence": "Pearls of Wisdom focuses on optimizing data for large language models like ChatGPT, Gemini, and Anthropic Claude.",
+            "entities": [
+                {
+                    "entity": "Pearls of Wisdom",
+                    "type": "WORK_OF_ART"
+                }
+            ],
+            "relationships": [],
+            "propositions": [],
+            "atomic_facts": [
+                "Pearls of Wisdom is involved in optimizing data.",
+                "Pearls of Wisdom focuses on large language models.",
+                "ChatGPT, Gemini, and Anthropic Claude are examples of large language models."
+            ]
+        },
+        {
+            "sentence": "Pearls of Wisdom offers a serverless pricing model similar to Amazon AWS, where companies pay-per-instance.",
+            "entities": [
+                {
+                    "entity": "Pearls of Wisdom",
+                    "type": "ORG"
+                },
+                {
+                    "entity": "Amazon AWS",
+                    "type": "ORG"
+                }
+            ],
+            "relationships": [
+                [
+                    "Pearls of Wisdom",
+                    "offers a pricing model similar to",
+                    "Amazon AWS"
+                ],
+                [
+                    "Amazon AWS",
+                    "is similar to",
+                    "Pearls of Wisdom"
+                ]
+            ],
+            "propositions": [
+                "Pearls of Wisdom offers a serverless pricing model similar to Amazon AWS.",
+                "Pearls of Wisdom offers a serverless pricing model similar to Amazon AWS."
+            ],
+            "atomic_facts": [
+                "Companies pay-per-instance in the serverless pricing model offered by Pearls of Wisdom."
+            ]
+        },
+        {
+            "sentence": "Pearls of Wisdom aims for a budget of $5,000 per month from Series A startups.",
+            "entities": [
+                {
+                    "entity": "Pearls of Wisdom",
+                    "type": "ORG"
+                },
+                {
+                    "entity": "5,000",
+                    "type": "MONEY"
+                }
+            ],
+            "relationships": [
+                [
+                    "5,000",
+                    "budget for",
+                    "Pearls of Wisdom"
+                ]
+            ],
+            "propositions": [
+                "Pearls of Wisdom has a monthly budget goal of $5,000."
+            ],
+            "atomic_facts": [
+                "Pearls of Wisdom targets Series A startups for funding."
+            ]
+        },
+        {
+            "sentence": "Data Security and Privacy: Data Security and Privacy uses publicly available marketing content from landing pages, blogs, and news articles.",
+            "entities": [
+                {
+                    "entity": "Data Security and Privacy",
+                    "type": "ORG"
+                },
+                {
+                    "entity": "Data Security and Privacy",
+                    "type": "ORG"
+                }
+            ],
+            "relationships": [],
+            "propositions": [],
+            "atomic_facts": [
+                "Data Security and Privacy utilizes publicly available marketing content.",
+                "Data Security and Privacy sources content from landing pages.",
+                "Data Security and Privacy sources content from blogs.",
+                "Data Security and Privacy sources content from news articles."
+            ]
+        },
+        {
+            "sentence": "Companies already pay to publicize publicly available marketing content.",
+            "entities": [],
+            "relationships": [],
+            "propositions": [],
+            "atomic_facts": [
+                "Companies pay to publicize marketing content.",
+                "The marketing content is publicly available.",
+                "The content is already available before companies publicize it."
+            ]
+        },
+        {
+            "sentence": "Partnerships: Talking to the Allen Institute researcher about creating an open dataset for researchers and large language model trainers.",
+            "entities": [
+                {
+                    "entity": "Allen Institute",
+                    "type": "ORG"
+                }
+            ],
+            "relationships": [],
+            "propositions": [],
+            "atomic_facts": [
+                "The Allen Institute researcher is involved in creating an open dataset.",
+                "The dataset is intended for researchers.",
+                "The dataset is also intended for large language model trainers."
+            ]
+        },
+        {
+            "sentence": "Agents are complicated and time-consuming to build.",
+            "entities": [],
+            "relationships": [],
+            "propositions": [],
+            "atomic_facts": [
+                "Agents are complicated to build.",
+                "Agents are time-consuming to build."
+            ]
+        },
+        {
+            "sentence": "Potential for hiring PhDs in the sciences and leveraging academic partnerships exists for companies.",
+            "entities": [
+                {
+                    "entity": "PhDs",
+                    "type": "WORK_OF_ART"
+                }
+            ],
+            "relationships": [],
+            "propositions": [],
+            "atomic_facts": [
+                "Companies have the potential to hire PhDs in the sciences.",
+                "Companies can leverage academic partnerships."
+            ]
+        },
+        {
+            "sentence": "Building a network effect and hybrid AI human systems is essential for creating valuable partnerships and advancing research.",
+            "entities": [],
+            "relationships": [],
+            "propositions": [],
+            "atomic_facts": [
+                "Building a network effect is essential for creating valuable partnerships.",
+                "Hybrid AI human systems are essential for creating valuable partnerships.",
+                "Creating valuable partnerships is essential for advancing research.",
+                "Advancing research depends on creating valuable partnerships."
+            ]
+        },
+        {
+            "sentence": "More customers lead to a higher rank of the page hosting the datasets due to the network effect.",
+            "entities": [],
+            "relationships": [],
+            "propositions": [],
+            "atomic_facts": [
+                "More customers increase the rank of the page hosting the datasets.",
+                "The rank of the page hosting the datasets is affected by the number of customers.",
+                "The higher rank of the page is a result of the network effect."
+            ]
+        },
+        {
+            "sentence": "More customers increase the value of the dataset for large language model trainers.",
+            "entities": [],
+            "relationships": [],
+            "propositions": [],
+            "atomic_facts": [
+                "More customers exist.",
+                "The value of the dataset increases with the number of customers.",
+                "Large language model trainers utilize datasets."
+            ]
+        },
+        {
+            "sentence": "More customers build credibility for the dataset used in hybrid AI human systems.",
+            "entities": [],
+            "relationships": [],
+            "propositions": [],
+            "atomic_facts": [
+                "Increasing the number of customers enhances credibility.",
+                "The dataset is utilized in hybrid AI human systems."
+            ]
+        },
+        {
+            "sentence": "Section 6: Technology discusses the network effect, where more customers lead to a higher rank of the page hosting the datasets, increase the value of the dataset for LLM trainers, and build credibility.",
+            "entities": [
+                {
+                    "entity": "6",
+                    "type": "CARDINAL"
+                }
+            ],
+            "relationships": [],
+            "propositions": [],
+            "atomic_facts": [
+                "Section 6 is titled 'Technology'.",
+                "The network effect is discussed in Section 6.",
+                "An increase in customers leads to a higher rank of the page hosting the datasets.",
+                "A higher rank of the page increases the value of the dataset for LLM trainers.",
+                "The network effect builds credibility."
+            ]
+        },
+        {
+            "sentence": "Technology uses AI agents to analyze marketing content and generate datasets.",
+            "entities": [],
+            "relationships": [],
+            "propositions": [],
+            "atomic_facts": [
+                "Technology uses AI agents.",
+                "AI agents analyze marketing content.",
+                "AI agents generate datasets."
+            ]
+        },
+        {
+            "sentence": "Datasets generated by AI agents are designed to be non-hallucinating, meaning datasets created by the technology are accurate and avoid fabricated information.",
+            "entities": [],
+            "relationships": [],
+            "propositions": [],
+            "atomic_facts": [
+                "AI agents generate datasets.",
+                "Datasets generated by AI agents are designed to be non-hallucinating.",
+                "Non-hallucinating datasets are accurate.",
+                "Datasets generated by AI agents avoid fabricated information."
+            ]
+        },
+        {
+            "sentence": "The \"Partnership Boost\" feature integrates partner information into datasets that are designed to be non-hallucinating (accurate and avoid fabricated information).",
+            "entities": [],
+            "relationships": [],
+            "propositions": [],
+            "atomic_facts": [
+                "The 'Partnership Boost' feature integrates partner information into datasets.",
+                "The datasets are designed to be non-hallucinating.",
+                "Non-hallucinating datasets aim for accuracy.",
+                "Non-hallucinating datasets avoid fabricated information."
+            ]
+        },
+        {
+            "sentence": "AI agents are complicated and time-consuming to build.",
+            "entities": [],
+            "relationships": [],
+            "propositions": [],
+            "atomic_facts": [
+                "AI agents are complicated to build.",
+                "Building AI agents is time-consuming."
+            ]
+        },
+        {
+            "sentence": "Section 7: Sales & Marketing contains inputted facts.",
+            "entities": [
+                {
+                    "entity": "7",
+                    "type": "CARDINAL"
+                }
+            ],
+            "relationships": [],
+            "propositions": [],
+            "atomic_facts": [
+                "Section 7 is titled 'Sales & Marketing'.",
+                "Section 7 contains inputted facts."
+            ]
+        },
+        {
+            "sentence": "Investor Pitch suggests preferring a conversational pitch over a traditional pitch deck.",
+            "entities": [
+                {
+                    "entity": "Investor Pitch",
+                    "type": "ORG"
+                }
+            ],
+            "relationships": [],
+            "propositions": [],
+            "atomic_facts": [
+                "Investor Pitch recommends a conversational pitch.",
+                "A conversational pitch is preferred over a traditional pitch deck."
+            ]
+        },
+        {
+            "sentence": "The agents are complicated and time-consuming to build, and investors prefer a conversational pitch over a pitch deck.",
+            "entities": [],
+            "relationships": [],
+            "propositions": [],
+            "atomic_facts": [
+                "The agents are complicated to build.",
+                "Building the agents is time-consuming.",
+                "Investors prefer a conversational pitch over a pitch deck."
+            ]
+        },
+        {
+            "sentence": "Investors are concerned about revealing too much in a pitch deck.",
+            "entities": [],
+            "relationships": [],
+            "propositions": [],
+            "atomic_facts": [
+                "Investors are concerned about revealing too much information.",
+                "Investors create pitch decks."
+            ]
+        },
+        {
+            "sentence": "The startup wants to filter investors and gauge the interest of investors before sending a full pitch deck.",
+            "entities": [],
+            "relationships": [],
+            "propositions": [],
+            "atomic_facts": [
+                "The startup aims to filter investors.",
+                "The startup seeks to gauge investor interest.",
+                "The full pitch deck will be sent after filtering and gauging interest."
+            ]
+        },
+        {
+            "sentence": "Investors believe that a conversational pitch allows for better tailoring and building rapport.",
+            "entities": [],
+            "relationships": [],
+            "propositions": [],
+            "atomic_facts": [
+                "Investors believe in the effectiveness of a conversational pitch.",
+                "A conversational pitch allows for better tailoring.",
+                "A conversational pitch helps in building rapport."
+            ]
+        },
+        {
+            "sentence": "The group plans to use slides to sell the service of LLM-optimization of marketing materials during client presentations.",
+            "entities": [],
+            "relationships": [],
+            "propositions": [],
+            "atomic_facts": [
+                "The group plans to use slides in their presentations.",
+                "The purpose of using slides is to sell a service.",
+                "The service being sold is LLM-optimization of marketing materials.",
+                "The presentations are aimed at clients.",
+                "LLM stands for Large Language Model."
+            ]
+        },
+        {
+            "sentence": "The service helps large language models reason about the company and avoids hallucinations.",
+            "entities": [],
+            "relationships": [],
+            "propositions": [],
+            "atomic_facts": [
+                "The service helps large language models reason about the company.",
+                "The service avoids hallucinations.",
+                "The service is specifically designed for large language models."
+            ]
+        },
+        {
+            "sentence": "The team is considering using a side-by-side comparison of ChatGPT responses with and without the training data.",
+            "entities": [
+                {
+                    "entity": "ChatGPT",
+                    "type": "ORG"
+                }
+            ],
+            "relationships": [],
+            "propositions": [],
+            "atomic_facts": [
+                "The team is considering using a side-by-side comparison.",
+                "The comparison involves ChatGPT responses.",
+                "The comparison will include responses with training data and without training data."
+            ]
+        },
+        {
+            "sentence": "The project team wants to show a benchmark to prove that using instruction-tuning datasets is better than just crawling landing pages and blogs.",
+            "entities": [],
+            "relationships": [],
+            "propositions": [],
+            "atomic_facts": [
+                "The project team wants to show a benchmark.",
+                "The benchmark is intended to prove the effectiveness of instruction-tuning datasets.",
+                "Instruction-tuning datasets are compared to crawling landing pages and blogs.",
+                "Using instruction-tuning datasets is considered better than crawling landing pages and blogs."
+            ]
+        },
+        {
+            "sentence": "Considering fine-tuning and retrieval-augmented generation as options to show the improvement of the product.",
+            "entities": [],
+            "relationships": [],
+            "propositions": [],
+            "atomic_facts": [
+                "Fine-tuning is considered as an option for product improvement.",
+                "Retrieval-augmented generation is considered as an option for product improvement."
+            ]
+        },
+        {
+            "sentence": "The Agency plans to teach agencies to include a slide about Pearls of Wisdom in their client presentations.",
+            "entities": [
+                {
+                    "entity": "Agency",
+                    "type": "ORG"
+                }
+            ],
+            "relationships": [],
+            "propositions": [],
+            "atomic_facts": [
+                "The Agency plans to teach agencies.",
+                "Agencies are expected to include a slide about Pearls of Wisdom.",
+                "The slide about Pearls of Wisdom is intended for client presentations."
+            ]
+        },
+        {
+            "sentence": "The marketing team wants to create a slide for agencies to use when pitching the idea of using instruction-tuning datasets to their clients.",
+            "entities": [],
+            "relationships": [],
+            "propositions": [],
+            "atomic_facts": [
+                "The marketing team is involved in creating materials for pitching ideas.",
+                "The slide is intended for agencies to use.",
+                "The slide will be about instruction-tuning datasets.",
+                "The purpose of the slide is to help agencies pitch to their clients."
+            ]
+        },
+        {
+            "sentence": "Need to understand the end customer, which consists of Series A startups, to create better slides for agencies.",
+            "entities": [],
+            "relationships": [],
+            "propositions": [],
+            "atomic_facts": [
+                "The end customer consists of Series A startups.",
+                "Creating better slides is intended for agencies."
+            ]
+        },
+        {
+            "sentence": "The plan is to teach agencies to include a slide about Pearls of Wisdom in their client presentations.",
+            "entities": [],
+            "relationships": [],
+            "propositions": [],
+            "atomic_facts": [
+                "Agencies are being taught to include a slide in their client presentations.",
+                "The slide to be included is about Pearls of Wisdom.",
+                "The plan involves teaching agencies."
+            ]
+        },
+        {
+            "sentence": "The slide for agencies should include a serverless pricing model, similar to Amazon AWS, where clients pay per instance.",
+            "entities": [
+                {
+                    "entity": "Amazon AWS",
+                    "type": "ORG"
+                }
+            ],
+            "relationships": [],
+            "propositions": [],
+            "atomic_facts": [
+                "The slide for agencies should include a serverless pricing model.",
+                "The serverless pricing model is similar to Amazon AWS.",
+                "Clients pay per instance in the serverless pricing model."
+            ]
+        },
+        {
+            "sentence": "The serverless pricing model allows for flexibility and scalability based on the needs and budget of Series A startups.",
+            "entities": [],
+            "relationships": [],
+            "propositions": [],
+            "atomic_facts": [
+                "The serverless pricing model provides flexibility based on needs.",
+                "The serverless pricing model provides scalability based on needs.",
+                "The serverless pricing model is suitable for Series A startups."
+            ]
+        },
+        {
+            "sentence": "The project is seeking seed funding from angel investors.",
+            "entities": [],
+            "relationships": [],
+            "propositions": [],
+            "atomic_facts": [
+                "The project is seeking funding.",
+                "The funding being sought is seed funding.",
+                "The funding is being sought from angel investors."
+            ]
+        },
+        {
+            "sentence": "The organization is aiming to build relationships with investors for easier future fundraising.",
+            "entities": [],
+            "relationships": [],
+            "propositions": [],
+            "atomic_facts": [
+                "The organization is aiming to build relationships with investors.",
+                "The goal of building relationships with investors is to facilitate future fundraising."
+            ]
+        },
+        {
+            "sentence": "Funding is needed to pay the founder a salary.",
+            "entities": [],
+            "relationships": [],
+            "propositions": [],
+            "atomic_facts": [
+                "Funding is needed to pay a salary.",
+                "The founder requires a salary."
+            ]
+        },
+        {
+            "sentence": "Funding is needed to build a self-service platform.",
+            "entities": [],
+            "relationships": [],
+            "propositions": [],
+            "atomic_facts": [
+                "Funding is needed.",
+                "A self-service platform needs to be built."
+            ]
+        },
+        {
+            "sentence": "The company aims to achieve rapid growth and potentially dominate the AI marketing landscape.",
+            "entities": [],
+            "relationships": [],
+            "propositions": [],
+            "atomic_facts": [
+                "The company aims for rapid growth.",
+                "The company potentially seeks to dominate the AI marketing landscape."
+            ]
+        },
+        {
+            "sentence": "Section 9 outlines the challenges and opportunities related to the need for funding to pay a salary, build a self-service platform, and achieve rapid growth while potentially dominating the AI marketing landscape.",
+            "entities": [
+                {
+                    "entity": "9",
+                    "type": "CARDINAL"
+                }
+            ],
+            "relationships": [],
+            "propositions": [],
+            "atomic_facts": [
+                "Section 9 outlines challenges related to funding for salary payments.",
+                "Section 9 outlines opportunities related to funding for building a self-service platform.",
+                "Section 9 discusses the need for rapid growth in the context of AI marketing.",
+                "Section 9 mentions the potential to dominate the AI marketing landscape."
+            ]
+        },
+        {
+            "sentence": "Challenges in building a self-service platform include achieving rapid growth and potentially dominating the AI marketing landscape.",
+            "entities": [],
+            "relationships": [],
+            "propositions": [],
+            "atomic_facts": [
+                "Building a self-service platform faces challenges.",
+                "Achieving rapid growth is a challenge in building a self-service platform.",
+                "Potentially dominating the AI marketing landscape is a challenge in building a self-service platform."
+            ]
+        },
+        {
+            "sentence": "Quantifying the value and return on investment is difficult because the large language model marketing infrastructure is very young.",
+            "entities": [],
+            "relationships": [],
+            "propositions": [],
+            "atomic_facts": [
+                "Quantifying the value and return on investment is difficult.",
+                "The large language model marketing infrastructure is very young."
+            ]
+        },
+        {
+            "sentence": "OpenAI trains models rarely, specifically once a year, making it hard to show immediate lift or performance changes.",
+            "entities": [
+                {
+                    "entity": "OpenAI",
+                    "type": "ORG"
+                }
+            ],
+            "relationships": [],
+            "propositions": [],
+            "atomic_facts": [
+                "OpenAI trains models once a year.",
+                "The training of models by OpenAI is rare.",
+                "It is hard to show immediate lift or performance changes after training."
+            ]
+        },
+        {
+            "sentence": "The team needs to sell the product without being able to show immediate performance improvements.",
+            "entities": [],
+            "relationships": [],
+            "propositions": [],
+            "atomic_facts": [
+                "The team must sell the product.",
+                "The product cannot show immediate performance improvements."
+            ]
+        },
+        {
+            "sentence": "Opportunities arise from the challenges of quantifying the value and ROI due to the young LLM marketing infrastructure, the infrequent training of models by OpenAI, and the need to sell the product despite the inability to demonstrate immediate performance improvements.",
+            "entities": [
+                {
+                    "entity": "LLM",
+                    "type": "WORK_OF_ART"
+                },
+                {
+                    "entity": "OpenAI",
+                    "type": "ORG"
+                }
+            ],
+            "relationships": [
+                [
+                    "LLM",
+                    "involved in",
+                    "OpenAI"
+                ],
+                [
+                    "OpenAI",
+                    "trains",
+                    "LLM"
+                ]
+            ],
+            "propositions": [
+                "LLM is involved in the model training processes by OpenAI.",
+                "OpenAI trains LLMs (large language models)."
+            ],
+            "atomic_facts": [
+                "Challenges exist in quantifying the value and ROI of the marketing infrastructure related to LLMs.",
+                "There are opportunities arising from these challenges.",
+                "OpenAI infrequently trains models.",
+                "There is a need to sell the product despite performance limitations.",
+                "Immediate performance improvements cannot be demonstrated."
+            ]
+        },
+        {
+            "sentence": "OpenAI has no direct competitors.",
+            "entities": [
+                {
+                    "entity": "OpenAI",
+                    "type": "ORG"
+                }
+            ],
+            "relationships": [],
+            "propositions": [],
+            "atomic_facts": [
+                "OpenAI does not have competitors that operate in the same space as it does."
+            ]
+        },
+        {
+            "sentence": "The closest competitors are data labeling companies and marketing service providers, but data labeling companies and marketing service providers have different target audiences or focus on traditional SEO.",
+            "entities": [],
+            "relationships": [],
+            "propositions": [],
+            "atomic_facts": [
+                "Data labeling companies are one type of competitor.",
+                "Marketing service providers are another type of competitor.",
+                "Data labeling companies have a different target audience than marketing service providers.",
+                "Marketing service providers focus on traditional SEO."
+            ]
+        },
+        {
+            "sentence": "The potential exists to dominate the AI marketing landscape and provide a wide range of solutions for marketing and artificial intelligence.",
+            "entities": [],
+            "relationships": [],
+            "propositions": [],
+            "atomic_facts": [
+                "There is potential to dominate the AI marketing landscape.",
+                "The dominance in the AI marketing landscape can be achieved.",
+                "A wide range of solutions for marketing and artificial intelligence can be provided."
+            ]
+        },
+        {
+            "sentence": "Addressing challenges related to the lack of direct competitors can enhance the potential to dominate the AI marketing landscape, which includes providing a wide range of solutions for marketing and AI.",
+            "entities": [],
+            "relationships": [],
+            "propositions": [],
+            "atomic_facts": [
+                "Addressing challenges related to the lack of direct competitors can enhance the potential to dominate the AI marketing landscape.",
+                "The AI marketing landscape includes providing a wide range of solutions for marketing and AI."
+            ]
+        },
+        {
+            "sentence": "Counting how many times marketing service providers and data labeling companies appear in ChatGPT responses to generated questions.",
+            "entities": [
+                {
+                    "entity": "ChatGPT",
+                    "type": "ORG"
+                }
+            ],
+            "relationships": [],
+            "propositions": [],
+            "atomic_facts": [
+                "The sentence discusses counting occurrences of marketing service providers and data labeling companies.",
+                "ChatGPT responses are referenced in the context of generated questions.",
+                "The focus is on identifying counts of specific entities in responses."
+            ]
+        },
+        {
+            "sentence": "Fine-tuning a smaller model on the instruction-tuning datasets and comparing the smaller model to larger models fine-tuned on landing pages would show the difference.",
+            "entities": [],
+            "relationships": [],
+            "propositions": [],
+            "atomic_facts": [
+                "Fine-tuning involves adjusting a model on specific datasets.",
+                "Smaller models can be fine-tuned on instruction-tuning datasets.",
+                "Larger models can be compared to smaller models after fine-tuning.",
+                "The purpose of the comparison is to show differences between models."
+            ]
+        },
+        {
+            "sentence": "Two metrics to evaluate are the difference in competitor mentions in ChatGPT responses and the changes observed after fine-tuning smaller models on the instruction-tuning datasets.",
+            "entities": [
+                {
+                    "entity": "Two",
+                    "type": "CARDINAL"
+                },
+                {
+                    "entity": "ChatGPT",
+                    "type": "ORG"
+                }
+            ],
+            "relationships": [
+                [
+                    "Two",
+                    "metrics evaluated on",
+                    "ChatGPT"
+                ]
+            ],
+            "propositions": [
+                "Two metrics are evaluated on ChatGPT."
+            ],
+            "atomic_facts": [
+                "One metric to evaluate is the difference in competitor mentions in ChatGPT responses.",
+                "Another metric to evaluate is the changes observed after fine-tuning smaller models on the instruction-tuning datasets."
+            ]
+        },
+        {
+            "sentence": "Section 10: Future Roadmap will include an analysis of how many times companies appear in ChatGPT responses to generated questions, a comparison of the performance of a smaller model fine-tuned on instruction-tuning datasets versus models fine-tuned on landing pages, and two metrics for evaluation: the difference in competitor mentions and changes after fine-tuning smaller models.",
+            "entities": [
+                {
+                    "entity": "10",
+                    "type": "CARDINAL"
+                },
+                {
+                    "entity": "ChatGPT",
+                    "type": "ORG"
+                },
+                {
+                    "entity": "two",
+                    "type": "CARDINAL"
+                }
+            ],
+            "relationships": [
+                [
+                    "10",
+                    "refers to",
+                    "ChatGPT"
+                ],
+                [
+                    "10",
+                    "describes",
+                    "two"
+                ],
+                [
+                    "ChatGPT",
+                    "is discussed in",
+                    "10"
+                ],
+                [
+                    "ChatGPT",
+                    "is evaluated by",
+                    "two"
+                ],
+                [
+                    "two",
+                    "is a quantity related to",
+                    "10"
+                ],
+                [
+                    "two",
+                    "is part of the evaluation",
+                    "ChatGPT"
+                ]
+            ],
+            "propositions": [
+                "Section 10 refers to ChatGPT in the context of analyzing the frequency of company mentions in responses.",
+                "Section 10 describes two metrics for evaluation.",
+                "ChatGPT is discussed in Section 10.",
+                "ChatGPT is evaluated by two metrics: the difference in competitor mentions and changes after fine-tuning smaller models.",
+                "The quantity 'two' is related to the '10' in the context of evaluation metrics mentioned in Section 10: Future Roadmap.",
+                "Two is part of the evaluation of ChatGPT's generated responses."
+            ],
+            "atomic_facts": [
+                "Section 10 will include a comparison of the performance of a smaller model fine-tuned on instruction-tuning datasets versus models fine-tuned on landing pages.",
+                "Section 10 will analyze how many times companies appear in ChatGPT responses to generated questions."
+            ]
+        },
+        {
+            "sentence": "Refine the analytics product to make sales quicker and easier.",
+            "entities": [],
+            "relationships": [],
+            "propositions": [],
+            "atomic_facts": [
+                "The analytics product is being refined.",
+                "The refinement of the analytics product aims to make sales quicker.",
+                "The refinement of the analytics product aims to make sales easier."
+            ]
+        },
+        {
+            "sentence": "Focus on onboarding the current wishlist of 20 customers for the refined analytics product to make sales quicker and easier.",
+            "entities": [
+                {
+                    "entity": "20",
+                    "type": "CARDINAL"
+                }
+            ],
+            "relationships": [],
+            "propositions": [],
+            "atomic_facts": [
+                "There is a current wishlist of 20 customers.",
+                "The wishlist is for a refined analytics product.",
+                "The goal is to make sales quicker and easier."
+            ]
+        },
+        {
+            "sentence": "Build a self-service platform to support the onboarding of the current wishlist of 20 customers.",
+            "entities": [
+                {
+                    "entity": "20",
+                    "type": "CARDINAL"
+                }
+            ],
+            "relationships": [],
+            "propositions": [],
+            "atomic_facts": [
+                "There is a current wishlist of 20 customers.",
+                "The platform being built is a self-service platform.",
+                "The self-service platform is intended for onboarding purposes."
+            ]
+        },
+        {
+            "sentence": "Expand by achieving very fast growth.",
+            "entities": [],
+            "relationships": [],
+            "propositions": [],
+            "atomic_facts": [
+                "The goal is to expand.",
+                "The method of expansion is through achieving growth.",
+                "The growth intended is very fast."
+            ]
+        },
+        {
+            "sentence": "Focus on automating as much as possible in the self-service platform.",
+            "entities": [],
+            "relationships": [],
+            "propositions": [],
+            "atomic_facts": [
+                "The self-service platform should prioritize automation.",
+                "Maximizing automation is the main focus for the self-service platform."
+            ]
+        },
+        {
+            "sentence": "The self-service platform will take over the marketing and AI landscape.",
+            "entities": [],
+            "relationships": [],
+            "propositions": [],
+            "atomic_facts": [
+                "The self-service platform will take over the marketing landscape.",
+                "The self-service platform will take over the AI landscape."
+            ]
+        },
+        {
+            "sentence": "The goal is to provide all of the solutions for marketing and artificial intelligence.",
+            "entities": [],
+            "relationships": [],
+            "propositions": [],
+            "atomic_facts": [
+                "The goal is to provide solutions.",
+                "The solutions are for marketing.",
+                "The solutions are for artificial intelligence."
+            ]
+        },
+        {
+            "sentence": "The team has already started talking to the Allen Institute researcher about creating an open dataset.",
+            "entities": [
+                {
+                    "entity": "Allen Institute",
+                    "type": "ORG"
+                }
+            ],
+            "relationships": [],
+            "propositions": [],
+            "atomic_facts": [
+                "The team has started discussions with a researcher.",
+                "The researcher is affiliated with the Allen Institute.",
+                "The discussions are about creating a dataset.",
+                "The dataset is intended to be open."
+            ]
+        }
+    ]
+}

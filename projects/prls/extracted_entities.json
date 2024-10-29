@@ -1,0 +1,500 @@
+{
+    "projects/prls/inputs/inputted_facts_2024-10-29T02:39:37-07:00.txt": [
+        [
+            {
+                "entity": "Pearls of Wisdom",
+                "type": "ORG"
+            }
+        ],
+        [
+            {
+                "entity": "Pearls of Wisdom",
+                "type": "ORG"
+            },
+            {
+                "entity": "ChatGPT",
+                "type": "PRODUCT"
+            },
+            {
+                "entity": "Google",
+                "type": "ORG"
+            },
+            {
+                "entity": "Gemini",
+                "type": "PRODUCT"
+            }
+        ],
+        [
+            {
+                "entity": "Pearls of Wisdom",
+                "type": "WORK_OF_ART"
+            }
+        ],
+        [
+            {
+                "entity": "Pearls of Wisdom",
+                "type": "ORG"
+            },
+            {
+                "entity": "two",
+                "type": "CARDINAL"
+            }
+        ],
+        [],
+        [
+            {
+                "entity": "LLM",
+                "type": "WORK_OF_ART"
+            }
+        ],
+        [],
+        [],
+        [
+            {
+                "entity": "Pearls of Wisdom",
+                "type": "ORG"
+            }
+        ],
+        [
+            {
+                "entity": "Pearls of Wisdom's",
+                "type": "ORG"
+            }
+        ],
+        [
+            {
+                "entity": "Pearls of Wisdom",
+                "type": "ORG"
+            },
+            {
+                "entity": "LLM",
+                "type": "WORK_OF_ART"
+            }
+        ],
+        [
+            {
+                "entity": "Pearls of Wisdom",
+                "type": "ORG"
+            }
+        ],
+        [],
+        [
+            {
+                "entity": "LLM",
+                "type": "WORK_OF_ART"
+            }
+        ],
+        [],
+        [],
+        [
+            {
+                "entity": "trillion-dollar",
+                "type": "MONEY"
+            }
+        ],
+        [],
+        [],
+        [
+            {
+                "entity": "trillion-dollar",
+                "type": "MONEY"
+            }
+        ],
+        [],
+        [
+            {
+                "entity": "OpenAI",
+                "type": "ORG"
+            },
+            {
+                "entity": "Google",
+                "type": "ORG"
+            },
+            {
+                "entity": "Anthropic",
+                "type": "ORG"
+            },
+            {
+                "entity": "Mistral",
+                "type": "ORG"
+            }
+        ],
+        [
+            {
+                "entity": "OpenAI",
+                "type": "ORG"
+            },
+            {
+                "entity": "ChatGPT",
+                "type": "PRODUCT"
+            },
+            {
+                "entity": "Google",
+                "type": "ORG"
+            },
+            {
+                "entity": "Gemini",
+                "type": "PRODUCT"
+            }
+        ],
+        [],
+        [
+            {
+                "entity": "ChatGPT",
+                "type": "ORG"
+            }
+        ],
+        [],
+        [
+            {
+                "entity": "ChatGPT",
+                "type": "ORG"
+            }
+        ],
+        [
+            {
+                "entity": "ChatGPT",
+                "type": "ORG"
+            }
+        ],
+        [],
+        [],
+        [],
+        [],
+        [
+            {
+                "entity": "Pearls of Wisdom",
+                "type": "ORG"
+            }
+        ],
+        [
+            {
+                "entity": "Pearls of Wisdom",
+                "type": "ORG"
+            }
+        ],
+        [
+            {
+                "entity": "ChatGPT",
+                "type": "ORG"
+            },
+            {
+                "entity": "Gemini",
+                "type": "ORG"
+            }
+        ],
+        [
+            {
+                "entity": "Pearls of Wisdom",
+                "type": "ORG"
+            },
+            {
+                "entity": "ChatGPT",
+                "type": "PRODUCT"
+            },
+            {
+                "entity": "Gemini",
+                "type": "PRODUCT"
+            }
+        ],
+        [],
+        [],
+        [],
+        [],
+        [
+            {
+                "entity": "ChatGPT",
+                "type": "ORG"
+            }
+        ],
+        [],
+        [
+            {
+                "entity": "One",
+                "type": "CARDINAL"
+            },
+            {
+                "entity": "ChatGPT",
+                "type": "ORG"
+            }
+        ],
+        [
+            {
+                "entity": "second",
+                "type": "ORDINAL"
+            }
+        ],
+        [
+            {
+                "entity": "ChatGPT",
+                "type": "PRODUCT"
+            }
+        ],
+        [
+            {
+                "entity": "ChatGPT",
+                "type": "PRODUCT"
+            }
+        ],
+        [
+            {
+                "entity": "ChatGPT",
+                "type": "ORG"
+            }
+        ],
+        [
+            {
+                "entity": "around $30,000",
+                "type": "MONEY"
+            }
+        ],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [
+            {
+                "entity": "around $5,000",
+                "type": "MONEY"
+            }
+        ],
+        [
+            {
+                "entity": "5",
+                "type": "CARDINAL"
+            }
+        ],
+        [],
+        [
+            {
+                "entity": "Scale AI",
+                "type": "ORG"
+            },
+            {
+                "entity": "Surge HQ",
+                "type": "ORG"
+            }
+        ],
+        [
+            {
+                "entity": "HubSpot",
+                "type": "ORG"
+            },
+            {
+                "entity": "Semrush",
+                "type": "ORG"
+            }
+        ],
+        [
+            {
+                "entity": "Pearls of Wisdom",
+                "type": "ORG"
+            },
+            {
+                "entity": "LLM",
+                "type": "WORK_OF_ART"
+            }
+        ],
+        [
+            {
+                "entity": "Pearls of Wisdom",
+                "type": "WORK_OF_ART"
+            }
+        ],
+        [
+            {
+                "entity": "Pearls of Wisdom",
+                "type": "ORG"
+            },
+            {
+                "entity": "Amazon AWS",
+                "type": "ORG"
+            }
+        ],
+        [
+            {
+                "entity": "Pearls of Wisdom",
+                "type": "ORG"
+            },
+            {
+                "entity": "5,000",
+                "type": "MONEY"
+            }
+        ],
+        [
+            {
+                "entity": "Data Security and Privacy",
+                "type": "ORG"
+            },
+            {
+                "entity": "Data Security and Privacy",
+                "type": "ORG"
+            }
+        ],
+        [],
+        [
+            {
+                "entity": "Allen Institute",
+                "type": "ORG"
+            }
+        ],
+        [],
+        [
+            {
+                "entity": "PhDs",
+                "type": "WORK_OF_ART"
+            }
+        ],
+        [],
+        [],
+        [],
+        [],
+        [
+            {
+                "entity": "6",
+                "type": "CARDINAL"
+            }
+        ],
+        [],
+        [],
+        [],
+        [],
+        [
+            {
+                "entity": "7",
+                "type": "CARDINAL"
+            }
+        ],
+        [
+            {
+                "entity": "Investor Pitch",
+                "type": "ORG"
+            }
+        ],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [
+            {
+                "entity": "ChatGPT",
+                "type": "ORG"
+            }
+        ],
+        [],
+        [],
+        [
+            {
+                "entity": "Agency",
+                "type": "ORG"
+            }
+        ],
+        [],
+        [],
+        [],
+        [
+            {
+                "entity": "Amazon AWS",
+                "type": "ORG"
+            }
+        ],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [
+            {
+                "entity": "9",
+                "type": "CARDINAL"
+            }
+        ],
+        [],
+        [],
+        [
+            {
+                "entity": "OpenAI",
+                "type": "ORG"
+            }
+        ],
+        [],
+        [
+            {
+                "entity": "LLM",
+                "type": "WORK_OF_ART"
+            },
+            {
+                "entity": "OpenAI",
+                "type": "ORG"
+            }
+        ],
+        [
+            {
+                "entity": "OpenAI",
+                "type": "ORG"
+            }
+        ],
+        [],
+        [],
+        [],
+        [
+            {
+                "entity": "ChatGPT",
+                "type": "ORG"
+            }
+        ],
+        [],
+        [
+            {
+                "entity": "Two",
+                "type": "CARDINAL"
+            },
+            {
+                "entity": "ChatGPT",
+                "type": "ORG"
+            }
+        ],
+        [
+            {
+                "entity": "10",
+                "type": "CARDINAL"
+            },
+            {
+                "entity": "ChatGPT",
+                "type": "ORG"
+            },
+            {
+                "entity": "two",
+                "type": "CARDINAL"
+            }
+        ],
+        [],
+        [
+            {
+                "entity": "20",
+                "type": "CARDINAL"
+            }
+        ],
+        [
+            {
+                "entity": "20",
+                "type": "CARDINAL"
+            }
+        ],
+        [],
+        [],
+        [],
+        [],
+        [
+            {
+                "entity": "Allen Institute",
+                "type": "ORG"
+            }
+        ]
+    ]
+}
