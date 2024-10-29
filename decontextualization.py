@@ -245,7 +245,7 @@ def process_articles(input_file, output_file):
             logging.info(
                 f"Processing {processed_sentences}/{total_sentences} sentences."
             )
-            previous_sentences = sentences[max(0, i - num_previous_sentences) : i]
+            previous_sentences = decontextualized_sentences[max(0, i - num_previous_sentences) : i]
             decontextualized = decontextualize_sentences(
                 previous_sentences, current_sentence, num_previous_sentences
             )
