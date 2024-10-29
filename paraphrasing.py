@@ -85,7 +85,11 @@ def process_articles(output_file):
 
     paraphrased_articles = {}
 
+    total_sentences = sum(len(sentences) for sentences in decontextualized_articles.values())
+    processed_sentences = 0
+
     for file_name, sentences_list in list(decontextualized_articles.items())[:]:
+        processed_sentences += len(sentences_list)
         sentences_list = sentences_list[:]
         logging.info(f"Paraphrasing article: {file_name}")
         entities_list = extracted_entities.get(file_name, [])
@@ -108,6 +112,7 @@ def process_articles(output_file):
 
     with open(output_file, "w", encoding="utf-8") as f:
         json.dump(paraphrased_articles, f, indent=4, ensure_ascii=False)
+    logging.info(f"Processed {processed_sentences}/{total_sentences} sentences.")
     logging.info(f"Successfully paraphrased articles into {output_file}")
 
 

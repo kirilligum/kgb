@@ -60,6 +60,8 @@ def extract_atomic_facts(sentence, propositions):
 
 def process_articles():
     """Process articles and extract atomic facts"""
+    logging.info(f"Processed {processed_sentences}/{total_sentences} sentences.")
+    logging.info(f"Extracted a total of {total_atomic_facts} atomic facts.")
     logging.info(
         "Loading decontextualized articles from projects/prls/decontextualized_articles.json"
     )
@@ -76,7 +78,12 @@ def process_articles():
 
     all_atomic_facts = {}
 
+    total_sentences = sum(len(sentences) for sentences in decontextualized_articles.values())
+    processed_sentences = 0
+    total_atomic_facts = 0
+
     for file_name, sentences_list in decontextualized_articles.items():
+        processed_sentences += len(sentences_list)
         logging.info(f"Processing article: {file_name}")
         propositions_list = extracted_propositions.get(file_name, [])
 
@@ -93,7 +100,10 @@ def process_articles():
             )
             atomic_facts = extract_atomic_facts(sentence, propositions)
             if atomic_facts:
+                facts_count = len(atomic_facts.facts)
                 article_atomic_facts[sentence_index].extend(atomic_facts.facts)
+                total_atomic_facts += facts_count
+                logging.info(f"Extracted {facts_count} atomic facts for sentence {sentence_index + 1}.")
 
         all_atomic_facts[file_name] = article_atomic_facts
 

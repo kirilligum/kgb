@@ -23,7 +23,11 @@ def create_knowledge_nodes():
 
     knowledge_graph = {}
 
+    total_sentences = sum(len(sentences) for sentences in decontextualized_articles.values())
+    processed_sentences = 0
+
     for file_name, sentences in decontextualized_articles.items():
+        processed_sentences += len(sentences)
         logging.info(f"Creating knowledge nodes for article: {file_name}")
         article_nodes = []
 
@@ -47,6 +51,7 @@ def create_knowledge_nodes():
     output_file = "projects/prls/knowledge_graph.json"
     with open(output_file, "w", encoding="utf-8") as f:
         json.dump(knowledge_graph, f, indent=4, ensure_ascii=False)
+    logging.info(f"Processed {processed_sentences}/{total_sentences} sentences.")
     logging.info(f"Successfully created knowledge nodes in {output_file}")
 
 if __name__ == "__main__":

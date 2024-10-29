@@ -127,7 +127,14 @@ def process_articles():
 
     all_relationships = {}
 
+    total_sentences = sum(len(sentences) for sentences in decontextualized_articles.values())
+    processed_sentences = 0
+    total_relationships = 0
+
     for file_index, (file_name, sentences_list) in enumerate(
+        decontextualized_articles.items(), start=1
+    ):
+        processed_sentences += len(sentences_list)
         decontextualized_articles.items(), start=1
     ):
         logging.info(
@@ -163,6 +170,8 @@ def process_articles():
                 len(sentences_list),
             )
             article_relationships.append(relationships)
+            total_relationships += len(relationships)
+            logging.info(f"Extracted {len(relationships)} relationships for sentence {sentence_index}.")
 
         all_relationships[file_name] = article_relationships
 
@@ -170,6 +179,8 @@ def process_articles():
     logging.info("Saving extracted relationships to projects/prls/extracted_relationships.json")
     with open("projects/prls/extracted_relationships.json", "w", encoding="utf-8") as f:
         json.dump(all_relationships, f, indent=2, ensure_ascii=False)
+    logging.info(f"Processed {processed_sentences}/{total_sentences} sentences.")
+    logging.info(f"Extracted a total of {total_relationships} relationships.")
     print(
         "Successfully extracted and validated relationships into data/extracted_relationships.json"
     )

@@ -30,7 +30,11 @@ def process_articles(input_file, output_file):
 
     extracted_linked_entities = {}
 
+    total_sentences = sum(len(sentences) for sentences in articles.values())
+    processed_sentences = 0
+
     for file_name, sentences_list in articles.items():
+        processed_sentences += len(sentences_list)
         logging.info(f"Extracting linked entities from article: {file_name}")
         sentence_linked_entities = []
 
@@ -42,6 +46,7 @@ def process_articles(input_file, output_file):
             sentence_linked_entities.append(linked_entities)
 
         extracted_linked_entities[file_name] = sentence_linked_entities
+        logging.info(f"Processed {processed_sentences}/{total_sentences} sentences.")
 
     with open(output_file, "w", encoding="utf-8") as f:
         json.dump(extracted_linked_entities, f, indent=4, ensure_ascii=False)

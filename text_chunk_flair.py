@@ -14,7 +14,7 @@ def split_text_into_sentences(input_file, output_file):
     # Use splitter to split text into list of sentences
     sentences = [sentence for sentence in splitter.split(text) if sentence.to_plain_string().strip()]
 
-    # Store sentences in a dictionary
+    logging.info(f"Split text into {len(sentences)} sentences.")
     chunked_articles = {
         input_file: [sentence.to_plain_string() for sentence in sentences]
     }

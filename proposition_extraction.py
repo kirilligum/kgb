@@ -63,6 +63,8 @@ def extract_proposition(entity1, relation, entity2, sentence):
 
 def process_articles():
     """Process articles and extract propositions"""
+    logging.info(f"Processed {processed_sentences}/{total_sentences} sentences.")
+    logging.info(f"Extracted a total of {total_propositions} propositions.")
     logging.info(
         "Loading decontextualized articles from projects/prls/decontextualized_articles.json"
     )
@@ -88,7 +90,12 @@ def process_articles():
     logging.info(f"Processed {processed_sentences}/{total_sentences} sentences.")
     logging.info(f"Extracted {total_propositions} propositions.")
 
+    total_sentences = sum(len(sentences) for sentences in decontextualized_articles.values())
+    processed_sentences = 0
+    total_propositions = 0
+
     for file_name, sentences_list in list(decontextualized_articles.items())[:]:
+        processed_sentences += len(sentences_list)
         processed_sentences += len(sentences_list)
         logging.info(f"Processing article: {file_name}")
         relationships_list = extracted_relationships.get(file_name, [])
@@ -109,6 +116,7 @@ def process_articles():
                 if proposition:
                     article_propositions[sentence_index].append(proposition.proposition)
                     total_propositions += 1
+                    logging.info(f"Extracted proposition: {proposition.proposition}")
 
         all_propositions[file_name] = article_propositions
 
