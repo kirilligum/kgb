@@ -253,9 +253,10 @@ def process_articles(input_file, output_file):
 
         decontextualized_articles[file_name] = decontextualized_sentences
 
+    output_file = "projects/prls/decontextualized_articles.json"
     with open(output_file, "w", encoding="utf-8") as f:
         json.dump(decontextualized_articles, f, indent=4, ensure_ascii=False)
-logging.info(f"Successfully decontextualized articles into {output_file}")
+    logging.info(f"Successfully decontextualized articles into {output_file}")
 
 
 if __name__ == "__main__":
