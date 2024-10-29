@@ -121,8 +121,8 @@ def process_articles():
     with open("projects/prls/paraphrased_articles.json", "r", encoding="utf-8") as f:
         paraphrased_articles = json.load(f)
 
-    logging.info("Loading extracted entities from projects/prls/extracted_entities_flair.json")
-    with open("projects/prls/extracted_entities_flair.json", "r", encoding="utf-8") as f:
+    logging.info("Loading extracted entities from projects/prls/extracted_entities.json")
+    with open("projects/prls/extracted_entities.json", "r", encoding="utf-8") as f:
         extracted_entities = json.load(f)
 
     all_relationships = {}
