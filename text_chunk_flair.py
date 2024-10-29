@@ -2,6 +2,7 @@ import json
 from flair.nn import Classifier
 from flair.splitter import SegtokSentenceSplitter
 
+
 def split_text_into_sentences(input_file, output_file):
     """Process articles and split them into sentences using Flair"""
     with open(input_file, "r", encoding="utf-8") as f:
@@ -13,17 +14,16 @@ def split_text_into_sentences(input_file, output_file):
     # Use splitter to split text into list of sentences
     sentences = splitter.split(text)
 
-    # Predict tags for sentences
-    tagger = Classifier.load('ner')
-    tagger.predict(sentences)
-
     # Store sentences in a dictionary
-    chunked_articles = {input_file: [sentence.to_plain_string() for sentence in sentences]}
+    chunked_articles = {
+        input_file: [sentence.to_plain_string() for sentence in sentences]
+    }
 
     # Write the chunked sentences to a JSON file
     with open(output_file, "w", encoding="utf-8") as f:
-        json.dump(chunked_articles, f, indent=4, ensure_ascii=False)
+        json.dump(chunked_articles, f, indent=2, ensure_ascii=False)
     print(f"Successfully chunked articles into {output_file}")
+
 
 if __name__ == "__main__":
     input_file = "projects/prls/inputs/inputted_facts_2024-10-29T02:39:37-07:00.txt"
