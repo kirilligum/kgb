@@ -229,7 +229,7 @@ def process_articles(input_file, output_file):
         print(f"Decontextualizing article: {file_name}")
         decontextualized_sentences = []
 
-        for i, current_sentence in enumerate(sentences[:2]):
+        for i, current_sentence in enumerate(sentences[:]):
             previous_sentences = sentences[max(0, i - num_previous_sentences) : i]
             decontextualized = decontextualize_sentences(
                 previous_sentences, current_sentence, num_previous_sentences
