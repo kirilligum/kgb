@@ -116,7 +116,7 @@ def process_articles():
 
         article_relationships = []
 
-        for sentence_index, original_sentence in enumerate(sentences_list[:2], start=1):
+        for sentence_index, original_sentence in enumerate(sentences_list, start=1):
             entities = entities_list[sentence_index - 1]
             logging.info(
                 f"Processing sentence {sentence_index}/{len(sentences_list)} in article: {file_name} with entities: {[entity['entity'] for entity in entities]}"
