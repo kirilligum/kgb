@@ -90,7 +90,7 @@ def process_articles():
         logging.info(f"Processing article: {file_name}")
         relationships_list = extracted_relationships.get(file_name, [])
 
-        article_propositions = []
+        article_propositions = [[] for _ in sentences_list]
 
         for sentence_index, sentence in enumerate(sentences_list[:2]):
             relationships = (
@@ -104,7 +104,7 @@ def process_articles():
                 )
                 proposition = extract_proposition(entity1, relation, entity2, sentence)
                 if proposition:
-                    article_propositions.append(proposition.proposition)
+                    article_propositions[sentence_index].append(proposition.proposition)
                     total_propositions += 1
 
         all_propositions[file_name] = article_propositions
