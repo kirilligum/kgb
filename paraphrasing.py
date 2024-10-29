@@ -79,8 +79,8 @@ def process_articles(output_file):
     with open("projects/prls/decontextualized_articles.json", "r", encoding="utf-8") as f:
         decontextualized_articles = json.load(f)
 
-    logging.info("Loading extracted entities from projects/prls/extracted_entities.json")
-    with open("projects/prls/extracted_entities.json", "r", encoding="utf-8") as f:
+    logging.info("Loading extracted entities from projects/prls/extracted_entities_flair.json")
+    with open("projects/prls/extracted_entities_flair.json", "r", encoding="utf-8") as f:
         extracted_entities = json.load(f)
 
     paraphrased_articles = {}
