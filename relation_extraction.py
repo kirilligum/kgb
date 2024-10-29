@@ -132,9 +132,9 @@ def process_articles():
     total_relationships = 0
 
     for file_index, (file_name, sentences_list) in enumerate(
-        processed_sentences += len(sentences_list)
         decontextualized_articles.items(), start=1
     ):
+        processed_sentences += len(sentences_list)
         logging.info(
             f"Processing article {file_index}/{len(decontextualized_articles)}: {file_name}"
         )

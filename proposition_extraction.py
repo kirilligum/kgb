@@ -66,6 +66,7 @@ def process_articles():
     total_sentences = sum(len(sentences) for sentences in decontextualized_articles.values())
     processed_sentences = 0
     total_propositions = 0
+    logging.info(
         "Loading decontextualized articles from projects/prls/decontextualized_articles.json"
     )
     with open(
