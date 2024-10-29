@@ -132,8 +132,6 @@ def process_articles():
     total_relationships = 0
 
     for file_index, (file_name, sentences_list) in enumerate(
-        decontextualized_articles.items(), start=1
-    ):
         processed_sentences += len(sentences_list)
         decontextualized_articles.items(), start=1
     ):

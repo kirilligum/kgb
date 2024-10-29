@@ -1,4 +1,5 @@
 import json
+import logging
 from openai import OpenAI
 from pydantic import BaseModel
 

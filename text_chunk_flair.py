@@ -1,4 +1,5 @@
 import json
+import logging
 from flair.nn import Classifier
 from flair.splitter import SegtokSentenceSplitter
 
