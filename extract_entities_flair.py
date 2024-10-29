@@ -4,10 +4,12 @@ from flair.data import Sentence
 from flair.nn import Classifier
 
 # Configure logging
-logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+logging.basicConfig(
+    level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s"
+)
 
 # Load the NER tagger
-tagger = Classifier.load('ner-ontonotes-large')
+tagger = Classifier.load("ner-ontonotes-large")
 
 
 def extract_entities_with_flair(article_text):
@@ -16,7 +18,7 @@ def extract_entities_with_flair(article_text):
     tagger.predict(sentence)
     entities = [
         {"entity": entity.text, "type": entity.get_label("ner").value}
-        for entity in sentence.get_spans('ner')
+        for entity in sentence.get_spans("ner")
     ]
     return entities
 
@@ -33,7 +35,9 @@ def process_articles(input_file, output_file):
         sentence_entities = []
 
         for i, sentence in enumerate(sentences_list):
-            logging.info(f"Extracting entities from sentence {i+1}/{len(sentences_list)} in article: {file_name}")
+            logging.info(
+                f"Extracting entities from sentence {i + 1}/{len(sentences_list)} in article: {file_name}"
+            )
             entities = extract_entities_with_flair(sentence)
             sentence_entities.append(entities)
 
@@ -46,6 +50,6 @@ def process_articles(input_file, output_file):
 
 if __name__ == "__main__":
     input_file = "projects/prls/decontextualized_articles.json"
-    output_file = "projects/prls/extracted_entities_flair.json"
+    output_file = "projects/prls/extracted_entities.json"
 
     process_articles(input_file, output_file)
