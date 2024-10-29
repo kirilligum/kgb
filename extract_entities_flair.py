@@ -45,7 +45,7 @@ def process_articles(input_file, output_file):
 
 
 if __name__ == "__main__":
-    input_file = "projects/prls/chunked_articles_flair.json"
+    input_file = "projects/prls/decontextualized_articles.json"
     output_file = "projects/prls/extracted_entities_flair.json"
 
     process_articles(input_file, output_file)
