@@ -40,15 +40,12 @@
                 "type": "CARDINAL"
             }
         ],
-        [],
         [
             {
-                "entity": "LLM",
-                "type": "WORK_OF_ART"
+                "entity": "Pearls of Wisdom",
+                "type": "ORG"
             }
         ],
-        [],
-        [],
         [
             {
                 "entity": "Pearls of Wisdom",
@@ -65,10 +62,12 @@
             {
                 "entity": "Pearls of Wisdom",
                 "type": "ORG"
-            },
+            }
+        ],
+        [
             {
-                "entity": "LLM",
-                "type": "WORK_OF_ART"
+                "entity": "Pearls of Wisdom's",
+                "type": "ORG"
             }
         ],
         [
@@ -77,30 +76,88 @@
                 "type": "ORG"
             }
         ],
-        [],
         [
             {
-                "entity": "LLM",
-                "type": "WORK_OF_ART"
+                "entity": "Pearls of Wisdom",
+                "type": "ORG"
             }
         ],
-        [],
-        [],
         [
+            {
+                "entity": "Pearls of Wisdom",
+                "type": "ORG"
+            }
+        ],
+        [
+            {
+                "entity": "Pearls of Wisdom's",
+                "type": "ORG"
+            },
+            {
+                "entity": "Pearls of Wisdom's",
+                "type": "ORG"
+            },
+            {
+                "entity": "Pearls of Wisdom",
+                "type": "ORG"
+            }
+        ],
+        [
+            {
+                "entity": "1",
+                "type": "CARDINAL"
+            }
+        ],
+        [
+            {
+                "entity": "Pearls of Wisdom's",
+                "type": "ORG"
+            }
+        ],
+        [
+            {
+                "entity": "Pearls of Wisdom",
+                "type": "ORG"
+            }
+        ],
+        [
+            {
+                "entity": "Pearls of Wisdom",
+                "type": "ORG"
+            },
             {
                 "entity": "trillion-dollar",
                 "type": "MONEY"
             }
         ],
-        [],
-        [],
         [
             {
-                "entity": "trillion-dollar",
-                "type": "MONEY"
+                "entity": "Pearls of Wisdom",
+                "type": "ORG"
             }
         ],
-        [],
+        [
+            {
+                "entity": "Pearls of Wisdom",
+                "type": "ORG"
+            }
+        ],
+        [
+            {
+                "entity": "Pearls of Wisdom",
+                "type": "ORG"
+            }
+        ],
+        [
+            {
+                "entity": "Pearls of Wisdom",
+                "type": "ORG"
+            },
+            {
+                "entity": "Pearls of Wisdom",
+                "type": "ORG"
+            }
+        ],
         [
             {
                 "entity": "OpenAI",
@@ -117,20 +174,88 @@
             {
                 "entity": "Mistral",
                 "type": "ORG"
+            },
+            {
+                "entity": "Pearls of Wisdom",
+                "type": "ORG"
             }
         ],
         [
-            {
-                "entity": "OpenAI",
-                "type": "ORG"
-            },
             {
                 "entity": "ChatGPT",
                 "type": "PRODUCT"
             },
             {
-                "entity": "Google",
+                "entity": "Gemini",
+                "type": "PRODUCT"
+            }
+        ],
+        [
+            {
+                "entity": "Pearls of Wisdom",
                 "type": "ORG"
+            }
+        ],
+        [
+            {
+                "entity": "ChatGPT",
+                "type": "ORG"
+            }
+        ],
+        [
+            {
+                "entity": "Pearls of Wisdom",
+                "type": "ORG"
+            }
+        ],
+        [
+            {
+                "entity": "2",
+                "type": "CARDINAL"
+            }
+        ],
+        [
+            {
+                "entity": "Pearls of Wisdom",
+                "type": "ORG"
+            }
+        ],
+        [],
+        [],
+        [
+            {
+                "entity": "ChatGPT",
+                "type": "ORG"
+            }
+        ],
+        [
+            {
+                "entity": "Pearls of Wisdom",
+                "type": "ORG"
+            },
+            {
+                "entity": "ChatGPT",
+                "type": "ORG"
+            },
+            {
+                "entity": "ChatGPT",
+                "type": "ORG"
+            }
+        ],
+        [
+            {
+                "entity": "Pearls of Wisdom",
+                "type": "ORG"
+            }
+        ],
+        [
+            {
+                "entity": "Pearls of Wisdom",
+                "type": "ORG"
+            },
+            {
+                "entity": "ChatGPT",
+                "type": "PRODUCT"
             },
             {
                 "entity": "Gemini",
@@ -140,27 +265,10 @@
         [],
         [
             {
-                "entity": "ChatGPT",
-                "type": "ORG"
+                "entity": "3",
+                "type": "CARDINAL"
             }
         ],
-        [],
-        [
-            {
-                "entity": "ChatGPT",
-                "type": "ORG"
-            }
-        ],
-        [
-            {
-                "entity": "ChatGPT",
-                "type": "ORG"
-            }
-        ],
-        [],
-        [],
-        [],
-        [],
         [
             {
                 "entity": "Pearls of Wisdom",
@@ -175,11 +283,7 @@
         ],
         [
             {
-                "entity": "ChatGPT",
-                "type": "ORG"
-            },
-            {
-                "entity": "Gemini",
+                "entity": "Pearls of Wisdom",
                 "type": "ORG"
             }
         ],
@@ -187,20 +291,8 @@
             {
                 "entity": "Pearls of Wisdom",
                 "type": "ORG"
-            },
-            {
-                "entity": "ChatGPT",
-                "type": "PRODUCT"
-            },
-            {
-                "entity": "Gemini",
-                "type": "PRODUCT"
             }
         ],
-        [],
-        [],
-        [],
-        [],
         [
             {
                 "entity": "ChatGPT",
@@ -214,31 +306,43 @@
                 "type": "CARDINAL"
             },
             {
-                "entity": "ChatGPT",
+                "entity": "Pearls of Wisdom",
                 "type": "ORG"
+            },
+            {
+                "entity": "ChatGPT",
+                "type": "PRODUCT"
             }
         ],
         [
             {
                 "entity": "second",
                 "type": "ORDINAL"
+            },
+            {
+                "entity": "Pearls of Wisdom",
+                "type": "ORG"
             }
         ],
         [
             {
-                "entity": "ChatGPT",
-                "type": "PRODUCT"
+                "entity": "Pearls of Wisdom",
+                "type": "ORG"
             }
         ],
         [
             {
-                "entity": "ChatGPT",
-                "type": "PRODUCT"
+                "entity": "4",
+                "type": "CARDINAL"
+            },
+            {
+                "entity": "Pearls of Wisdom",
+                "type": "ORG"
             }
         ],
         [
             {
-                "entity": "ChatGPT",
+                "entity": "Pearls of Wisdom",
                 "type": "ORG"
             }
         ],
@@ -248,10 +352,30 @@
                 "type": "MONEY"
             }
         ],
-        [],
-        [],
-        [],
-        [],
+        [
+            {
+                "entity": "Pearls of Wisdom",
+                "type": "ORG"
+            }
+        ],
+        [
+            {
+                "entity": "Pearls of Wisdom",
+                "type": "ORG"
+            }
+        ],
+        [
+            {
+                "entity": "Pearls of Wisdom",
+                "type": "ORG"
+            }
+        ],
+        [
+            {
+                "entity": "Pearls of Wisdom",
+                "type": "ORG"
+            }
+        ],
         [],
         [],
         [
@@ -264,10 +388,23 @@
             {
                 "entity": "5",
                 "type": "CARDINAL"
+            },
+            {
+                "entity": "Pearls of Wisdom",
+                "type": "ORG"
             }
         ],
-        [],
         [
+            {
+                "entity": "Pearls of Wisdom",
+                "type": "WORK_OF_ART"
+            }
+        ],
+        [
+            {
+                "entity": "Pearls of Wisdom",
+                "type": "ORG"
+            },
             {
                 "entity": "Scale AI",
                 "type": "ORG"
@@ -300,7 +437,11 @@
         [
             {
                 "entity": "Pearls of Wisdom",
-                "type": "WORK_OF_ART"
+                "type": "ORG"
+            },
+            {
+                "entity": "ChatGPT",
+                "type": "PRODUCT"
             }
         ],
         [
@@ -325,137 +466,328 @@
         ],
         [
             {
-                "entity": "Data Security and Privacy",
-                "type": "ORG"
-            },
-            {
-                "entity": "Data Security and Privacy",
+                "entity": "Pearls of Wisdom",
                 "type": "ORG"
             }
         ],
-        [],
         [
+            {
+                "entity": "Pearls of Wisdom",
+                "type": "ORG"
+            }
+        ],
+        [
+            {
+                "entity": "Pearls of Wisdom",
+                "type": "PERSON"
+            },
             {
                 "entity": "Allen Institute",
                 "type": "ORG"
             }
         ],
-        [],
         [
+            {
+                "entity": "ChatGPT",
+                "type": "PRODUCT"
+            },
+            {
+                "entity": "Gemini",
+                "type": "PRODUCT"
+            }
+        ],
+        [
+            {
+                "entity": "Pearls of Wisdom",
+                "type": "ORG"
+            },
             {
                 "entity": "PhDs",
                 "type": "WORK_OF_ART"
             }
         ],
-        [],
-        [],
-        [],
-        [],
+        [
+            {
+                "entity": "Pearls of Wisdom",
+                "type": "ORG"
+            }
+        ],
+        [
+            {
+                "entity": "Pearls of Wisdom",
+                "type": "ORG"
+            }
+        ],
+        [
+            {
+                "entity": "Pearls of Wisdom",
+                "type": "ORG"
+            }
+        ],
+        [
+            {
+                "entity": "Pearls of Wisdom",
+                "type": "ORG"
+            }
+        ],
         [
             {
                 "entity": "6",
                 "type": "CARDINAL"
             }
         ],
+        [
+            {
+                "entity": "Pearls of Wisdom",
+                "type": "ORG"
+            }
+        ],
         [],
-        [],
-        [],
+        [
+            {
+                "entity": "Pearls of Wisdom",
+                "type": "ORG"
+            }
+        ],
         [],
         [
             {
                 "entity": "7",
                 "type": "CARDINAL"
-            }
-        ],
-        [
+            },
             {
-                "entity": "Investor Pitch",
+                "entity": "Pearls of Wisdom",
                 "type": "ORG"
             }
         ],
         [],
-        [],
-        [],
-        [],
-        [],
-        [],
         [
+            {
+                "entity": "5-7",
+                "type": "CARDINAL"
+            },
+            {
+                "entity": "Pearls of Wisdom",
+                "type": "ORG"
+            }
+        ],
+        [
+            {
+                "entity": "Pearls of Wisdom",
+                "type": "ORG"
+            }
+        ],
+        [
+            {
+                "entity": "Pearls of Wisdom",
+                "type": "ORG"
+            }
+        ],
+        [
+            {
+                "entity": "Pearls of Wisdom",
+                "type": "ORG"
+            }
+        ],
+        [
+            {
+                "entity": "Pearls of Wisdom",
+                "type": "ORG"
+            }
+        ],
+        [
+            {
+                "entity": "Pearls of Wisdom",
+                "type": "ORG"
+            }
+        ],
+        [
+            {
+                "entity": "Pearls of Wisdom",
+                "type": "ORG"
+            },
             {
                 "entity": "ChatGPT",
                 "type": "ORG"
             }
         ],
-        [],
-        [],
         [
             {
-                "entity": "Agency",
+                "entity": "Pearls of Wisdom",
                 "type": "ORG"
             }
         ],
-        [],
-        [],
-        [],
         [
+            {
+                "entity": "Pearls of Wisdom",
+                "type": "ORG"
+            }
+        ],
+        [
+            {
+                "entity": "Pearls of Wisdom",
+                "type": "ORG"
+            },
+            {
+                "entity": "Pearls of Wisdom",
+                "type": "ORG"
+            }
+        ],
+        [
+            {
+                "entity": "Pearls of Wisdom",
+                "type": "ORG"
+            }
+        ],
+        [
+            {
+                "entity": "Pearls of Wisdom",
+                "type": "ORG"
+            }
+        ],
+        [
+            {
+                "entity": "Section 8: Financials & Funding",
+                "type": "WORK_OF_ART"
+            },
+            {
+                "entity": "Pearls of Wisdom",
+                "type": "ORG"
+            }
+        ],
+        [
+            {
+                "entity": "Pearls of Wisdom",
+                "type": "ORG"
+            },
             {
                 "entity": "Amazon AWS",
                 "type": "ORG"
             }
         ],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
+        [
+            {
+                "entity": "Pearls of Wisdom",
+                "type": "ORG"
+            }
+        ],
+        [
+            {
+                "entity": "Pearls of Wisdom",
+                "type": "ORG"
+            }
+        ],
+        [
+            {
+                "entity": "Pearls of Wisdom",
+                "type": "ORG"
+            }
+        ],
+        [
+            {
+                "entity": "Pearls of Wisdom",
+                "type": "ORG"
+            }
+        ],
+        [
+            {
+                "entity": "Pearls of Wisdom",
+                "type": "ORG"
+            }
+        ],
+        [
+            {
+                "entity": "Pearls of Wisdom",
+                "type": "ORG"
+            }
+        ],
         [
             {
                 "entity": "9",
                 "type": "CARDINAL"
             }
         ],
-        [],
-        [],
+        [
+            {
+                "entity": "Pearls of Wisdom",
+                "type": "ORG"
+            }
+        ],
+        [
+            {
+                "entity": "Pearls of Wisdom",
+                "type": "ORG"
+            }
+        ],
         [
             {
                 "entity": "OpenAI",
                 "type": "ORG"
-            }
-        ],
-        [],
-        [
-            {
-                "entity": "LLM",
-                "type": "WORK_OF_ART"
             },
             {
-                "entity": "OpenAI",
+                "entity": "Pearls of Wisdom",
                 "type": "ORG"
             }
         ],
         [
             {
-                "entity": "OpenAI",
+                "entity": "Pearls of Wisdom",
                 "type": "ORG"
             }
         ],
-        [],
-        [],
-        [],
         [
+            {
+                "entity": "Pearls of Wisdom",
+                "type": "ORG"
+            }
+        ],
+        [
+            {
+                "entity": "Pearls of Wisdom",
+                "type": "ORG"
+            }
+        ],
+        [
+            {
+                "entity": "Pearls of Wisdom",
+                "type": "ORG"
+            }
+        ],
+        [
+            {
+                "entity": "Pearls of Wisdom",
+                "type": "ORG"
+            }
+        ],
+        [
+            {
+                "entity": "Pearls of Wisdom",
+                "type": "ORG"
+            }
+        ],
+        [
+            {
+                "entity": "Pearls of Wisdom",
+                "type": "ORG"
+            },
             {
                 "entity": "ChatGPT",
                 "type": "ORG"
             }
         ],
-        [],
         [
             {
-                "entity": "Two",
+                "entity": "Pearls of Wisdom",
+                "type": "ORG"
+            }
+        ],
+        [
+            {
+                "entity": "two",
                 "type": "CARDINAL"
             },
             {
-                "entity": "ChatGPT",
+                "entity": "Pearls of Wisdom",
                 "type": "ORG"
             }
         ],
@@ -465,16 +797,25 @@
                 "type": "CARDINAL"
             },
             {
-                "entity": "ChatGPT",
+                "entity": "Pearls of Wisdom",
+                "type": "ORG"
+            }
+        ],
+        [
+            {
+                "entity": "Pearls of Wisdom",
                 "type": "ORG"
             },
             {
-                "entity": "two",
-                "type": "CARDINAL"
+                "entity": "second",
+                "type": "ORDINAL"
             }
         ],
-        [],
         [
+            {
+                "entity": "Pearls of Wisdom",
+                "type": "ORG"
+            },
             {
                 "entity": "20",
                 "type": "CARDINAL"
@@ -482,15 +823,39 @@
         ],
         [
             {
-                "entity": "20",
-                "type": "CARDINAL"
+                "entity": "Pearls of Wisdom",
+                "type": "ORG"
             }
         ],
-        [],
-        [],
-        [],
-        [],
         [
+            {
+                "entity": "Pearls of Wisdom",
+                "type": "ORG"
+            }
+        ],
+        [
+            {
+                "entity": "Pearls of Wisdom",
+                "type": "ORG"
+            }
+        ],
+        [
+            {
+                "entity": "Pearls of Wisdom",
+                "type": "ORG"
+            }
+        ],
+        [
+            {
+                "entity": "Pearls of Wisdom",
+                "type": "ORG"
+            }
+        ],
+        [
+            {
+                "entity": "Pearls of Wisdom",
+                "type": "ORG"
+            },
             {
                 "entity": "Allen Institute",
                 "type": "ORG"
