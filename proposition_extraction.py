@@ -34,7 +34,8 @@ def extract_proposition(entity1, relation, entity2, sentence):
 
     try:
         completion = client.beta.chat.completions.parse(
-            model="gpt-4o-mini",
+            model="gpt-4o",
+            # model="gpt-4o-mini",
             messages=[
                 {
                     "role": "system",
@@ -65,7 +66,9 @@ def process_articles():
     logging.info(
         "Loading decontextualized articles from projects/prls/decontextualized_articles.json"
     )
-    with open("projects/prls/decontextualized_articles.json", "r", encoding="utf-8") as f:
+    with open(
+        "projects/prls/decontextualized_articles.json", "r", encoding="utf-8"
+    ) as f:
         decontextualized_articles = json.load(f)
 
     logging.info(

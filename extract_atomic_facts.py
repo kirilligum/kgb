@@ -23,14 +23,15 @@ def extract_atomic_facts(sentence, propositions):
         f"3. Express each atomic fact as a concise and grammatically correct sentence.\n"
         f"4. Ensure each atomic fact is complete and doesn't depend on information outside the given sentence.\n"
         f"5. Avoid generating redundant or overlapping facts, both amongst themselves and with the propositions.\n"
-        f"6. If the sentence contains no additional factual information beyond what's in the propositions, state: \"No new atomic facts found.\"\n"
+        f'6. If the sentence contains no additional factual information beyond what\'s in the propositions, state: "No new atomic facts found."\n'
         f"7. Limit the number of atomic facts to a maximum of 5.\n\n"
-        f"Sentence: \"{sentence}\"\n"
+        f'Sentence: "{sentence}"\n'
         f"Propositions: {propositions}\n"
     )
 
     try:
         completion = client.beta.chat.completions.parse(
+            # model="gpt-4o",
             model="gpt-4o-mini",
             messages=[
                 {
@@ -62,7 +63,9 @@ def process_articles():
     logging.info(
         "Loading decontextualized articles from projects/prls/decontextualized_articles.json"
     )
-    with open("projects/prls/decontextualized_articles.json", "r", encoding="utf-8") as f:
+    with open(
+        "projects/prls/decontextualized_articles.json", "r", encoding="utf-8"
+    ) as f:
         decontextualized_articles = json.load(f)
 
     logging.info(

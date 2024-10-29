@@ -11,7 +11,7 @@ class DecontextualizedSentence(BaseModel):
 
 
 def decontextualize_sentences(
-    previous_sentences, current_sentence, num_previous_sentences=3
+    previous_sentences, current_sentence, num_previous_sentences=1000
 ):
     """Decontextualize a sentence using OpenAI API"""
     prompt = """
@@ -183,10 +183,10 @@ def decontextualize_sentences(
     user_input = (
         prompt
         + examples
-        + "## Previous sentences\n"
-        + "\n".join(previous_sentences)
         + "\n## Current sentence\n"
         + current_sentence
+        + "\n\n\n\n## Previous sentences\n"
+        + "\n".join(previous_sentences)
     )
 
     try:
