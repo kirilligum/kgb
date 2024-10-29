@@ -79,14 +79,13 @@ def process_articles(input_file, output_file):
         print(f"Extracting entities from article: {file_name}")
         sentence_entities = []
 
-        for i, sentences in enumerate(sentences_list):
-            for sentence in sentences:
-                logging.info(f"Extracting entities from sentence {i+1}/{len(sentences_list)} in article: {file_name}")
-                entities = extract_entities_from_article(sentence)
-                if entities:
-                    sentence_entities.append([
-                        {"entity": entity.entity, "type": entity.type} for entity in entities.entities
-                    ])
+        for i, sentence in enumerate(sentences_list):
+            logging.info(f"Extracting entities from sentence {i+1}/{len(sentences_list)} in article: {file_name}")
+            entities = extract_entities_from_article(sentence)
+            if entities:
+                sentence_entities.append([
+                    {"entity": entity.entity, "type": entity.type} for entity in entities.entities
+                ])
 
         extracted_entities[file_name] = sentence_entities
 
