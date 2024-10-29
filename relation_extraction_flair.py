@@ -32,7 +32,10 @@ def extract_and_validate_relationships(
     flair_relations = sentence.get_labels('relation')
 
     for relation in flair_relations:
-        entity1, candidate_relation, entity2 = relation.value.split()
+        # Extract the entities and the relation
+        entity1 = relation.head.text
+        entity2 = relation.tail.text
+        candidate_relation = relation.value
         logging.info(
             f"Extracted relationship using Flair: {entity1} {candidate_relation} {entity2}"
         )
