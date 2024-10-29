@@ -190,10 +190,11 @@ def decontextualize_sentences(
     user_input = (
         prompt
         + examples
+        + "\n## Previous sentences\n"
+        + "\n".join(previous_sentences)
+        + "\n\n\n"
         + "\n## Current sentence\n"
         + current_sentence
-        + "\n\n\n\n## Previous sentences\n"
-        + "\n".join(previous_sentences)
     )
 
     try:
@@ -229,7 +230,7 @@ def process_articles(input_file, output_file):
     decontextualized_articles = {}
 
     num_previous_sentences = (
-        1000  # Default value for the number of previous sentences to consider
+        7  # Default value for the number of previous sentences to consider
     )
 
     total_sentences = sum(len(sentences) for sentences in articles.values())
