@@ -12,7 +12,7 @@ def split_text_into_sentences(input_file, output_file):
     splitter = SegtokSentenceSplitter()
 
     # Use splitter to split text into list of sentences
-    sentences = splitter.split(text)
+    sentences = [sentence for sentence in splitter.split(text) if sentence.to_plain_string().strip()]
 
     # Store sentences in a dictionary
     chunked_articles = {
