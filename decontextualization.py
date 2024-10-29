@@ -223,7 +223,7 @@ def process_articles(input_file, output_file):
     decontextualized_articles = {}
 
     num_previous_sentences = (
-        3  # Default value for the number of previous sentences to consider
+        1000  # Default value for the number of previous sentences to consider
     )
 
     total_sentences = sum(len(sentences) for sentences in articles.values())
@@ -234,21 +234,21 @@ def process_articles(input_file, output_file):
         decontextualized_sentences = []
 
         for i, current_sentence in enumerate(sentences[:]):
+            processed_sentences += 1
+            logging.info(
+                f"Processing {processed_sentences}/{total_sentences} sentences."
+            )
             previous_sentences = sentences[max(0, i - num_previous_sentences) : i]
             decontextualized = decontextualize_sentences(
                 previous_sentences, current_sentence, num_previous_sentences
             )
             if decontextualized:
                 decontextualized_sentences.append(decontextualized.sentence)
-            processed_sentences += 1
-            logging.info(f"Processed {processed_sentences}/{total_sentences} sentences.")
-            logging.info(f"Decontextualized {len(decontextualized_sentences)} sentences in article: {file_name}")
 
         decontextualized_articles[file_name] = decontextualized_sentences
 
     with open(output_file, "w", encoding="utf-8") as f:
         json.dump(decontextualized_articles, f, indent=4, ensure_ascii=False)
-    logging.info(f"Processed {processed_sentences}/{total_sentences} sentences.")
     print(f"Successfully decontextualized articles into {output_file}")
 
 
