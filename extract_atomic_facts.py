@@ -116,6 +116,7 @@ def process_articles():
 
         all_atomic_facts[file_name] = article_atomic_facts
         logging.info(f"Extracted atomic facts for {len(article_atomic_facts)} sentences in article: {file_name}")
+        logging.info(f"Processed {processed_sentences}/{total_sentences} sentences.")
 
     with open("projects/prls/extracted_atomic_facts.json", "w", encoding="utf-8") as f:
         json.dump(all_atomic_facts, f, indent=4, ensure_ascii=False)

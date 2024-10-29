@@ -48,6 +48,7 @@ def process_articles(input_file, output_file):
         extracted_entities[file_name] = sentence_entities
         logging.info(f"Processed {processed_sentences}/{total_sentences} sentences.")
         logging.info(f"Extracted entities for {len(sentence_entities)} sentences in article: {file_name}")
+        logging.info(f"Extracted entities for {len(sentence_entities)} sentences in article: {file_name}")
 
     with open(output_file, "w", encoding="utf-8") as f:
         json.dump(extracted_entities, f, indent=4, ensure_ascii=False)

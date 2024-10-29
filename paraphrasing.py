@@ -107,6 +107,7 @@ def process_articles(output_file):
                 paraphrased_sentences.append(paraphrased.paraphrased_text)
 
         logging.info(f"Paraphrased {len(paraphrased_sentences)} sentences in article: {file_name}")
+        logging.info(f"Processed {processed_sentences}/{total_sentences} sentences.")
         paraphrased_articles[file_name] = {
             "paraphrased_sentences": paraphrased_sentences
         }

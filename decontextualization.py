@@ -242,6 +242,7 @@ def process_articles(input_file, output_file):
                 decontextualized_sentences.append(decontextualized.sentence)
             processed_sentences += 1
             logging.info(f"Processed {processed_sentences}/{total_sentences} sentences.")
+            logging.info(f"Decontextualized {len(decontextualized_sentences)} sentences in article: {file_name}")
 
         decontextualized_articles[file_name] = decontextualized_sentences
 

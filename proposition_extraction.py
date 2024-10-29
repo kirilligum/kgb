@@ -129,6 +129,7 @@ def process_articles():
 
         all_propositions[file_name] = article_propositions
         logging.info(f"Extracted propositions for {len(article_propositions)} sentences in article: {file_name}")
+        logging.info(f"Processed {processed_sentences}/{total_sentences} sentences.")
 
     with open("projects/prls/extracted_propositions.json", "w", encoding="utf-8") as f:
         json.dump(all_propositions, f, indent=4, ensure_ascii=False)

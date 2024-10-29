@@ -173,6 +173,7 @@ def process_articles():
 
         all_relationships[file_name] = article_relationships
         logging.info(f"Extracted relationships for {len(article_relationships)} sentences in article: {file_name}")
+        logging.info(f"Processed {processed_sentences}/{total_sentences} sentences.")
 
     # Save the relationships to a JSON file
     logging.info("Saving extracted relationships to projects/prls/extracted_relationships.json")

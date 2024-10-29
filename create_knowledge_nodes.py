@@ -48,6 +48,7 @@ def create_knowledge_nodes():
 
         knowledge_graph[file_name] = article_nodes
         logging.info(f"Created {len(article_nodes)} knowledge nodes for article: {file_name}")
+        logging.info(f"Processed {processed_sentences}/{total_sentences} sentences.")
 
     output_file = "projects/prls/knowledge_graph.json"
     with open(output_file, "w", encoding="utf-8") as f:

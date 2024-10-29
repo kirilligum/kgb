@@ -20,6 +20,7 @@ def split_text_into_sentences(input_file, output_file):
         input_file: [sentence.to_plain_string() for sentence in sentences]
     }
     logging.info(f"Chunked {len(chunked_articles[input_file])} sentences from input file: {input_file}")
+    logging.info(f"Processed {len(sentences)} sentences.")
 
     # Write the chunked sentences to a JSON file
     with open(output_file, "w", encoding="utf-8") as f:
