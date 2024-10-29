@@ -1,6 +1,12 @@
 import json
 import logging
+import logging
 from openai import OpenAI
+
+# Configure logging
+logging.basicConfig(
+    level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s"
+)
 from pydantic import BaseModel
 
 # Initialize OpenAI client
@@ -230,7 +236,7 @@ def process_articles(input_file, output_file):
     processed_sentences = 0
 
     for file_name, sentences in articles.items():
-        print(f"Decontextualizing article: {file_name}")
+        logging.info(f"Decontextualizing article: {file_name}")
         decontextualized_sentences = []
 
         for i, current_sentence in enumerate(sentences[:]):
@@ -249,7 +255,7 @@ def process_articles(input_file, output_file):
 
     with open(output_file, "w", encoding="utf-8") as f:
         json.dump(decontextualized_articles, f, indent=4, ensure_ascii=False)
-    print(f"Successfully decontextualized articles into {output_file}")
+logging.info(f"Successfully decontextualized articles into {output_file}")
 
 
 if __name__ == "__main__":
