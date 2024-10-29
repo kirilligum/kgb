@@ -135,8 +135,8 @@ def process_articles():
         all_relationships[file_name] = article_relationships
 
     # Save the relationships to a JSON file
-    logging.info("Saving extracted relationships to projects/prls/extracted_relationships.json")
-    with open("projects/prls/extracted_relationships.json", "w", encoding="utf-8") as f:
+    logging.info("Saving extracted relationships to projects/prls/extracted_relationships_flair.json")
+    with open("projects/prls/extracted_relationships_flair.json", "w", encoding="utf-8") as f:
         json.dump(all_relationships, f, indent=2, ensure_ascii=False)
     print(
         "Successfully extracted and validated relationships into data/extracted_relationships.json"
