@@ -63,15 +63,15 @@ def extract_proposition(entity1, relation, entity2, sentence):
 def process_articles():
     """Process articles and extract propositions"""
     logging.info(
-        "Loading decontextualized articles from data/decontextualized_articles.json"
+        "Loading decontextualized articles from projects/prls/decontextualized_articles.json"
     )
-    with open("data/decontextualized_articles.json", "r", encoding="utf-8") as f:
+    with open("projects/prls/decontextualized_articles.json", "r", encoding="utf-8") as f:
         decontextualized_articles = json.load(f)
 
     logging.info(
-        "Loading extracted relationships from data/extracted_relationships.json"
+        "Loading extracted relationships from projects/prls/extracted_relationships.json"
     )
-    with open("data/extracted_relationships.json", "r", encoding="utf-8") as f:
+    with open("projects/prls/extracted_relationships.json", "r", encoding="utf-8") as f:
         extracted_relationships = json.load(f)
 
     all_propositions = {}
@@ -109,7 +109,7 @@ def process_articles():
 
         all_propositions[file_name] = article_propositions
 
-    with open("data/extracted_propositions.json", "w", encoding="utf-8") as f:
+    with open("projects/prls/extracted_propositions.json", "w", encoding="utf-8") as f:
         json.dump(all_propositions, f, indent=4, ensure_ascii=False)
     logging.info(
         "Successfully extracted propositions into data/extracted_propositions.json"

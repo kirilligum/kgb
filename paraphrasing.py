@@ -75,12 +75,12 @@ def paraphrase_article(article_text, entities):
 
 def process_articles(output_file):
     """Process articles and paraphrase them"""
-    logging.info("Loading decontextualized articles from data/decontextualized_articles.json")
-    with open("data/decontextualized_articles.json", "r", encoding="utf-8") as f:
+    logging.info("Loading decontextualized articles from projects/prls/decontextualized_articles.json")
+    with open("projects/prls/decontextualized_articles.json", "r", encoding="utf-8") as f:
         decontextualized_articles = json.load(f)
 
-    logging.info("Loading extracted entities from data/extracted_entities.json")
-    with open("data/extracted_entities.json", "r", encoding="utf-8") as f:
+    logging.info("Loading extracted entities from projects/prls/extracted_entities.json")
+    with open("projects/prls/extracted_entities.json", "r", encoding="utf-8") as f:
         extracted_entities = json.load(f)
 
     paraphrased_articles = {}
@@ -112,6 +112,6 @@ def process_articles(output_file):
 
 
 if __name__ == "__main__":
-    output_file = "data/paraphrased_articles.json"
+    output_file = "projects/prls/paraphrased_articles.json"
 
     process_articles(output_file)

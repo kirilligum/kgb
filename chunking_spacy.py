@@ -28,7 +28,7 @@ def process_articles(input_file, output_file):
     print(f"Successfully chunked articles into {output_file}")
 
 if __name__ == "__main__":
-    input_file = "data/merged_articles.json"
-    output_file = "data/chunked_articles_spacy.json"
+    input_file = "projects/prls/merged_articles.json"
+    output_file = "projects/prls/chunked_articles_spacy.json"
 
     process_articles(input_file, output_file)

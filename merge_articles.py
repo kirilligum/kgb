@@ -39,7 +39,7 @@ def merge_cleaned_articles(input_dir, output_file):
 
 
 if __name__ == "__main__":
-    input_directory = "data/cleaned_articles"
-    output_file = "data/merged_articles.json"
+    input_directory = "projects/prls/cleaned_articles"
+    output_file = "projects/prls/merged_articles.json"
 
     merge_cleaned_articles(input_directory, output_file)

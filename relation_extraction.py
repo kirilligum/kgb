@@ -112,17 +112,17 @@ def extract_and_validate_relationships(
 def process_articles():
     # Load data from JSON files
     logging.info(
-        "Loading decontextualized articles from data/decontextualized_articles.json"
+        "Loading decontextualized articles from projects/prls/decontextualized_articles.json"
     )
-    with open("data/decontextualized_articles.json", "r", encoding="utf-8") as f:
+    with open("projects/prls/decontextualized_articles.json", "r", encoding="utf-8") as f:
         decontextualized_articles = json.load(f)
 
-    logging.info("Loading paraphrased articles from data/paraphrased_articles.json")
-    with open("data/paraphrased_articles.json", "r", encoding="utf-8") as f:
+    logging.info("Loading paraphrased articles from projects/prls/paraphrased_articles.json")
+    with open("projects/prls/paraphrased_articles.json", "r", encoding="utf-8") as f:
         paraphrased_articles = json.load(f)
 
-    logging.info("Loading extracted entities from data/extracted_entities.json")
-    with open("data/extracted_entities.json", "r", encoding="utf-8") as f:
+    logging.info("Loading extracted entities from projects/prls/extracted_entities.json")
+    with open("projects/prls/extracted_entities.json", "r", encoding="utf-8") as f:
         extracted_entities = json.load(f)
 
     all_relationships = {}
@@ -167,8 +167,8 @@ def process_articles():
         all_relationships[file_name] = article_relationships
 
     # Save the relationships to a JSON file
-    logging.info("Saving extracted relationships to data/extracted_relationships.json")
-    with open("data/extracted_relationships.json", "w", encoding="utf-8") as f:
+    logging.info("Saving extracted relationships to projects/prls/extracted_relationships.json")
+    with open("projects/prls/extracted_relationships.json", "w", encoding="utf-8") as f:
         json.dump(all_relationships, f, indent=2, ensure_ascii=False)
     print(
         "Successfully extracted and validated relationships into data/extracted_relationships.json"
